@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <Android-Version>11</Android-Version>
+    <version>20200819</version>
+
+    <!--bool ID="2004">true</bool-->
+
+    <!--string ID="5005">on</string-->
+
+    <!--item ID="4010" format="float" type="dimen">7.0</item-->
+
+    <!--integer ID="3011">2</integer-->
+</filter-conf>

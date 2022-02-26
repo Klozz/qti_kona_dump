@@ -1,0 +1,69 @@
+
+# InitEnv
+
+# Build.java
+ro.build.id=RKQ1.201105.002
+ro.product.manufacturer=realme
+ro.product.brand=realme
+ro.product.model=RMX3370
+ro.product.name=RMX3370TR
+ro.product.device=RE879AL1
+ro.build.version.incremental=1641919684391
+ro.build.version.release=11
+ro.build.fingerprint=realme/RMX3370TR/RE879AL1:11/RKQ1.201105.002/1641919684391:user/release-keys
+ro.odm.build.fingerprint=realme/RMX3370TR/RE879AL1:11/RKQ1.201105.002/1641919684391:user/release-keys
+ro.odm.build.version.incremental=1641919684391
+ro.product.odm.brand=realme
+ro.product.odm.manufacturer=realme
+ro.product.odm.model=RMX3370
+ro.product.odm.device=RE879AL1
+ro.product.odm.name=RMX3370TR
+ro.odm.build.date=Wed Jan 12 00:48:04 CST 2022
+ro.odm.build.date.utc=1641919684
+ro.system.build.fingerprint=realme/RMX3370TR/RE879AL1:11/RKQ1.201105.002/1641919684391:user/release-keys
+ro.system.build.version.incremental=1641919684391
+ro.product.system.brand=realme
+ro.product.system.manufacturer=realme
+ro.product.system.model=RMX3370
+ro.product.system.device=RE879AL1
+ro.product.system.name=RMX3370TR
+ro.system.build.date=Wed Jan 12 00:48:04 CST 2022
+ro.system.build.date.utc=1641919684
+ro.bootimage.build.fingerprint=realme/RMX3370TR/RE879AL1:11/RKQ1.201105.002/1641919684391:user/release-keys
+ro.bootimage.build.version.incremental=1641919684391
+ro.product.bootimage.brand=realme
+ro.product.bootimage.manufacturer=realme
+ro.product.bootimage.model=RMX3370
+ro.product.bootimage.device=RE879AL1
+ro.product.bootimage.name=RMX3370TR
+ro.bootimage.build.date=Wed Jan 12 00:48:04 CST 2022
+ro.bootimage.build.date.utc=1641919684
+ro.vendor.build.fingerprint=realme/RMX3370TR/RE879AL1:11/RKQ1.201105.002/1641919684391:user/release-keys
+ro.vendor.build.version.incremental=1641919684391
+ro.product.vendor.brand=realme
+ro.product.vendor.manufacturer=realme
+ro.product.vendor.model=RMX3370
+ro.product.vendor.device=RE879AL1
+ro.product.vendor.name=RMX3370TR
+ro.vendor.build.date=Wed Jan 12 00:48:04 CST 2022
+ro.vendor.build.date.utc=1641919684
+ro.system_ext.build.fingerprint=realme/RMX3370TR/RE879AL1:11/RKQ1.201105.002/1641919684391:user/release-keys
+ro.system_ext.build.version.incremental=1641919684391
+ro.product.system_ext.brand=realme
+ro.product.system_ext.manufacturer=realme
+ro.product.system_ext.model=RMX3370
+ro.product.system_ext.device=RE879AL1
+ro.product.system_ext.name=RMX3370TR
+ro.system_ext.build.date=Wed Jan 12 00:48:04 CST 2022
+ro.system_ext.build.date.utc=1641919684
+ro.product.build.fingerprint=realme/RMX3370TR/RE879AL1:11/RKQ1.201105.002/1641919684391:user/release-keys
+ro.product.build.version.incremental=1641919684391
+ro.product.product.brand=realme
+ro.product.product.manufacturer=realme
+ro.product.product.model=RMX3370
+ro.product.product.device=RE879AL1
+ro.product.product.name=RMX3370TR
+ro.product.build.date=Wed Jan 12 00:48:04 CST 2022
+ro.product.build.date.utc=1641919684
+
+# OPPO

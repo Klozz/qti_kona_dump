@@ -1,0 +1,63 @@
+{
+  "comment"       : "editable description",
+  "version"       : 20210825,
+  "filter_content": [
+    {
+      "name": "gl_oom",
+      "tag" : ["com.instagram.android", "com.facebook.katana", "com.facebook.orca", "com.facebook.pages.app", "com.excean.gspace"]
+    },
+    {
+      "name": "brk_s2w",
+      "tag" : [
+        "com.autonavi.minimap", "com.autonavi.amapauto", "cn.bus365.wyc.drivergd", "cn.hznetroute.AAdriver",
+        "com.eamobile.nbajam_na_wf", "com.tuotuo.driver", "com.keubano.zhdz", "com.jsyc.driver", "net.untrip.app.lczcd",
+        "com.CharmingAgencys.nearme.gamecenter", "com.frontline.DesertEscape.nearme.gamecenter", "com.zsfz.zsjmnjs.nearme.gamecenter",
+        "com.yx", "com.smile.gifmaker"
+      ]
+    },
+    {
+      "name": "ui_first_black",
+      "tag" : [
+        "com.icbc.im", "com.bill99.kuaiyishua", "com.andromeda.androbench2", "com.tencent.tmgp.sgame", "com.tencent.tmgp.pubgmhd"
+      ]
+    },
+    {
+      "name": "gl_thread_ux",
+      "tag" : [
+        "com.coloros.gallery3d", "com.oppo.camera"
+      ]
+    },
+    {
+      "name": "window_flag_optimize",
+      "tag" : [
+        "com.xunlei.downloadprovider", "com.lianjia.beike"
+      ]
+    },
+    {
+      "name": "scroll_opt",
+      "tag" : [
+        "com.tencent.mm", "com.taobao.taobao", "com.sina.weibo", "com.tencent.news", "com.smile.gifmaker", "com.sankuai.meituan",
+        "tv.danmaku.bili", "com.android.contacts", "com.UCMobile", "com.heytap.browser",
+        "com.tencent.qqlive", "com.zhihu.android", "com.tmall.wireless", "com.dianping.v1",
+        "com.jingdong.app.mall", "com.baidu.tieba", "com.cubic.autohome", "com.taobao.idlefish",
+        "com.autonavi.minimap", "com.twitter.android", "com.lazada.android", "com.opera.browser",
+        "com.eg.android.AlipayGphone", "com.shopee.ph", "com.android.vending"
+      ],
+      "value": [
+        "[com.tencent.mm.plugin.sns.ui.SnsTimeLineUI, com.tencent.mm.ui.LauncherUI, com.tencent.mm.plugin.brandservice.ui.timeline.BizTimeLineUI]",
+        "[com.taobao.tao.TBMainActivity, com.taobao.android.detail.wrapper.activity.DetailActivity, com.taobao.weex.WXActivity]",
+        "[com.sina.weibo.VisitorMainTabActivity, com.sina.weibo.MainTabActivity, com.sina.weibo.page.SearchResultActivity, com.sina.weibo.feed.DetailWeiboActivity]",
+        "[com.tencent.news.activity.SplashActivity]", "[com.yxcorp.gifshow.HomeActivity]",
+        "[com.meituan.android.food.homepage.FoodHomePageActivity, com.meituan.android.pt.homepage.activity.MainActivity]",
+        "[tv.danmaku.bili.MainActivity]", "[com.android.contacts.DialtactsActivityAlias]", "[com.uc.browser.InnerUCMobile]",
+        "[com.android.browser.BrowserActivity]", "[com.tencent.qqlive.ona.activity.SplashHomeActivity]",
+        "[com.zhihu.android.app.ui.activity.MainActivity]","[com.tmall.wireless.maintab.module.TMMainTabActivity]",
+        "[com.dianping.v1.NovaMainActivity]", "[com.jingdong.app.mall.MainFrameActivity]",
+        "[com.baidu.tieba.tblauncher.MainTabActivity]", "[com.cubic.autohome.MainActivity]", "[com.taobao.fleamarket.home.activity.MainActivity]",
+        "[com.autonavi.map.activity.NewMapActivity]", "[com.twitter.app.main.MainActivity, com.twitter.android.search.results.SearchActivity]",
+        "[com.lazada.android.maintab.MainTabActivity]", "[com.opera.Opera]", "[com.eg.android.AlipayGphone.AlipayLogin]",
+        "[com.shopee.app.ui.home.HomeActivity_]", "[com.android.vending.AssetBrowserActivity]"
+      ]
+    }
+  ]
+}

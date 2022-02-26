@@ -1,0 +1,8 @@
+on late-fs
+    chmod 0666 /dev/awinic_haptic
+service vendor.oplus.vibrator-default /odm/bin/hw/vendor.oplus.hardware.vibrator-service
+    class late_start
+    user system
+    group system
+    setenv RICHTAP_DEVICE_PATH /dev/awinic_haptic
+    setenv ENV_RICHTAP_CONFIG_PATH /odm/etc/aac_richtap.config

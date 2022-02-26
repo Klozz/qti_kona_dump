@@ -1,0 +1,25 @@
+#! /bin/sh
+#
+#Copyright (c)  2019-2020 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+    override
+    interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
+/*shoulei.sun@camera add for vts_ibase_test fail*/
+#ifdef OPLUS_FEATURE_CAMERA_COMMON
+    interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
+#endif
+    class hal
+    user cameraserver
+    group audio camera input drmrpc oem_2907
+    ioprio rt 4
+    capabilities SYS_NICE
+/*linyingpiao@camera add for camera set foreground fail*/
+#ifdef OPLUS_FEATURE_CAMERA_COMMON
+#   writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks
+#else
+    task_profiles CameraServiceCapacity HighPerformance
+#endif

@@ -1,0 +1,14 @@
+# qssi-user 11 RKQ1.201105.002 1627626453322 release-keys
+- manufacturer: 
+- platform: kona
+- codename: kona
+- flavor: qssi-user
+- release: 11
+- id: RKQ1.201105.002
+- incremental: 1627626453322
+- tags: release-keys
+- fingerprint: qti/kona/kona:11/RKQ1.201105.002/1627626453322:user/release-keys
+- is_ab: false
+- brand: qti
+- branch: qssi-user-11-RKQ1.201105.002-1627626453322-release-keys
+- repo: qti_kona_dump
