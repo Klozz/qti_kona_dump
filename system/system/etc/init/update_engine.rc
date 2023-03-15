@@ -1,0 +1,40 @@
+service update_engine /system/bin/update_engine --logtostderr --logtofile --foreground
+    class late_start
+    user root
+    group root system wakelock inet cache media_rw everybody
+    task_profiles OtaProfiles
+    disabled
+
+on property:ro.boot.slot_suffix=*
+    enable update_engine
+
+# sam.li@ANDROID.UPDATABILITY,add for update engine log
+on property:sys.oplus.update_engine.log=1
+    copy_update_engine_log /data/misc/oplus_update_engine_log /mnt/vendor/oplusreserve/update_engine_log
+    setprop sys.oplus.update_engine.log 0
+
+#ifdef OPLUS_FEATURE_VAB_WIFI_OTA
+#Shuangquan.du@PSW.AD.Recovery.0, 2021/04/16, Add for install vab ota in recovery mode
+on property:sys.oplus.copy_map_file=payload
+    copy /cache/recovery/block.map /mnt/vendor/oplusreserve/recovery/payload.map
+    setprop sys.oplus.copy_map_file 0
+
+on property:sys.oplus.copy_map_file=payload_properties
+    mkdir /mnt/vendor/oplusreserve/recovery 0711 root root
+    copy /cache/recovery/block.map /mnt/vendor/oplusreserve/recovery/payload_properties.map
+    setprop sys.oplus.copy_map_file 0
+#endif /*OPLUS_FEATURE_VAB_WIFI_OTA*/
+
+#ifdef OPLUS_FEATURE_VAB_DOWNGRADE
+#//Yang.Li@AD.UPDATABILITY, 2022/05/05, Add for update_engine downgrade ota
+on property:sys.oplus.update_engine.dg_check=1
+    setprop sys.oplus.update_engine.dg_serial ${ro.serialno}
+#endif /* OPLUS_FEATURE_VAB_DOWNGRADE */
+
+on property:vold.fbe.decrypted=1
+    ##ifdef OPLUS_FORCE_AB_OTA_UPDATER
+    #sam.li@SYSTEM,2021/11/15,add for update_engine upgrading reserve.img
+    create_reserve_dir /data/reserve 0775 system system
+    #ajinath@SYSTEM, 2022/03/14, Add oneplus 7 series india.img support
+    create_india_dir /data/india 0775 system system
+    ##endif /* OPLUS_FORCE_AB_OTA_UPDATER */
