@@ -1,0 +1,27 @@
+#/************************************************************************************
+#** Copyright (C), 2008-2018, OPPO Mobile Comm Corp., Ltd
+#** File: init.oplus.cust.rc
+#**
+#** Description:
+#**	Definitions for init.oplus.cust.rc
+#**
+#** Version: 1.0
+#** Date created: 2021/09/13
+#** Author:
+#**
+#** --------------------------- Revision History: ------------------------------------
+#* <version>	    	<date>	    	<author>	             <desc>
+#* Revision 1.0		2021/09/13
+#**************************************************************************************/
+
+on post-fs-data && property:ro.boot.cust=8
+    mount ext4 /dev/block/bootdevice/by-name/oem_cust1${ro.boot.slot_suffix} /oem ro barrier=1 discard context=u:object_r:oemfs:s0
+    mount overlay overlay /my_product/media/bootanimation lowerdir=/oem/cyberpunk_media/media/bootanimation:/my_product/media/bootanimation,context=u:object_r:system_file:s0
+    mount overlay overlay /my_company/app lowerdir=/oem/app:/my_company/app,context=u:object_r:system_file:s0
+    mount overlay overlay /my_company/priv-app lowerdir=/oem/priv-app:/my_company/priv-app,context=u:object_r:system_file:s0
+    mount overlay overlay /my_company/lib lowerdir=/oem/lib:/my_company/lib,context=u:object_r:system_lib_file:s0
+    mount overlay overlay /my_company/lib64 lowerdir=/oem/lib64:/my_company/lib64,context=u:object_r:system_lib_file:s0
+    mount overlay overlay /my_company/etc lowerdir=/oem/etc:/my_company/etc,context=u:object_r:system_file:s0
+    mount overlay overlay /my_company/overlay lowerdir=/oem/overlay:/my_company/overlay,context=u:object_r:vendor_overlay_file:s0
+    mount overlay overlay /my_company/media lowerdir=/oem/cyberpunk_media/media:/my_company/media,context=u:object_r:system_file:s0
+

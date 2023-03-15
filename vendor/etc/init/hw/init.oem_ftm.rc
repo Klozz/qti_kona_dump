@@ -1,0 +1,3 @@
+#factory load rc
+
+import /vendor/etc/init/hw/init.${sys.oplus_boot_mode}.rc

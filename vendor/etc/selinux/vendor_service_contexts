@@ -1,0 +1,66 @@
+#line 1 "vendor/oplus/system/sepolicy/vendor/service_contexts"
+#ifdef OPLUS_FEATURE_ORMS
+#Xiehuilong@GAME.ORMS, 2022/06/07, Add for oplus orms aidl hal service on Android T
+vendor.oplus.hardware.ormsHalService.IOrmsAidlHalService/default  u:object_r:oplus_orms_aidl_hal_service:s0
+#endif /* OPLUS_FEATURE_ORMS */
+
+com.silead.fingerprintService u:object_r:silead_fp_service:s0
+
+#ifdef OPLUS_FEATURE_ESIM
+#ChenGuoyao@NETWORK.ARCH.3631218, 2022/06/06, Add for hidl2aidl
+vendor.oplus.hardware.esim.IOplusEsim/default u:object_r:hal_esim_service:s0
+#endif OPLUS_FEATURE_ESIM
+
+#ifdef OPLUS_FEATURE_WIFI_SNIFFER
+#LiangXiao@CONNECTIVITY.WIFI.BASIC.3631197, 2022/05/15, Add for oplus wifi aidl hal service on Android T
+vendor.oplus.hardware.wifi.IOplusWifiService/default  u:object_r:oplus_wifi_aidl_hal_service:s0
+#endif /* OPLUS_FEATURE_WIFI_SNIFFER */
+
+#ifdef OPLUS_FEATURE_WIFI_SUPPLICANTAIDL
+#FanBingqi@CONNECTIVITY.WIFI.CONNECTION.CONNECT.3631233, 2022/06/20, Add for oplus supplicant hal service on Android T
+vendor.oplus.hardware.wifi.supplicant.IOplusSupplicant/default  u:object_r:oplus_supplicant_aidl_hal_service:s0
+#endif /*OPLUS_FEATURE_WIFI_SUPPLICANTAIDL*/
+
+#Ruijiagui@Network.ARCH, 2020/10/22, add for subsys-hal
+vendor.oplus.hardware.subsys_interface.subsys.ISubsys/default             u:object_r:hal_subsys_service:s0
+vendor.oplus.hardware.subsys_interface.subsys_radio.ISubsysRadio/slot1    u:object_r:hal_subsys_service:s0
+vendor.oplus.hardware.subsys_interface.subsys_radio.ISubsysRadio/slot2    u:object_r:hal_subsys_service:s0
+#Ruijiagui@Network.ARCH, 2020/10/22, end add for subsys-hal
+
+
+
+#line 1 "device/qcom/sepolicy_vndr/qva/vendor/common/service_contexts"
+# Copyright (c) 2021, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+vendor.qti.hardware.qxr.IQXRCoreService/default        u:object_r:vendor_hal_qvrd_service:s0
+vendor.qti.hardware.qxr.IQXRCamService/default         u:object_r:vendor_hal_qvrd_service:s0
+vendor.qti.hardware.qxr.IQXRModService/default         u:object_r:vendor_hal_qvrd_service:s0
+#line 1 "system/sepolicy/reqd_mask/service_contexts"
+# empty service_contexts file - this file is used to generate an empty
+# non-platform service_context for devices without any service_contexts
+# customizations.
