@@ -1,0 +1,24 @@
+
+<permissions>
+    <!-- Xiaori.Yuan@PSW.MultiMedia.Display.Service.Feature.1082192,2017/11/21,for new autobrightness  -->
+    <feature name="oppo.aod.support" />
+    <feature name="oppo.aod.prevent.burn.support" />
+    <feature name="oppo.high.brightness.support" />
+    <feature name="oppo.display.screen.gloablehbm.support" />
+    <feature name="oppo.autobrightctl.animation.support" />
+    <feature name="oppo.brightness.mode.automatic" />
+    <feature name="oppo.dynamicfpsswitch.feature.support" />
+    <!--feature name="oppo.display.screen.defaultsmartmode" /-->
+    <feature name="oppo.display.screen.120hz.support" />
+    <feature name="oppo.display.colormode.support" />
+    <feature name="oppo.hardware.fingerprint.optical.support" />
+    <feature name="oppo.fingerprint.disable.dimlayer" />
+    <feature name="com.oppo.feature.screen.heteromorphism" />
+    <feature name="oppo.intelligent.color.temperature.support" />
+    <feature name="oppo.display.cinema.mode.support" />
+    <feature name="oppo.display.colorful.mode.support" />
+    <feature name="oppo.mmdisplay.origin.roundcorner.support" />
+    <!-- LiAn@PSW.MultiMedia.Display.Service,2020/08/12,remove HDR Feature  -->
+    <feature name="oppo.hdr.enhance.brightness.support" />
+    <feature name="oplus.software.video.osie_support"/>
+</permissions>

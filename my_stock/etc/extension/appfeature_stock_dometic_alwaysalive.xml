@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="oplus.software.alwaysalive.enable" args="boolean:false"/>
+</extend_features>

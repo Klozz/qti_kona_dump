@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.android.settings.oguard_info" />
+    <app_feature name="com.android.settings.region_picker" />
+</extend_features>

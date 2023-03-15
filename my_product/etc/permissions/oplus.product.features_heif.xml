@@ -1,0 +1,4 @@
+<oplus-config>
+    <!-- nigaopeng@MM.MEDIASERVER.IMAGE, 2020/06/15, Add for heif capture feature -->
+    <oplus-feature name="oplus.software.camera.heic_support" />
+</oplus-config>

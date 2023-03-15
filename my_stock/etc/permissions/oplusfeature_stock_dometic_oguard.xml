@@ -1,0 +1,4 @@
+<oplus-config>
+	<!-- lin.xu@ANDROID.RESCONTROL, 2022/07/28, add for oguard enable -->
+    <oplus-feature name="oplus.software.oguard.enable"/>
+</oplus-config>

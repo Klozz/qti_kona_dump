@@ -1,0 +1,58 @@
+##################################################################################
+### oplus All rights reserved.
+###
+### File: - init.oplus.bsp_debug.rc
+### Author: wen.luo@BSP.Kernel.Stability
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### 2019-11-10                 Create this file    1.0        bsp debug/tracing
+##################################################################################
+
+#for agingtest ftrace
+on property:persist.sys.agingtest=1
+    write /dev/kmsg "Ftrace Debug:init.oplus.bsp_debug.rc"
+
+    # timer
+    chmod 0755 /sys/kernel/tracing
+    write /sys/kernel/tracing/tracing_on  0
+    write /sys/kernel/tracing/events/enable 0
+    write /sys/kernel/tracing/buffer_size_kb 64000
+    write /sys/kernel/tracing/set_event ""
+    write /sys/kernel/tracing/trace ""
+
+    #qcom suppose
+    #sched
+    write  /sys/kernel/tracing/events/sched/sched_switch/enable 1
+    write  /sys/kernel/tracing/events/sched/sched_wakeup/enable 1
+    write  /sys/kernel/tracing/events/sched/sched_waking/enable 1
+    write  /sys/kernel/tracing/events/sched/sched_stat_runtime/enable 1
+    #irq
+    write  /sys/kernel/tracing/events/irq/irq_handler_entry/enable 1
+    write  /sys/kernel/tracing/events/irq/irq_handler_exit/enable 1
+    write  /sys/kernel/tracing/events/irq/softirq_entry/enable 1
+    write  /sys/kernel/tracing/events/irq/softirq_exit/enable 1
+
+    write /sys/kernel/tracing/tracing_on 1
+
+    #subsystem SSR config(open wlan esoc SSR)
+    #write /sys/bus/msm_subsys/devices/subsys9/restart_level "related"
+
+#for agingtest dcc debug
+on property:persist.sys.agingtest=1
+    start bsp_debug
+
+service bsp_debug /vendor/bin/sh /odm/bin/init.oplus.bsp_debug.sh
+    class core
+    user shell
+    group root system log
+    disabled
+    oneshot
+
+service bsp_us_dump /vendor/bin/sh /odm/bin/init.oplus.bsp_us_dump.sh
+    class core
+    user shell
+    group root system log
+    disabled
+    oneshot

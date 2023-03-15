@@ -1,0 +1,15 @@
+##################################################################################
+### , OPPO All rights reserved.
+###
+### File: - init.op2.mount.rc
+### add this file for move op2 mounting to system_ext partition, to avoid some CTS fail test
+### origin design of this operation is in init.target.rc(qcom) or init.mtxxxx.rc(mtk)
+##################################################################################
+#use /mnt/oplus/op2 instead
+on fs
+	#do umount first,some platform maybe already mount by fstab.qcom
+	umount /mnt/oplus/op2
+    mkdir /mnt/oplus
+    mkdir /mnt/oplus/op2
+    restorecon_recursive /mnt/oplus/
+    mount ext4 /mnt/vendor/oplusreserve /mnt/oplus/op2 bind

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+<disable pkg="com.android.contacts" priority="6"/>
+<disable pkg="com.android.incallui" priority="6"/>
+<disable pkg="com.android.mms" priority="6"/>
+<disable pkg="com.coloros.blacklistapp" priority="6"/>
+<disable pkg="com.coloros.phonenoareainquire" priority="6"/>
+<disable pkg="com.oplus.blacklistapp" priority="6"/>
+<disable pkg="com.oplus.phonenoareainquire" priority="6"/>
+<disable pkg="com.ted.number" priority="6"/>
+</app>

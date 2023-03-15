@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migrateConfig>
+    <!-- common config start -->
+    <crossUpdateMigrateItem targetPkgName="com.oplus.melody" targetApkPath="/my_heytap/del-app/Melody/Melody.apk" isSystemApp="false" priority="10">
+        <!-- OOS only -->
+        <mirrorSourcePkg sourcePkgName="com.oneplus.twspods" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/onepluspods.db" targetPath="/databases/ops_melody.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/device_info.db" targetPath="/databases/device_info.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/com.oneplus.twspods_preferences.xml" targetPath="/shared_prefs/com.oplus.melody_preferences.xml" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </mirrorSourcePkg>
+        <!-- OOS only -->
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.oplus.synergy" targetApkPath="/my_stock/priv-app/HeySynergy/HeySynergy.apk" isSystemApp="true" priority="10">
+        <mirrorSourcePkg sourcePkgName="com.heytap.synergy" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/shared_prefs/com_shortcutcast_preference.xml" targetPath="/shared_prefs/com_shortcutcast_preference.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/local_config.xml" targetPath="/shared_prefs/local_config.xml" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </mirrorSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.oplus.appplatform" targetApkPath="/system/priv-app/OplusAppPlatform/OplusAppPlatform.apk" isSystemApp="true" priority="10">
+        <mirrorSourcePkg sourcePkgName="com.heytap.appplatform" deleteSourcePkg="true">
+            <deFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="heytap_secure.xml" targetPath="heytap_secure.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="heytap_system.xml" targetPath="heytap_system.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="heytap_global.xml" targetPath="heytap_global.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="heytap_nonpersist.xml" targetPath="heytap_nonpersist.xml" fixPermissionWhenMig="true"/>
+            </deFile>
+        </mirrorSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem isSystemApp="true"
+        priority="10" targetApkPath="/my_stock/app/FileEncryption/FileEncryption.apk"
+        targetPkgName="com.oplus.encryption">
+        <!-- oneplus only -->
+        <migrateSourcePkg deleteSourcePkg="false" sourcePkgName="com.oneplus.gallery">
+            <ceFile fixPermissionWhenMig="false" migrateAllFromSource="false">
+                <renameAction fixPermissionWhenMig="true" sourcePath="/.safe/passwd" targetPath="/private/backup_oneplus_gallery/passwd" />
+                <renameAction fixPermissionWhenMig="true" sourcePath="/.safe/hidden.db" targetPath="/private/backup_oneplus_gallery/hidden.db" />
+                <renameAction fixPermissionWhenMig="true" sourcePath="/.safe/hidden.db-shm" targetPath="/private/backup_oneplus_gallery/hidden.db-shm" />
+                <renameAction fixPermissionWhenMig="true" sourcePath="/.safe/hidden.db-wal" targetPath="/private/backup_oneplus_gallery/hidden.db-wal" />
+                <renameAction fixPermissionWhenMig="false" sourcePath="/.safe/files" targetPath="/private/backup_oneplus_gallery/files" />
+            </ceFile>
+        </migrateSourcePkg>
+
+        <migrateSourcePkg deleteSourcePkg="false" sourcePkgName="com.oneplus.filemanager">
+            <ceFile fixPermissionWhenMig="false" migrateAllFromSource="false">
+                <renameAction fixPermissionWhenMig="true" sourcePath="/files/.safe/passwd" targetPath="/private/backup_oneplus_filemanager/passwd" />
+                <renameAction fixPermissionWhenMig="true" sourcePath="/shared_prefs/safe_box_preference.xml" targetPath="/private/backup_oneplus_filemanager/safe_box_preference.xml" />
+                <renameAction fixPermissionWhenMig="true" sourcePath="/files/.safe/safebox.db" targetPath="/private/backup_oneplus_filemanager/safebox.db" />
+                <renameAction fixPermissionWhenMig="true" sourcePath="/files/.safe/safebox.db-journal" targetPath="/private/backup_oneplus_filemanager/safebox.db-journal" />
+                <renameAction fixPermissionWhenMig="false" sourcePath="/files/.safe/files" targetPath="/private/backup_oneplus_filemanager/files" />
+            </ceFile>
+        </migrateSourcePkg>
+        <!-- oneplus only -->
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.oplus.sos" targetApkPath="/my_stock/priv-app/SOSHelper.apk" isSystemApp="true" priority="10">
+        <migrateSourcePkg sourcePkgName="com.android.emergency" deleteSourcePkg="true">
+            <deFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/shared_prefs/com.android.emergency_preferences.xml" targetPath="/shared_prefs/com.android.emergency_preferences.xml"  fixPermissionWhenMig="true"/>
+            </deFile>
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.oplus.pay" targetApkPath="/my_heytap/app/KeKePay/KeKePay.apk" isSystemApp="true" priority="10">
+        <migrateSourcePkg sourcePkgName="com.nearme.atlas" deleteSourcePkg="true">
+        </migrateSourcePkg>
+        <migrateSourcePkg sourcePkgName="com.finshell.atlas" deleteSourcePkg="true">
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+    <!-- common config end -->
+
+    <!-- export config start -->
+    <crossUpdateMigrateItem targetPkgName="com.oplus.stdid" targetApkPath="/my_heytap/app/StdID/StdID.apk" isSystemApp="true" priority="10">
+        <mirrorSourcePkg sourcePkgName="com.heytap.openid" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/openID.db" targetPath="/databases/id.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/openID.db-shm" targetPath="/databases/id.db-shm" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/openID.db-wal" targetPath="/databases/id.db-wal" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/appData.xml" targetPath="/shared_prefs/appData.xml" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </mirrorSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.oplus.themestore" targetApkPath="/my_bigball/priv-app/KeKeThemeSpace/KeKeThemeSpace.apk" isSystemApp="true" priority="10" period="t">
+        <mirrorSourcePkg sourcePkgName="com.heytap.themestore" deleteSourcePkg="true">
+        </mirrorSourcePkg>
+    </crossUpdateMigrateItem>
+    <!-- export config end -->
+
+    <!-- oneplus config start -->
+    <crossUpdateMigrateItem targetPkgName="com.oplus.camera" targetApkPath="/my_product/app/OplusCamera/OplusCamera.apk" isSystemApp="true" priority="10">
+        <mirrorSourcePkg sourcePkgName="com.oneplus.camera" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/shared_prefs/com.oneplus.camera_preferences.xml" targetPath="/shared_prefs/op_legacy_com.oneplus.camera_preferences.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/Video.xml" targetPath="/shared_prefs/op_legacy_video.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/photo.xml" targetPath="/shared_prefs/op_legacy_photo.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/manual.xml" targetPath="/shared_prefs/op_legacy_manual.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/panorama.xml" targetPath="/shared_prefs/op_legacy_panorama.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/slowmotion.xml" targetPath="/shared_prefs/op_legacy_slowmotion.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/timelapse.xml" targetPath="/shared_prefs/op_legacy_timelapse.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/bokeh.xml" targetPath="/shared_prefs/op_legacy_bokeh.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/night.xml" targetPath="/shared_prefs/op_legacy_night.xml" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </mirrorSourcePkg>
+        <migrateSourcePkg sourcePkgName="com.oppo.camera" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/shared_prefs/com.oppo.camera_preferences.xml" targetPath="/shared_prefs/com.oplus.camera_preferences.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/com.oppo.camera_preferences_0.xml" targetPath="/shared_prefs/com.oplus.camera_preferences_0.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/com.oppo.camera_preferences_1.xml" targetPath="/shared_prefs/com.oplus.camera_preferences_1.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/files/sticker" targetPath="/my_tmp/sticker" fixPermissionWhenMig="false"/>
+                <renameAction sourcePath="/databases/sticker.db" targetPath="/databases/sticker.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/sticker.db-journal" targetPath="/databases/sticker.db-journal" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/mode_data.db" targetPath="/databases/mode_data.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/mode_data.db-journal" targetPath="/databases/mode_data.db-journal" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.android.mms" targetApkPath="/my_stock/priv-app/Mms/Mms.apk" isSystemApp="true" priority="10">
+        <mirrorSourcePkg sourcePkgName="com.oneplus.mms" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/shared_prefs/bugle_prefs.xml" targetPath="/shared_prefs/bugle_prefs.xml" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/com.oneplus.mms_preferences.xml" targetPath="/shared_prefs/com.android.mms_preferences.xml" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </mirrorSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.android.providers.contacts" targetApkPath="/system_ext/app/ContactsProvider/ContactsProvider.apk" isSystemApp="true" priority="10">
+        <migrateSourcePkg sourcePkgName="com.oneplus.communication.data" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/phone_record.db" targetPath="/databases/old_phone_record.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/phone_record.db-journal" targetPath="/databases/old_phone_record.db-journal" fixPermissionWhenMig="true"/>
+            </ceFile>
+            <externalData migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/files/Record/PhoneRecord" targetPath="/files/oldRec" fixPermissionWhenMig="false"/>
+            </externalData>
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.ted.number" targetApkPath="/product/priv-app/NumberRecognition/NumberRecognition.apk" isSystemApp="true" priority="10">
+        <mirrorSourcePkg sourcePkgName="com.recognize.number" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/numcache.db" targetPath="/databases/old_numcache.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/numcache.db-journal" targetPath="/databases/old_numcache.db-journal" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </mirrorSourcePkg>
+        <migrateSourcePkg sourcePkgName="com.numberrecognition" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/numcache.db" targetPath="/databases/old_numcache.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/numcache.db-journal" targetPath="/databases/old_numcache.db-journal" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.oplus.blacklistapp" targetApkPath="/my_stock/priv-app/BlackListApp/BlackListApp.apk" isSystemApp="true" priority="10">
+        <migrateSourcePkg sourcePkgName="com.oneplus.dialer" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/customized_interception.db" targetPath="/databases/old_customized_interception.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/customized_interception.db-journal" targetPath="/databases/old_customized_interception.db-journal" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.android.contacts" targetApkPath="/my_stock/priv-app/Contacts/Contacts.apk" isSystemApp="true" priority="10">
+        <migrateSourcePkg sourcePkgName="com.oneplus.dialer" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/shared_prefs/com.oneplus.dialer_preferences.xml" targetPath="/shared_prefs/com.vvm.migrate_preferences.xml" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+
+    <crossUpdateMigrateItem targetPkgName="com.coloros.assistantscreen" targetApkPath="/my_bigball/app/AssistantScreen/AssistantScreen.apk" isSystemApp="true" priority="10" period="t">
+        <mirrorSourcePkg sourcePkgName="com.oneplus.opshelf" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/shelf.db" targetPath="/databases/shelf.db" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/shelf.db-journal" targetPath="/databases/shelf.db-journal" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/shared_prefs/com.oneplus.opshelf_preferences.xml" targetPath="/shared_prefs/com.oneplus.opshelf_preferences.xml" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </mirrorSourcePkg>
+        <migrateSourcePkg sourcePkgName="com.oneplus.opsports" deleteSourcePkg="true">
+            <ceFile migrateAllFromSource="false" fixPermissionWhenMig="false">
+                <renameAction sourcePath="/databases/OPSports" targetPath="/databases/OPSports" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/OPSports-journal" targetPath="/databases/OPSports-journal" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/football_database" targetPath="/databases/football_database" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/football_database-wal" targetPath="/databases/football_database-wal" fixPermissionWhenMig="true"/>
+                <renameAction sourcePath="/databases/football_database-shm" targetPath="/databases/football_database-shm" fixPermissionWhenMig="true"/>
+            </ceFile>
+        </migrateSourcePkg>
+    </crossUpdateMigrateItem>
+    <!-- oneplus config end -->
+</migrateConfig>

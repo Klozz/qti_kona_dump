@@ -1,0 +1,6 @@
+on post-fs-data
+    mkdir /data/persist_log 0775 system system
+    mkdir /data/persist_log/DCS 0775 system system
+    mkdir /data/persist_log/DCS/de 0775 system system
+    mkdir /data/persist_log/DCS/de/olog 0777 system system
+    mkdir /data/persist_log/DCS/de/modemdump 0777 system system

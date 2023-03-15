@@ -1,0 +1,8 @@
+my_product,3b0b78f7 
+my_heytap,b7298417 
+my_stock,cf1828ce 
+my_region,6b69e785 
+my_carrier,753383e4 
+my_preload,9abb91a5 
+my_bigball,ee3d0895 
+my_company,80a56d1c 

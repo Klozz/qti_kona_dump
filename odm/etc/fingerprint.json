@@ -1,0 +1,12 @@
+[
+    {
+        "project": "20838",
+        "name": "default",
+        "product": "OnePlus9R_IND",
+        "device": "OnePlus9R",
+        "model": "LE2101",
+        "manufacturer": "OnePlus",
+        "brand": "OnePlus",
+        "first_api_level": "30"
+    }
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature args="StringList:type" name="com.android.phone.simsettings.disable_apn_preferences">
+        <StringList args="bearer" name="type"/>
+    </app_feature>
+    <app_feature name="com.android.phone.simsettings.customize_vowifi_switch_title_dynamic" args="String:uk_vdf_vowifi_enable_title" />
+</extend_features>

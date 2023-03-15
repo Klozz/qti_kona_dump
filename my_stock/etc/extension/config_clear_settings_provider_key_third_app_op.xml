@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings_provider_key version="129">
+    <application package="com.oneplus.findmyphone">
+        <key category="secure" new_name="customize_findmyphone_switch" old_name="findmyphone_switch"/>
+    </application>
+
+    <application package="com.android.phone">
+        <key category="global" new_name="oplus_customize_user_config_auto_call_back" old_name="op_call_history_dial_back"/>
+        <key category="global" new_name="enable_temp_dds" old_name="op_ddschange_when_nonddsincall"/>
+    </application>
+
+    <application package="com.android.systemui">
+        <key category="secure" target_category="system" new_name="oplus_customize_status_bar_enable_when_lock" old_name="oneplus_disable_qs_when_locked"
+            key_version="119">
+            <value new_value="0" old_value="1" />
+            <value new_value="1" old_value="0" />
+        </key>
+        <key category="system" new_name="display_power_percent" old_name="status_bar_show_battery_percent">
+        </key>
+
+	<key category="secure" new_name="clock_seconds" old_name="clock_seconds" key_version="119">
+            <value new_value="0" old_value="1" />
+            <value new_value="0" old_value="0" />
+        </key>
+    </application>
+
+    <application package="com.android.mms">
+        <key category="system" target_category="global" new_name="oplus_customize_comm_phone_intercept_notify"
+            old_name="spam_notification" key_version="119">
+            <value new_value="0" old_value="1" />
+            <value new_value="2" old_value="0" />
+        </key>
+    </application>
+
+    <application package="com.android.contacts">
+        <key category="system" new_name="android.contacts.SORT_ORDER" old_name="oneplus.contacts.SORT_ORDER" />
+        <key category="system" new_name="android.contacts.DISPLAY_ORDER" old_name="oneplus.contacts.DISPLAY_ORDER" />
+        <key category="system" new_name="android.contacts.HAS_PHONE_NUMBER" old_name="oneplus.contacts.HAS_PHONE_NUMBER" />
+        <key category="system" new_name="android.contacts.filter.type" old_name="oneplus.contacts.filter.type" />
+        <key category="system" new_name="android.contacts.filter.accountName" old_name="oneplus.contacts.filter.accountName" />
+        <key category="system" new_name="android.contacts.filter.accountType" old_name="oneplus.contacts.filter.accountType" />
+        <key category="system" new_name="android.contacts.filter.dataSet" old_name="oneplus.contacts.filter.dataSet" />
+        <key category="system" new_name="oplus_customize_assisted_dialing_switch" old_name="op_auto_country_code_enable" key_version="119">
+            <value new_value="true" old_value="1" />
+            <value new_value="false" old_value="0" />
+        </key>
+    </application>
+</settings_provider_key>

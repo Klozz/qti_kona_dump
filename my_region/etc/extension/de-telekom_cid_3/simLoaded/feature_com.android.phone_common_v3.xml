@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.simsettings.customize_vowifi_switch_title_dynamic" args="String:wifi_call_title_for_de_telekom" />
+    <app_feature name="com.android.phone.simsettings.show_data_prompting_dialog_dynamic" />
+</extend_features>

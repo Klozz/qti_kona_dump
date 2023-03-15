@@ -1,0 +1,12 @@
+<oplus-config>
+<!-- Suxiaolong@NETWORK.REG.208067, 2020/07/31, modify for Feature Toggle -->
+<!-- <unavailable-oplus-feature name="oplus.software.radio.support_5g"/> -->
+
+    <!-- PengHao@NETWORK.DATA.8124, 2020/05/08, Add for network quality evaluation.OPLUS_FEATURE_DATA_EVAL -->
+    <oplus-feature name="oplus.software.radio.data_eval" />
+
+    <!-- ShiQianhua@NETWORK.DATA.8615, 2020/06/22, modify for Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.data_fast_recovery" />
+    <!-- Tanzhengpeng@NETWORK.TECH.8615, 2022/06/22, modify for Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.nhs_disabled_restricted" />
+</oplus-config>

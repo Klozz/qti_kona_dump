@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <!-- WangGuorui@ANDROID.UPDATABILITY, 2020/10/30 ,Add for change to oplusos -->
+    <app_feature name="com.oplusos.sau.downloadByDialog"  args="boolean:true"/>
+    <app_feature name="com.oplusos.sau.packageChange" args="boolean:true"/>
+    <app_feature name="com.oplusos.sau.forbidSilent" args="boolean:false"/>
+    <app_feature name="com.oplusos.sau.showToast" args="boolean:false"/>
+    <app_feature name="com.oplusos.sau.popUpDialog" args="boolean:false"/>
+    <app_feature name="com.oplusos.sau.print_log" args="boolean:false"/>
+</extend_features>

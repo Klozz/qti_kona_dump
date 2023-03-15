@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!--use chrome package for keyguard,default:""-->
+    <app_feature name="com.oplus.heysynergy.func_brief_url_12.0" args="String:connect.oppo.com"/>
+    <app_feature name="com.oplus.heysynergy.agreement_url_12.0" args="String:https://connect.oppo.com/hi-IN/agreement"/>
+    <app_feature name="com.oplus.heysynergy.func_brief_url" args="String:pc-in.heytap.com"/>
+    <app_feature name="com.oplus.heysynergy.agreement_url" args="String:https://pc-in.heytap.com/hi-IN/agreement"/>
+</extend_features>

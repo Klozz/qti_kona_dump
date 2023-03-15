@@ -1,0 +1,12 @@
+#ifdef OPLUS_FEATURE_BT_EAP_LOG
+#Wangguolong@CONNECTIVITY.BT.Basic.Feature.2531788 , 2021/11/10, Add for Open Bluetooth Uart Log
+on  property:persist.vendor.tracing.enabled=*
+    start qti-hsuart-debug
+
+service qti-hsuart-debug /vendor/bin/sh /odm/bin/init.qti.hsuart.debug.sh
+    class core
+    user root
+    oneshot
+
+#endif /* OPLUS_FEATURE_BT_EAP_LOG */
+

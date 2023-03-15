@@ -1,0 +1,525 @@
+#line 1 "device/qcom/sepolicy/generic/private/service_contexts"
+# Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+cneservice                                           u:object_r:vendor_cne_service:s0
+com.qualcomm.qti.ustaservice.USTAServiceImpl         u:object_r:vendor_usta_app_service:s0
+dpmservice                                     u:object_r:vendor_dpmservice:s0
+MinkBinderSvc                                  u:object_r:vendor_MinkBinderSvc:s0
+vendor.perfservice                             u:object_r:vendor_perf_service:s0
+vendor.qdtservice                              u:object_r:vendor_qdt_service:s0
+sms-sec                                        u:object_r:radio_service:s0
+extphone                                       u:object_r:radio_service:s0
+qti.radio.extphone                             u:object_r:radio_service:s0
+com.qualcomm.location.izat.IzatService         u:object_r:vendor_izat_service:s0
+qti.security.seempspa                          u:object_r:vendor_seemp_service:s0
+vendor.audio.vrservice                         u:object_r:audioserver_service:s0
+com.qti.snapdragon.sdk.display.IColorService   u:object_r:vendor_color_service:s0
+wfdservice                                     u:object_r:vendor_wfdservice_service:s0
+wfdservice64                                   u:object_r:vendor_wfdservice_service:s0
+wigigp2p                                       u:object_r:vendor_wigigp2p_service:s0
+wigig                                          u:object_r:vendor_wigig_service:s0
+display.smomoservice                           u:object_r:surfaceflinger_service:s0
+vendor.vpsservice                              u:object_r:vendor_vps_service:s0
+vendor.qspmsvc                                 u:object_r:vendor_qspmsvc_service:s0
+nfc_settings                                   u:object_r:nfc_service:s0
+nfc.st_ext                                     u:object_r:nfc_service:s0
+vendor.qti.gnss.ILocAidlGnss/default           u:object_r:hal_gnss_service:s0
+vendor.qvirtmgr                                u:object_r:vendor_qvirtmgr_service:s0
+vendor.qti.qesdsys.IQesdSys/default            u:object_r:vendor_qesdk_service:s0
+vendor.qti.hardware.radio.atcmdfwd.IAtCmdFwd/AtCmdFwdAidl u:object_r:radio_service:s0
+#line 1 "vendor/oplus/system/sepolicy/qcom/private/service_contexts"
+cabc                                           u:object_r:cabc_service:s0
+additionald                                     u:object_r:additional_service:s0
+usage                                          u:object_r:usage_service:s0
+opluscustomize                                  u:object_r:opluscustomize_service:s0
+#ifdef OPLUS_FEATURE_CUSTOMIZE
+
+#sunshaojie@ANDROID.CUSTOMIZE, 2020/07/10, add for oplusdevicepolicy
+oplusdevicepolicy                               u:object_r:oplusdevicepolicy_service:s0
+#endif
+
+RotorSrv                                       u:object_r:rotor_service:s0
+assert.tip                                     u:object_r:debugasserttip_service:s0
+#fingerprints                                  u:object_r:fingerprints_service:s0
+#ifdef 
+#Jivin.shen 7/8, add for multiscreen
+SmartShowManager                          u:object_r:SmartShowManager_service:s0
+#endif  
+
+#ifdef 
+#Miao.Yu@ANDROID.AMS, 2019/5/27, Add for army requirement
+oppo_army                                      u:object_r:oppoarmy_service:s0
+#endif /*  */
+
+#ifdef 
+#YaJun.Li@PSW.MM.Daemon.Atlas.1332843,2018/10/12,add for atlas
+AtlasService                             u:object_r:atlas_service:s0
+MMListService                             u:object_r:mmlist_service:s0
+#endif
+
+#ifdef 
+#2016-07-16 zhzhyon Add for selfstick
+selfstick                                           u:object_r:selfstick_service:s0
+#endif  
+
+#ifdef OPLUS_FEATURE_LOCATION_SERVICE
+#Huaqiu.Lin@CONNECTIVITY.GPS.LOCATION.REFACTOR, 2021/08/20, add for oplus location service.
+OplusLocationManager                    u:object_r:oplus_location_service:s0
+#endif /* OPLUS_FEATURE_LOCATION_SERVICE */
+
+#ifdef 
+OPLUSExService                             u:object_r:OPLUSExService_service:s0
+KinectService                             u:object_r:KinectService_service:s0
+critical.log                                   u:object_r:criticallog_service:s0
+#JianHui.Yu@Plf.SDK, 2016-05-20 : Add for Longshot
+color_screenshot                          u:object_r:color_screenshot_service:s0
+#endif 
+#Zongjun.Li@Swdp.Android.Performance.LuckyMoney, 2016/06/06, add for lucky money
+luckymoney                                u:object_r:luckymoney_service:s0
+#endif  
+
+#Jian.Wang@ANDROID.ENGINEERTOOLS, 2016/07/14, add for secrecy
+secrecy                                   u:object_r:secrecy_service:s0
+#KeZhi.Zhu@Tech.AD.Performance, 2019/09/20, Add for add dynamic filter service
+dynamic_filter                            u:object_r:dynamic_filter_service:s0
+#endif  
+
+#ifdef 
+#YaJun.Li@MultiMedia.Daemon.Base, 2016/08/05, Add for Multimedia Service
+multimediaDaemon                          u:object_r:multimediaDaemon_service:s0
+#endif 
+
+#ifdef 
+#Xiaori.Yuan@MultiMedia.Daemon.Base, 2018/02/03, Add for Multimedia RoundCorner
+OppoRoundCornerService                     u:object_r:opporoundcorner_service:s0
+#endif 
+
+#ifdef 
+#liangkun@swdp.shanghai, 2016/03/22, modify for NS service
+neuronsystem                              u:object_r:neuronsystem_service:s0
+#endif /**/
+
+
+#ifdef 
+#Wenxian.Zhen@BSP.Power.Basic,  2017/1/19 11:00:20, add for factory AT  mode
+factory u:object_r:factory_service:s0
+#endif
+
+#ifdef 
+#Faquan.Yao@PSW.AD.Power.PowerMonitor.1130587,  2017/10/20, Add for adding power monitor service
+power_monitor u:object_r:power_monitor:s0
+#endif /**/
+
+#ifdef OPLUS_FEATURE_LOGKIT
+#Peng.Zhong@ANDROID.DEBUG.1074183, 2017/10/19, Add for chatty log
+chatty                                u:object_r:chatty_service:s0
+#endif  /* OPLUS_FEATURE_LOGKIT */
+
+#ifdef OPLUS_FEATURE_LOCATION_SERVICE
+#Huaqiu.Lin@CONNECTIVITY.GPS.LOCATION.REFACTOR, 2021/08/20, add for oplus location service.
+OplusLocationManager                    u:object_r:oplus_location_service:s0
+#endif /* OPLUS_FEATURE_LOCATION_SERVICE */
+
+#Peng.Zhong@PSW.AD.Input.Motor.1589153, 2018/11/08, Add for motor control
+motor                                           u:object_r:motor_service:s0
+motor.control                                   u:object_r:motorcontrol_service:s0
+#endif  
+
+#ifdef 
+#Wang.Mengmeng@PSW2, 2017/10/19, Add for oiface
+oiface                                u:object_r:oiface_service:s0
+#matthew.zou@GameEco, 2020/11/11, Add new OplusOiface service
+oplusoiface                           u:object_r:oplusoiface_service:s0
+#huangzhigen@SRC, 2018/12/4, add for hypnusd
+horae                                 u:object_r:horae_service:s0
+#endif  
+
+#ifdef OPLUS_FEATURE_MIDAS
+#Wang.Mengmeng@bsp.power, 2021/06/21, Add for obrain service
+obrain                                u:object_r:obrain_service:s0
+#endif /* OPLUS_FEATURE_MIDAS */
+
+#ifdef OPLUS_FEATURE_MIDAS
+#wudi@BSP.Power.Framework, 2021/11/11, add for midas
+midasd                                u:object_r:midasd_service:s0
+#endif /* OPLUS_FEATURE_MIDAS */
+
+#ifdef 
+#Pingping.Yang@swdp, 2018/10/22, Add for omedia
+omedia                                u:object_r:omedia_service:s0
+#endif  
+
+#ifdef 
+#huangsu@swdp.shanghai, 2017/04/27, modify for NS service
+neoservice                              u:object_r:neo_service:s0
+#endif /**/
+
+#Runsheng.Pei@ANDROID.ENGINEERTOOLS.1140185, 2014/07/22, Add to provide a function
+usage.log                                  u:object_r:ousage_service:s0
+
+#ifdef 
+#FangZhen@APP.tools.Basic,2017/11/1, Add for backuprestore copy bin android O
+AppDataService    u:object_r:app_data_service:s0
+#endif /**/
+
+#ifdef 
+#Tao.Hui@PSW.CN.WiFi.Basic.WFD.1173705, 2017/12/07,
+#Add for WFD cant work
+#wfdservice u:object_r:vendor_wfdservice_service:s0
+#endif /**/
+
+#ifdef 
+#Bing.Du@Plf.Framework, 2018/01/09, modify for athena service
+athenaservice                              u:object_r:athena_service:s0
+#endif /**/
+
+#ifdef 
+#RuoCheng.Jiang@Cam.Drv, 2018/01/13, add for oppo camera postproc
+media.oppocamera                          u:object_r:cameraserver_service:s0
+#endif
+
+#ifdef 
+#wenjie.Liu@CN.NFC.Basic.Hardware, 2018/02/26, Add for
+felica                                    u:object_r:nfc_service:s0
+#endif /*  */
+
+#ifdef 
+#Gaowenbo@ROM.SysApp, 2018/04/20, [CleanTrashService] Add for SafeCenter clean app data trash.
+CleanTrashService    u:object_r:clean_trash_service:s0
+#endif /*  */
+
+#ifdef 
+#Qing.Wu@PSW.AD.Performance.1153641, 2018/06/18, Add for dex2oat service
+dex2oat                         u:object_r:dex2oat_service:s0
+#endif /*  */
+
+#ifdef 
+#Bing.Du@Plf.Framework, 2019/01/05, add for linearmotor vibration service.
+linearmotor                             u:object_r:linearmotor_service:s0
+#endif /**/
+
+#ifdef 
+#JiZhi.Xiao@ROM.SimSettings, 2019/04/30, Add for oppo network control
+networking_control                                 u:object_r:networking_control_service:s0
+#endif /*  */
+
+#ifdef OPLUS_FEATURE_DATA_EVAL
+#PengHao@NETWORK.DATA.8124, 2020/05/08, Add for network quality evaluation.
+oplusnetworkstack                                 u:object_r:oplus_network_stack_service:s0
+#endif /* OPLUS_FEATURE_DATA_EVAL */
+
+#ifdef OPLUS_FEATURE_LLM
+#Cynric.Zhao@NETWORK.DATA, 2021/08/02, Add for oplusnetworkmanagement.
+oplusnetworkmanagement                            u:object_r:oplus_network_management_service:s0
+#endif /* OPLUS_FEATURE_LLM */
+
+#ifdef 
+#TonghuDeng@Plf.Framework, 2019-05-31, add for SEC_IMMS
+input_method_secure                       u:object_r:input_method_secure_service:s0
+#endif 
+
+#ifdef OPLUS_FEATURE_ACCESS_CONTROL
+#JiaBai.Wei@ROM.Framework,2019/05/14,Add for oplus App encryption
+oplus_accesscontrol                          u:object_r:oplus_accesscontrol_service:s0
+#endif /* OPLUS_FEATURE_ACCESS_CONTROL */
+
+#ifdef OPLUS_FEATURE_DEEPTHINKER_EVENTFOUNTAIN
+#ShengQing.Liu@ANDROID.AITECH., 2019/10/05, Add for DeepThinker
+eventhandle                                u:object_r:eventhandle_service:s0
+#endif /* OPLUS_FEATURE_DEEPTHINKER_EVENTFOUNTAIN */
+
+#ifdef OPLUS_FEATURE_NWPOWER_NETCONTROLLER
+#Asiga@NETWORK.POWER.26376, 2020/04/27, add for net controller
+oappnetcontrol                                 u:object_r:registry_service:s0
+#endif /* OPLUS_FEATURE_NWPOWER_NETCONTROLLER */
+
+#ifdef OPLUS_FEATURE_OSYS_NETCONTROL
+#Asiga@NETWORK.POWER.2099200, 2020/08/30, Add for system net control.
+osysnetcontrol                                 u:object_r:registry_service:s0
+#endif /* OPLUS_FEATURE_OSYS_NETCONTROL */
+
+#ifdef OPLUS_FEATURE_COMM_SCENE
+#Asiga@NETWORK.POWER.2116767, 2020/08/30, Add for comm scene.
+commscene                                      u:object_r:registry_service:s0
+#endif /* OPLUS_FEATURE_COMM_SCENE */
+
+#ifdef 
+#Leyang.Li@PSW.AD.Operator, 2019/11/16, Add for operator service
+operator                                u:object_r:operator_service:s0
+#endif 
+
+#ifdef OPLUS_FEATURE_BEHAVIOR_CHANGE
+#jianhui.qiu@Android.Compatibility.app_compatibility, 2021/08/09, add for app_compatibility
+app_compatibility                       u:object_r:app_compatibility_service:s0
+#endif /**/
+
+#ifdef OPLUS_FEATURE_REFRESHRATE_SWITCH
+#Guofu.Yang@ANDROID.WMS.2458273, 2019/10/21, Add for screenmode service
+oplusscreenmode   u:object_r:oplusscreenmode_service:s0
+#enidf /* OPLUS_FEATURE_REFRESHRATE_SWITCH */
+
+#ifdef OPLUS_FEATURE_DYNAMICVSYNC
+#joseph.huang@OPTIMIZATION, 2020/12/01, Add for dynamic vsync service
+oplusdynamicvsync   u:object_r:oplusdynamicvsync_service:s0
+#enidf /* OPLUS_FEATURE_DYNAMICVSYNC */
+
+#HeZhihui@NETWORK.REG.2022890, 2019/05/16
+#add for network exception report
+oplus_nec                                 u:object_r:registry_service:s0
+oplus_telephony_ext                       u:object_r:radio_service:s0
+SignalMap                                 u:object_r:radio_service:s0
+ICyberSenseLocationSrv                    u:object_r:radio_service:s0
+#TanZhengpeng@NETWORK.REG.1383229, 2018/05/16
+#add for network issue point postback
+nwdiagnose                                u:object_r:radio_service:s0
+#add for data optimize
+oemlinklatency                            u:object_r:radio_service:s0
+#endif
+
+#LiBangxu add for lowlatency
+olowlatency                            u:object_r:radio_service:s0
+#endif
+
+#yong8.huang@ROM.Framework, 2019/11/1, add for hans freeze manager
+oplus.hans.IHansComunication                              u:object_r:hans_service:s0
+#endif /**/
+
+#ifdef OPLUS_FEATURE_RES_PRELOAD
+#chao.zhu@ANDROID.RESCONTROL, 2021/3/23, add for Resource Preload Manager
+iopgp.service                           u:object_r:iopgp_service:s0
+#endif /* OPLUS_FEATURE_RES_PRELOAD */
+
+#ifdef OPLUS_FEATURE_APPDATA_SERVICE
+#LiSongting@ANDROID.FRAMEWORK  2020.5.11 Add for BackupRestore . alm id 23493
+oplus_app_data_service                  u:object_r:oplus_app_data_service:s0
+#endif /* OPLUS_FEATURE_APPDATA_SERVICE */
+
+#ifdef OPLUS_ARCH_INJECT
+#sunshaojie@ANDROID.CUSTOMIZE, 2020/5/19. add for coreapp_service
+opluscoreappservice u:object_r:coreapp_service:s0
+#endif /* OPLUS_ARCH_INJECT */
+
+#ifdef OPLUS_FEATURE_ORMS
+#Xiehuilong@ANDROID.PERFORMANCE, 2020/04/10, Add for OplusResourceManagerService
+OplusResourceManagerService                      u:object_r:oplus_resource_manager_service:s0
+#endif /*OPLUS_FEATURE_ORMS*/
+
+#ifdef OPLUS_FEATURE_HEIMDALL
+#yuanyang@GST.NJ, 2020/07/01, add for heimdall
+heimdall                               u:object_r:heimdall_service:s0
+#endif /*OPLUS_FEATURE_HEIMDALL*/
+
+#ifdef OPLUS_FEATURE_ENGINEERTOOLS
+#JianRong.Zheng@ANDROID.ENGINEERTOOLS.1071920, 2017/09/18, Add for engineer service
+engineer                                   u:object_r:engineer_service:s0
+#endif /* OPLUS_FEATURE_ENGINEERTOOLS */
+
+#ifdef OPLUS_FEATURE_BIOMETRICS
+#Haifeng.Zhu@ANDROID.BIOMETRICS,2019/08/04,Alipay Service for fingerprint and face payment of Alipay
+alipay                                         u:object_r:alipay_service:s0
+#endif /* OPLUS_FEATURE_BIOMETRICS */
+
+#ifdef OPLUS_FEATURE_COMMONDCS
+#Qianyou.Chen@ANDROID.DEBUG.5883, 2018/11/24, Add for CommonDcs
+common_dcs              u:object_r:commondcs_service:s0
+#endif /* OPLUS_FEATURE_COMMONDCS */
+
+#ifdef OPLUS_FEATURE_ANTIROOT
+#Zhenming.Chen@SECURITY.ANTIROOT, 2020/05/15, add oplus kevent diaglog selinux
+anti_root_dialog                           u:object_r:anti_root_dialog_service:s0
+#endif OPLUS_FEATURE_ANTIROOT
+
+#ifdef OPLUS_FEATURE_PERMISSION_INTERCEPT
+#xiaohu.mei@ANDROID.PERMISSION, 2020/5/14, add for permission intercept
+security_permission                         u:object_r:security_permission_service:s0
+#endif OPLUS_FEATURE_PERMISSION_INTERCEPT
+
+##ifdef OPLUS_FEATURE_NFC_FELICA
+##HuangRuhong@CONNECTIVITY.NFC.BASIC, 2020/06/22, Add for: add felica lock interface
+felicalock                                u:object_r:felicalock_service:s0
+felicaser                                 u:object_r:felicalock_service:s0
+#endif /* OPLUS_FEATURE_NFC_FELICA */
+
+#ifdef OPLUS_FEATURE_HEPHAESTUS
+#Yi.Cai@ANDROID.UPDATABLITIY, 2020-04-23 : Add for sau native service
+hephaestus                             u:object_r:hephaestus_service:s0
+#endif /*OPLUS_FEATURE_HEPHAESTUS*/
+
+#ifdef OPLUS_FEATURE_HEPHAESTUS
+#Changchang.Liu@ANDROID.UPDATABLITIY, 2020/08/05, Add for sau native service with installd
+hephaestus_app_data_service                             u:object_r:hephaestus_app_data_service:s0
+hephaestus_install                        u:object_r:hephaestus_service:s0
+#endif /* OPLUS_FEATURE_HEPHAESTUS */
+
+#ifdef OPLUS_FEATURE_THERMAL_MONITOR
+#Xinyu.Cen@ANDROID.POWER, 2020/08/12, Add for guardelf thermal control
+guardelfthermalcontrol                             u:object_r:guardelfthermalcontrol_service:s0
+#endif /* OPLUS_FEATURE_THERMAL_MONITOR */
+
+#ifdef OPLUS_FEATURE_STORAGE_TOOL
+#Xuweijie1@BSP.Storage , 20200601. modify for memory monitor
+storage_healthinfo                             u:object_r:storage_healthinfo_service:s0
+#endif /* OPLUS_FEATURE_STORAGE_TOOL */
+#ifdef OPLUS_FEATURE_LOGKIT
+#Chunbo.Gao@ANDROID.DEBUG 2020/9/1, Add for onetrace
+onetrace                             u:object_r:onetrace_service:s0
+#endif /* OPLUS_FEATURE_LOGKIT */
+
+#ifdef OPLUS_FEATURE_DATA_LIMIT
+#ShiQianhua@NETWORK.DATA.110873, 2020/07/01, support get total network stats.
+oplusnetworkstats                           u:object_r:oplus_network_stats_service:s0
+#endif /* OPLUS_FEATURE_DATA_LIMIT */
+
+#ifdef OPLUS_FEATURE_DATA_LIMIT
+#PengHao@NETWORK.DATA.110873, 2020/06/28, Add for background data limit.
+oplusdatalimit                                    u:object_r:oplus_data_limit_service:s0
+#endif /* OPLUS_FEATURE_DATA_LIMIT */
+
+##ifdef OPLUS_FEATURE_NFC_BRINGUP
+#Liuwenjie@CONNECTIVITY.NFC, 2020/09/08,Add selinux for st chip
+nfc_settings                              u:object_r:nfc_service:s0
+nfc.st_ext                                u:object_r:nfc_service:s0
+##endif OPLUS_FEATURE_NFC_BRINGUP
+
+#ifdef OPLUS_FEATURE_STORAGE
+#ZhuMing@ANDROID.STORAGE, 2020/09/27, add for system self-optimization at rest
+oplusstoragemanagerservice                              u:object_r:oplusstoragemanagerservice_service:s0
+#endif /* OPLUS_FEATURE_STORAGE */
+
+#ifdef OPLUS_SUBSYS_ARCH
+#Ruijiagui@Network.ARCH, 2020/10/22, add for subsys-services
+ISubsysRadio      u:object_r:ISubsysService:s0
+ISubsys           u:object_r:ISubsysService:s0
+#endif /* OPLUS_SUBSYS_ARCH */
+
+
+#ifdef OPLUS_FEATURE_ADFR
+#Yugang.Bao@ANDROID.CUSTOMIZE, 2020/12/8, Add for bootanimation service
+BootAnimService                             u:object_r:bootanim_service:s0
+#endif /* OPLUS_FEATURE_CUSTOMIZE */
+
+#ifdef OPLUS_FEATURE_VRR
+#CaiHuiyue@MULTIMEDIA, 2020/12/8, Add for vrr service
+oplus_vrr_service   u:object_r:oplus_vrr_service:s0
+#enidf /* OPLUS_FEATURE_VRR */
+
+oplusnetd           u:object_r:oplus_netd_service:s0
+
+#ifdef OPLUS_FEATURE_UID_PUR_STATS
+#ShiQianhua@NETWORK.DATA.443666, 2020/09/28, add for get uid pur stats
+oplusuidpurstats                            u:object_r:oplus_uid_pur_stats_service:s0
+#endif /* OPLUS_FEATURE_UID_PUR_STATS */
+
+#ifdef OPLUS_FEATURE_BATTERY_STATS
+#XiangYiFan@ANDROID.POWER, 2021/07/08, Add for get uidsipper for spm
+oplus_battery_stats_service                             u:object_r:spmservice:s0
+#endif /* OPLUS_FEATURE_BATTERY_STATS */
+
+#ifdef OPLUS_FEATURE_OLC
+#PanZhuan@BSP.DFX, 2021/10/26, Add for olc service
+olc  u:object_r:olc_service:s0
+#endif /* OPLUS_FEATURE_OLC */
+
+#ifdef OPLUS_FEATURE_OLK
+#Philip.Huang@NETWORK.DATA.1761401, 2020/06/28, Add for oplus link kit.
+opluslinkkit                                    u:object_r:oplus_link_kit_service:s0
+oplusnetcmd                                     u:object_r:oplus_link_kit_service:s0
+
+#DaoXu.Hu@ANDROID.DEXOPT, 2022/1/5 , add for OplusOtaDexopt service
+oplusotadexopt                                 u:object_r:otadexopt_service:s0
+#endif /* OPLUS_FEATURE_ORIGIN_OTADEXOPT_ENABLE */
+
+#ifdef OPLUS_FEATURE_OSENSE
+#yong8.huang@ANDROID.RESCONTROL, 2021/05/06, Add for OsenseResManagerService
+osensemanager                      u:object_r:osense_service:s0
+#endif /*OPLUS_FEATURE_OSENSE*/
+
+#ifdef OPLUS_FEATURE_HANS_FREEZE
+#MingYu.Sun@ANDROID.POWER, 2021/12/289, Add for oplus hans freeze.
+oplus_freeze                                    u:object_r:oplus_freeze_service:s0
+#endif /* OPLUS_FEATURE_HANS_FREEZE */
+
+#ifdef OPLUS_FEATURE_SUPPORT_SNC
+#rahul.tripathi@build.sncontent.solution, 2021/09/27, Added for SN-Content Solution India Hyderabad R&D
+IextSDUFsService.joinFSStackService                                     u:object_r:debugasserttip_service:s0
+
+#ifdef OPLUS_FEATURE_ARCH_WIFI
+#peter.wangyk@CONNECTIVITY.WIFI.DECOUPLING.3317003, 2022/3/30, Add for decoupling OplusWifiManager
+opluswifikitservice                                     u:object_r:oplus_wifi_kit_service:s0
+#endif /* OPLUS_FEATURE_ARCH_WIFI */
+
+#ifdef OPLUS_FEATURE_PLMN_CARRIERCONFIG
+#Huangkaihui@NETWORK.CALL.2715531, 2022-05-11, add for Plmn CarrierConfig feature
+plmn_carrier_config                       u:object_r:radio_service:s0
+#enidf /* OPLUS_FEATURE_PLMN_CARRIERCONFIG */
+
+#ifdef OPLUS_FEATURE_ARCH_TELEPHONY_REGISTRY_EXT
+#Huangkaihui@NETWORK.ARCH.3485672, 2022/04/08, extend telephonyregistry.
+telephony_registry_ext                           u:object_r:registry_service:s0
+#endif /* OPLUS_FEATURE_ARCH_TELEPHONY_REGISTRY_EXT */
+
+#ifdef OPLUS_FEATURE_TELECOM_SERVICE_EXT
+#Huangkaihui@NETWORK.ARCH.3485672, 2022/04/08, extend telecom service.
+telecom_ext                                      u:object_r:telecom_service:s0
+#endif /*OPLUS_FEATURE_TELECOM_SERVICE_EXT*/
+
+#ifdef OPLUS_FEATURE_WIFI_SNIFFER
+#LiangXiao@CONNECTIVITY.WIFI.BASIC.3631197, 2022/05/15, Add for oplus wifi aidl hal service on Android T
+vendor.oplus.hardware.wifi.IOplusWifiService/default  u:object_r:oplus_wifi_aidl_hal_service:s0
+#endif /* OPLUS_FEATURE_WIFI_SNIFFER */
+
+#ifdef OPLUS_FEATURE_THEIA
+#YangYi@ANDROID.STABILITY, Add for TheiaManagerService
+theia                      u:object_r:theia_service:s0
+#YangYi@ANDROID.STABILITY, Add for oplus_theias
+TheiaBinderService         u:object_r:TheiaBinderService:s0
+#endif /*OPLUS_FEATURE_THEIA*/
+
+#ifdef OPLUS_FEATURE_TELEPHONY_EXT_OSDK
+#Huangkaihui@NETWORK.CALL.3772838, 2022-06-07, add for addon sdk
+isms_ext                                      u:object_r:radio_service:s0
+isub_ext                                      u:object_r:radio_service:s0
+#endif /*OPLUS_FEATURE_TELEPHONY_EXT_OSDK*/
+
+#ifdef OPLUS_FEATURE_PREINSTALL
+#Chunbo.Gao@ANDROID.PREINSTALL 2022/6/15, Add for preloadsource
+channel_service    u:object_r:oplus_channel_service:s0
+#endif /* OPLUS_FEATURE_PREINSTALL */
+
+#v-weizhicheng@BSP.DFX, 2022/05/30, Add for stamp service
+stamp_service    u:object_r:oplus_stamp_service:s0
+
+#ifdef OPLUS_FEATURE_PXLW_IRIS5
+#DeWuLong@ANDROID.LCD, 2022/4/19, add for pixewlroks iris7 render_accelerating service
+render_accelerating   u:object_r:render_accelerating_service:s0
+#endif /*OPLUS_FEATURE_PXLW_IRIS5*/
+
+#ifdef OPLUS_FEATURE_OPLUS_TILE
+#WENSHUGUANG@ANDROID.SYSTEMUI, 2022/08/11, add for OplusTile
+oplus_tile                                    u:object_r:oplus_tile_service:s0
+#endif /* OPLUS_FEATURE_OPLUS_TILE */
+

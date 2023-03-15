@@ -1,0 +1,30 @@
+<!--Tips: The product configuration will not overlay the common configration. Do not configure the same configuration -->
+
+<oplus-config>
+    <!-- GuiXiang@NETWORK.REG.8515, 2019/01/03, Add for 5G support feature -->
+    <oplus-feature name="oplus.software.radio.support_5g"/>
+    <!-- HeZhihui@NETWORK.REG.8515, 2020/06/12, modify for Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.nr_icon_optimized_enabled"/>
+    <oplus-feature name="oplus.software.radio.ntp_preferred"/>
+    <oplus-feature name="oplus.software.radio.health_service_support"/>
+    <!-- ZhuangYunteng@NETWORK.REG.7403, 2020/06/24, modify for Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.light_smart5g_enabled"/>
+    <!-- HuangKaihui@NETWORK.CALL.226929, 2020/08/05, add for OPLUS_FEATURE_ECC_TESTMODE -->
+    <oplus-feature name="oplus.software.radio.custom_ecclist_writable"/>
+    <!-- Yujingpan@NETWORK.DATA.2935978, 2020/08/11, modify for Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.aptg_force_enable_roaming"/>
+    <!-- ZhunNian@NETWORK.DATA.783805, 2015/03/31, modify for not allow internet if we disable internet even when we send mms -->
+    <oplus-feature name="oplus.software.radio.mms_not_allow_internet"/>
+    <!-- WangHui@NETWORK.RF.8039, 2020/12/05, add for engineer sale pa test Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.eng_salepatest_support"/>
+    <!-- CynricZhao@NETWORK.TELE, 2020/11/18, oneplus ril ext hook api -->
+    <oplus-feature name="oplus.software.radio.ril_ext_api_hook"/>
+    <!-- Tanzhengpeng@NETWORK.Tech.11345, 2020/12/22, add for use vendor diag for logkit-->
+    <oplus-feature name="oplus.software.radio.vendor_diag"/>
+    <!-- YangXueNi@NETWORK.CALL.2579952, 2021/12/27, add for disable sa call control-->
+    <oplus-feature name="oplus.software.radio.sa_call_control_disabled" />
+    <!-- MaiwenTian@NETWORK.RF.2810524, 2022/01/11, add for support all path test tool-->
+    <oplus-feature name="oplus.software.radio.all_path_test_support" />
+    <!-- YangXueNi@NETWORK.IMS.2879050, 2021/12/27, enable VoNR switch at engineering mode -->
+    <oplus-feature name="oplus.software.radio.vonr_switch_enabled"/>
+</oplus-config>

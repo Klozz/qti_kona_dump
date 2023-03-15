@@ -1,0 +1,9 @@
+service oplus_mm_configure /system_ext/bin/init.sys.oplus.mm.post_boot.sh
+    class core
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start oplus_mm_configure

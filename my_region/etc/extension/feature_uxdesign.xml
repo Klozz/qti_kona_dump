@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.oplus.uxdesign.icons.host" args="String:https://gui-server-in.allawnos.com"/>
+    <app_feature name="com.oplus.uxdesign.language.host" args="String:https://lang-server-in.allawnos.com"/>
+    <app_feature name="com.oplus.uxdesign.uxcolor.host" args="String:https://globalcolor-service-in.allawnos.com"/>
+</extend_features>

@@ -1,0 +1,5 @@
+service midas_hal_service /odm/bin/hw/vendor.oplus.hardware.midas@1.0-service
+	interface vendor.oplus.hardware.handlefactory@1.0::IHandleFactory default
+	class hal
+	user system
+	group system

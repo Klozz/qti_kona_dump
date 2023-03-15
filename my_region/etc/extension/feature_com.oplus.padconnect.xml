@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!--use chrome package for QR, default:""-->
+    <app_feature name="com.oplus.padconnect.QR_url" args="String:https://pc-assistant-in.allawnofs.com/h5/index.html?param="/>
+
+</extend_features>

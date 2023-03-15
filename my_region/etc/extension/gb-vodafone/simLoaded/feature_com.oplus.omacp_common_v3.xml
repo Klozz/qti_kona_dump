@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.oplus.omacp.customize_vowifi_switch_status" />
+</extend_features>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.mms.smart_message" />
+    <app_feature name="com.android.mms.phone_number_recognition" />
+</extend_features>

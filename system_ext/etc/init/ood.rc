@@ -1,0 +1,22 @@
+# TODO: remove ood service
+
+service ood /system_ext/bin/ood
+	user root
+	group root system
+	disabled
+
+on property:sys.boot_completed=1 && property:persist.sys.ood.enable=0
+	stop ood
+
+on property:sys.boot_completed=1 && property:persist.sys.ood.enable=1
+	start ood
+
+on property:sys.oplus.ood.diag=true
+	write /proc/sys/kernel/kptr_restrict 0
+
+on property:sys.oplus.ood.diag=false
+	write /proc/sys/kernel/kptr_restrict 2
+
+on post-fs-data
+    # Create directory for ood.
+    mkdir /data/misc/ood 0770 root system

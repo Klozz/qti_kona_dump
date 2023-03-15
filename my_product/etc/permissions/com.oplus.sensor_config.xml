@@ -1,0 +1,5 @@
+<oplus-config>
+    <!-- Qi.Pan@ANDROID.SENSOR, 2020/09/14, add for Fusion Light Support -->
+    <oplus-feature name="oplus.sensor.fusionlight.support" />
+    <!-- Qi.Pan@ANDROID.SENSOR, 2020/09/14, add for Fusion Light Support end. -->
+</oplus-config>

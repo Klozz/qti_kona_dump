@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <!-- liuxinqi@ANDROID.UPDATABILITY, 2022/04/28, Add for rus feature -->
+    <app_feature name="com.oplus.romupdate.is_exp" args="boolean:true"/>
+    <app_feature name="com.oplus.romupdate.is_log_print_limit" args="boolean:true"/>
+</extend_features>

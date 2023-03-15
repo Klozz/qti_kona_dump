@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature args="StringList:type" name="com.android.phone.simsettings.not_set_apn_type">
+        <!--extended format, exp: args="xcap;ims;ia"-->
+        <StringList args="xcap" name="type"/>
+    </app_feature>
+    <app_feature name="com.android.phone.simsettings.update_volte_switch_title_dynamic" />
+</extend_features>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!-- format: mode_auto-mode_90-mode_60-mode_120
+     value: 0(unspecified), 1(90Hz), 2(60Hz), 3(120Hz)
+     rateId="3-0-2-3" the preferred refresh rate id per setting mode
+     setting mode: auto  ,90hz     ,60hz  ,120hz
+     refresh rate: 120hz ,default,  60hz  ,120hz
+-->
+<refresh_rate_config version="20220915" ratemagic="865R60_90_120">
+<!-- 120Hz activity -->
+<item package="com.tencent.mm"  disableViewOverride="true"  rateId="3-3-2-3" />
+<item package="com.netease.newsreader.activity" activity="com.netease.newsreader.activity/com.netease.newsreader.article.framework.view.NewsPageActivity" disableViewOverride="true"  rateId="3-1-2-3" />
+
+<!-- cts activity -->
+  <item package="android.view.cts" activity="android.view.cts/.DisplayRefreshRateCtsActivity" rateId="2-2-2-2" appreqfirst="true" /> <!--CTS测试fail-->
+  <item package="android.view.cts" activity="android.view.cts/.surfacevalidator.CapturedActivity" rateId="2-2-2-2" />  <!--CTS测试fail-->
+
+<!-- other activity -->
+  <item package="com.opera.mini.native" activity="com.opera.mini.native/com.opera.android.MiniActivity" disableViewOverride="true" rateId="2-2-2-2" />  <!--opera.mini浏览器-->
+  <item package="com.ss.android.article.news" activity="com.ss.android.article.news/com.ss.android.video.impl.feed.immersion.ImmerseDetailActivity" disableViewOverride="true" rateId="2-2-2-2" />  <!--今日头条关注视频播放界面-->
+  <item package="com.ss.android.article.news" activity="com.ss.android.article.news/com.ss.android.live.host.livehostimpl.LivePlayerActivity" rateId="2-2-2-2" />  <!--今日头条中视频播放-->
+  <item package="com.ss.android.article.news" activity="com.ss.android.article.news/com.ss.android.live.host.livehostimpl.LivePlayerTransActivity" rateId="2-2-2-2" />  <!--今日头条中视频播放-->
+  <item package="com.ss.android.article.news" activity="com.ss.android.article.news/com.ss.android.ugc.detail.detail.ui.v2.view.TikTokDetailActivity" rateId="2-2-2-2" />  <!--今日头条中视频播放-->
+  <item package="com.ss.android.article.news" activity="com.ss.android.article.news/com.ss.android.article.news.activity.MainActivity" rateId="2-2-2-2" />
+  <item package="com.ss.android.article.news" activity="com.ss.android.article.news/com.ss.android.publisher.PublisherActivity" rateId="2-2-2-2" />  <!--今日头条中相机拍摄-->
+  <item package="com.coloros.video" activity="com.coloros.video/com.oplus.video.mycenter.MoviePlayerActivity" disableViewOverride="true" rateId="2-2-2-2" />  <!--文件管理器播放视频-->
+   <item package="com.homelink.android" activity="com.homelink.android/com.lianjia.common.vr.webview.VrWebviewActivity" disableViewOverride="true" rateId="2-2-2-2" />  <!--链家VR-->
+  <item package="com.tencent.mobileqq" activity="com.tencent.mobileqq/dov.com.tencent.biz.qqstory.takevideo.EditVideoActivity" disableViewOverride="true" rateId="2-2-2-2" /> <!--QQ 视频编辑-->
+
+  <item package="com.tencent.mm" activity="com.tencent.mm/.plugin.recordvideo.activity.MMRecordUI" rateId="2-2-2-2" disableViewOverride="true" />  <!--微信中拍摄场景-->
+  <item package="com.tencent.mm" activity="com.tencent.mm/.ui.chatting.gallery.ImageGalleryUI" rateId="0-0-0-0" disableViewOverride="true" />  <!--微信聊天界面播放小视频-->
+  <item package="com.tencent.mm" activity="com.tencent.mm/.plugin.sns.ui.SnsOnlineVideoActivity" rateId="2-2-2-2" disableViewOverride="true" />  <!--微信朋友圈播放视频-->
+  <item package="com.tencent.mm" activity="com.tencent.mm/.plugin.voip.ui.VideoActivity" rateId="2-2-2-2" disableViewOverride="true" />  <!--bug 2946142 微信语音/视频聊天界面-->
+  <item package="com.tencent.mm" activity="com.tencent.mm/.plugin.scanner.ui.BaseScanUI" rateId="2-2-2-2" disableViewOverride="true" />  <!--微信扫一扫页面-->
+
+<!-- thirdpart app-->
+  <item package="com.netflix.mediacliente" disableViewOverride="true" ateId="2-2-2-2" />  <!--netflix-->
+  <item package="com.amazon.avod.thirdpartyclient" disableViewOverride="true" rateId="2-2-2-2" />  <!--Prime Video-->
+  <item package="com.hunantv.imgo.activity" disableViewOverride="true" rateId="2-2-2-2" />  <!--芒果TV-->
+  <item package="com.ovital.ovitalMap" disableViewOverride="true" rateId="2-2-2-2" />  <!--奥维互动地图-->
+  <item package="com.skype.raider" disableViewOverride="true" rateId="2-2-2-2" />  <!--skype-->
+  <item package="com.ss.android.ugc.aweme" disableViewOverride="true" rateId="2-2-2-2" />  <!--抖音短视频-->
+  <item package="com.cainiao.cs" disableViewOverride="true" rateId="2-2-2-2" />  <!--菜鸟包裹侠-->
+  <item package="com.kwai.videoeditor" disableViewOverride="true" rateId="2-2-2-2" />  <!--快影-->
+  <item package="com.jx.cmcc.ict.ibelieve" disableViewOverride="true" rateId="2-2-2-2" />  <!--和我信-->
+  <item package="org.xbmc.kodi" disableViewOverride="true" rateId="2-2-2-2" />  <!--xbmc-->
+  <item package="com.nexstreaming.app.kinemasterfree" disableViewOverride="true" rateId="2-2-2-2" />  <!--巧影-->
+  <item package="com.google.android.youtube" disableViewOverride="true" rateId="2-2-2-2" />  <!--youtube-->
+  <item package="com.tencent.tmgp.sgame" disableViewOverride="true" rateId="2-2-2-2" />  <!--王者荣耀-->
+  <item package="com.microsoft.office.onenote" disableViewOverride="true" rateId="2-2-2-2" />  <!--onenote-->
+
+  <!--Start High rate(120/90) oversea's app-->
+  <item package="com.ss.android.article.news" rateId="3-1-2-3" />  <!--今日头条-->
+  <item package="com.nianticlabs.pokemongo" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="net.oneplus.launcher" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.baidu.tieba" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.ztgame.bob" disableViewOverride="true" rateId="3-1-2-3" />  <!--球球大作战-->
+  <item package="com.yingxiong.dftk.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />  <!--巅峰坦克-->
+  <item package="com.youzu.bs.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />  <!--荒野乱斗-->
+  <item package="com.tencent.tmgp.speedmobile" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.tencent.af" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.pubg.imobile" disableViewOverride="true" rateId="3-3-2-3" />
+  <item package="com.netease.lztg.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.netease.lztg" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.netease.lztg.aligames" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.netease.lztg.eyou" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="org.mozilla.firefox" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="cn.soulapp.android" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.pinterest" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.snapchat.android" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.snapchat.android" activity="com.snapchat.android/com.snap.mushroom.MainActivity"disableViewOverride="true" rateId="3-1-2-2" />
+  <item package="com.zl.fqbao" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.android.browser" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.UCMobile" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.opera.browser" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.nike.ntc" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.chrome.beta" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.taobao.idlefish" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.netease.mc.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.netease.x19" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.taobao.taobao" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.tencent.tim" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.facebook.katana" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.oneplus.deskclock" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.nearme.browser" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.tencent.qqpim" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.sogou.novel" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.app.shanghai.metro" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.tencent.tmgp.cf" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.alimama.moon" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.jxedt" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.moji.mjweather" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.netease.blqx.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.hsh.cqyzs.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.yunbu.rehtona.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.denachina.g13002010.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.Lilith.Abi.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.netease.blqx" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.m37.dldl.aligames" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.yunbu.rehtona.uc" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.denachina.g13002010.aligames" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.lilith.abi.uc" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.volvapps.ef5.x.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.tencent.tmgp.ef5" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.palmpi.hcollege.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.tencent.tmgp.hqxy" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.palmpi.hcollege.uc" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.superevilmegacorp.game" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.superevilmegacorp.game.nearme.gamecenter" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.xingin.xhs" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.imangi.templerun2" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.android.chrome" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.sina.weibo" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="app.buzz.share" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.instagram.android" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.instagram.android" activity="com.instagram.android/com.instagram.mainactivity.MainActivity" disableViewOverride="true" rateId="3-1-2-2" />
+  <item package="net.oneplus.weather" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.coloros.weather2" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.coloros.gallery3d" disableViewOverride="true" rateId="3-1-2-3" />
+  <item package="com.tencent.mobileqq" disableViewOverride="true" rateId="3-1-2-3" />
+  <!-- 录屏降低帧率到 60hz -->
+  <record package="com.heytap.cast" />  <!--投屏时候保持系统帧率在60hz-->
+  <record package="com.oplus.cast" />  <!--投屏时候保持系统帧率在60hz-->
+  <!--inputMethodLowRate 为true输入法降帧，默认为false
+      enableRateOverride 默认为true,为false表示surfaceview，texture场景不降
+      enableFodHighRate true表示可以支持指纹高刷新请求，默认false，部分项目指纹闪屏需要配置 -->
+  <config inputMethodLowRate="true" />
+</refresh_rate_config>
+

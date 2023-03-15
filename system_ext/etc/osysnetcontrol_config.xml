@@ -1,0 +1,23 @@
+<!-- OPLUS_FEATURE_OSYS_NETCONTROL -->
+<!-- siga@NETWORK.POWER.2099200, 2020/08/30, Add for system net control. -->
+<OSysNetControl>
+    <OSysNetControlVersion>20200430</OSysNetControlVersion>
+
+    <SysNetControlSwitch>
+        <Version date="20200430"/>
+        <Value switch="true"/>
+    </SysNetControlSwitch>
+
+    <LongStandbyRuleList>
+        <Version date="20200430"/>
+        <Value_1
+            action_id="1"
+            enabled="true"
+            condition_id="1" condition_duration="43200"
+            condition_id="2" condition_duration="43200"
+            arg_name="breathe_cycle" arg_value="7200"
+            arg_name="breathe_duration" arg_value="300"
+        />
+    </LongStandbyRuleList>
+
+</OSysNetControl>

@@ -1,0 +1,48 @@
+<oplus-config>
+
+    <!-- =================== DISPLAY FEATURES BEGIN ================================ -->
+    <!-- heteromorphism feature -->
+    <oplus-feature name="oplus.software.display.screen_heteromorphism" />
+    <oplus-feature name="oplus.software.display.origin_roundcorner_support" />
+
+    <!-- brightness feature -->
+    <oplus-feature name="oplus.software.display.screen_gloablehbm_support" />
+    <oplus-feature name="oplus.software.display.autobrightctl_animation_support" />
+
+    <!-- colormode feature -->
+    <oplus-feature name="oplus.software.display.colormode_support" />
+
+    <!-- aod feature -->
+    <oplus-feature name="oplus.software.display.aod_support" />
+    <oplus-feature name="oplus.software.display.aod_prevent_burn_support" />
+
+    <!-- sceen fingerprint feature -->
+    <!-- oplus-feature name="oplus.software.fingeprint_optical_enabled"/ -->
+
+    <!-- fingerprint dimlayer feature -->
+    <oplus-feature name="oplus.software.display.fingerprint_disable_dimlayer" />
+
+    <!-- game hqv feature -->
+    <oplus-feature name="oplus.software.display.game_color_plus_v2_support"/>
+
+    <!-- sceen mode feature -->
+    <oplus-feature name="oplus.software.display.dynamic_fps_switch" />
+
+    <!-- pixelworks_enable feature -->
+    <!--oplus-feature name="oplus.software.display.pixelworks_enable" /-->
+
+    <!-- color temperature feature -->
+    <!--oplus-feature name="oplus.software.display.intelligent_color_temperature_support" /-->
+
+    <!-- cinema mode feature -->
+    <!-- oplus-feature name="oplus.software.display.cinema_mode_support" / -->
+
+    <!-- hdr enhance feature -->
+    <!-- oplus-feature name="oplus.software.display.hdr_enhance_brightness_support" / -->
+
+    <!-- no use feature -->
+    <oplus-feature name="oplus.software.display.autolight_psensor_notsupport" />
+
+    <!-- =================== DISPLAY FEATURES END ================================== -->
+
+</oplus-config>

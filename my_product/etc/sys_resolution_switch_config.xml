@@ -1,0 +1,21 @@
+<!-- resolutionID的值，智能切换为1,低分辨率为2，高分辨率为3 -->
+<!-- idmask = 1 左移 resolutionID值的结果  -->
+<!-- 不支持分辨率切换的机器，只有智能模式生效 -->
+<!-- 固定density的app不能添加到智能分辨率名单中  -->
+<!--Display Compat mode-->
+<sys_resolution_switch_config version="20220704" filemagic="androidS" screenwidth="1080" >
+<!-- 1440 * 0.75 = 1080,640 * 0.75 = 480 -->
+<scaleinfo value="1.5,0.666667,320" />
+<!-- auto or qhd+  force to low resolution example -->
+<item package="com.example.force" idmask="1010" />  <!-- xxx -->
+<!-- auto  example -->
+<item package="com.example.test1" idmask="0010"  scaleinfo="1.5,0.6666667,420" />  <!-- xxx -->
+<item package="com.imangi.templerun2" idmask="0010" />  <!-- 神庙逃亡2 -->
+<item package="com.netease.dhxy.nearme.gamecenter" idmask="0010" />  <!-- 大话西游 -->
+<item package="com.cocos2d.fishingfun.nearme.gamecenter" idmask="0010" />
+<item package="org.cocos2d.fishingjoy3" idmask="0010" />
+<item package="org.cocos2dx.FishingJoy2" idmask="0010" />
+<item package="com.gbits.atm.nearme.gamecenter" idmask="0010" /> <!-- 问道 -->
+<item package="com.nextwave.wcc2" idmask="0010" /> <!-- World Cricket Championship -->
+</sys_resolution_switch_config>
+

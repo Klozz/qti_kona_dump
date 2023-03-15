@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature args="StringList:type" name="com.android.phone.simsettings.disable_apn_preferences">
+        <StringList args="bearer" name="type"/>
+    </app_feature>
+</extend_features>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!-- nitin.misra@DocVault.ROM.31/08/2020.add for controlling DocVault in devices -->
+    <app_feature name="com.os.docvault_support" />
+</extend_features>

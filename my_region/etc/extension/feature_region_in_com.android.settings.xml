@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.android.settings.video_beauty.invisible" />
+    <app_feature name="com.android.settings.electronic_label"/>
+    <app_feature name="com.android.settings.auth_base_url" args="String:https://spk-service-sg.allawnos.com/" />
+    <!-- TODO: convert to valid feature -->
+    <app_feature name="com.android.settings.in_version" />
+    <!-- replace com.android.settings.in_version, but should not delete in_version feature; -->
+    <app_feature name="com.android.settings.double_tap_power_button.disable" />
+</extend_features>

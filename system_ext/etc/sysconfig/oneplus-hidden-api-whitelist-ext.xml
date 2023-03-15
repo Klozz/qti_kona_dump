@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<config>
+    <hidden-api-whitelisted-app package="net.oneplus.weather" />
+    <hidden-api-whitelisted-app package="net.oneplus.launcher" />
+    <hidden-api-whitelisted-app package="com.oneplus.deskclock" />
+    <hidden-api-whitelisted-app package="com.oneplus.opshelf" />
+    <hidden-api-whitelisted-app package="com.oneplus.setupwizard" />
+</config>

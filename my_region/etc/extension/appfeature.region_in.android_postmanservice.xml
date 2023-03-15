@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<extend_features>
+    <app_feature name="dfx.diag.tts_url" args="String:" />
+    <app_feature name="dfx.diag.ostorage_url" args="String:https://ostorage-ocloud-in.allawnos.com" />
+</extend_features>

@@ -1,0 +1,14 @@
+# qssi-user 13 TP1A.220905.001 1664297296355 release-keys
+- manufacturer: qualcomm
+- platform: kona
+- codename: kona
+- flavor: qssi-user
+- release: 13
+- id: TP1A.220905.001
+- incremental: 1664297296355
+- tags: release-keys
+- fingerprint: qti/kona/kona:12/RKQ1.211119.001/1664726875023:user/release-keys
+- is_ab: true
+- brand: qti
+- branch: qssi-user-13-TP1A.220905.001-1664297296355-release-keys
+- repo: qti_kona_dump

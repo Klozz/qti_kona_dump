@@ -1,0 +1,30 @@
+<oplus-config>
+    <!-- Wanghui@NETWORK.REG.8745, 2020/07/13, modify for Feature Toggle -->
+    <oplus-feature name="oplus.software.radio.air_interface_detect_support" />
+
+    <!-- Aniyo.Zhang@NETWORK.DATA.2036468, 2021/08/26, add for isExpCfg-->
+    <oplus-feature name="oplus.software.radio.smart5g_exp_cfg"/>
+
+    <!-- CynricZhao@NETWORK.TELE, 2020/11/18, oneplus sar -->
+    <oplus-feature name="oplus.software.radio.sar.sar_sensor_enable"/>
+
+    <!-- ranganatha.r@NETWORK.CALL.2292473, 2021/10/22, add for WFC Disable 5G SA feature-->
+    <!-- wfc_disable_nrsa_config is used to enable/disable 5G SA mode during WFC call specific to carrier -->
+    <oplus-feature name="oplus.software.radio.wfc_disable_nrsa"/>
+
+    <!--WangJianwei@NETWORK.CALL, 2020/11/7, add for vonr switch and dynamic update-->
+    <oplus-feature name="oplus.software.radio.vonr_switch_enabled"/>
+
+    <!-- SunHao@NETWORK.IMS.3361428, 2022/04/14, IMS Guard -->
+    <oplus-feature name="oplus.software.radio.ims_guard"/>
+
+    <!-- ChenZehong@NETWORK.Call.3591929, 2022/08/15, Add for initialization of India SA -->
+    <oplus-feature name="oplus.software.radio.data_limit" />
+    <oplus-feature name="oplus.software.radio.sa_data_recovery_enabled"/>
+    <oplus-feature name="oplus.software.radio.light_smart5g_enabled"/>
+    <oplus-feature name="oplus.software.radio.smart5g_game_lte_prefer"/>
+
+    <!-- Amit.Kawadkar@NETWORK.REG.3591929, 2022/05/31, add for enabling VoNR -->
+    <oplus-feature name="oplus.software.radio.show_5g_nr_mode" />
+
+</oplus-config>

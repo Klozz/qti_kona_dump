@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+    <default-grant-permissions package="com.heytap.accessory" >
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.BLUETOOTH_SCAN"/>
+        <permission name="android.permission.BLUETOOTH_ADVERTISE"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+        <permission name="android.permission.NEARBY_WIFI_DEVICES" />
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.ted.number" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.WRITE_CALENDAR"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.android.incallui" >
+        <permission name="android.permission.SEND_SMS"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.WRITE_CALL_LOG"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_CONTACTS" />
+        <permission name="android.permission.WRITE_CONTACTS" />
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.CALL_PHONE" />
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS" />
+    </default-grant-permissions>
+
+    <!-- begin: add for delete android.system.uid, userid 1590504-->
+    <default-grant-permissions package="com.oplus.wirelesssettings">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+        <permission name="android.permission.CAMERA" />
+        <permission name="android.permission.BLUETOOTH_SCAN" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+    </default-grant-permissions>
+    <!-- end: add for delete android.system.uid, userid 1590504-->
+
+    <default-grant-permissions package="com.mediatek.omacp" >
+        <permission name="android.permission.RECEIVE_WAP_PUSH"/>
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oplus.onet" >
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.BLUETOOTH_SCAN"/>
+        <permission name="android.permission.BLUETOOTH_ADVERTISE"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+        <permission name="android.permission.NEARBY_WIFI_DEVICES" />
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oplus.sos" >
+        <permission name="android.permission.READ_CONTACTS" />
+        <permission name="android.permission.CALL_PHONE" />
+    </default-grant-permissions>
+
+    <!--R Yogeswari@Apps.OnePlusSetupwizard,2021/10/25,add for setupwizard app to grant permission -->
+    <default-grant-permissions package="com.oneplus.setupwizard">
+        <permission name="android.permission.READ_PHONE_STATE" />
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.bootreg" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oplus.cast">
+        <permission name="android.permission.RECORD_AUDIO" />
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oplus.cota">
+        <permission name="android.permission.POST_NOTIFICATIONS" />
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oplus.ocs">
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.ocs.opencapabilityservice">
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oplus.screenrecorder">
+        <permission name="android.permission.RECORD_AUDIO" />
+    </default-grant-permissions>
+</packages>

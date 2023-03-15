@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhoneColors>
+        <!--PhoneColor.name：手机颜色的唯一标识，由项目、手软提供-->
+        <!--ColorDescription：手机颜色描述，描述手机颜色-->
+        <!--ColorDescriptionCN：手机颜色描述（中文），描述手机颜色-->
+        <!--DefaultWallpaper :对应的锁屏壁纸-->
+        <!--DefaultWallpaperLock :对应的桌面壁纸-->
+        <!--ThemeDescriptionCN：主题描述（中文），描述主题名称-->
+        <!--手机颜色唯一标识、手机颜色描述由项目或手软提供，对应主题由桌面主题组根据UI要求配置-->
+        <!--该文件由OS产品中心桌面主题组维护-->
+
+    <PhoneColor name="FF3E3F44">
+        <ColorDescription>Carbon Black</ColorDescription>
+        <ColorDescriptionCN>黑岛</ColorDescriptionCN>
+        <DefaultWallpaper>NA</DefaultWallpaper>
+        <DefaultWallpaperLock>NA</DefaultWallpaperLock>
+        <DefaultWallpaperComponent>com.android.wallpaper.livepicker/.service.video.op.Op91VideoWallpaper</DefaultWallpaperComponent>
+    </PhoneColor>
+
+    <PhoneColor name="FFC0DCDD">
+        <ColorDescription>Lake Blue</ColorDescription>
+        <ColorDescriptionCN>蓝屿</ColorDescriptionCN>
+        <DefaultWallpaper>NA</DefaultWallpaper>
+        <DefaultWallpaperLock>NA</DefaultWallpaperLock>
+        <DefaultWallpaperComponent>com.android.wallpaper.livepicker/.service.video.op.Op92VideoWallpaper</DefaultWallpaperComponent>
+    </PhoneColor>
+</PhoneColors>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.oplus.eap.pre_host" args="String:" />
+    <app_feature name="com.oplus.eap.release_host" args="String:https://moa-upload-in.allawnos.com" />
+    <app_feature name="com.oplus.eap.anr_crash.statistics.switch" args="boolean:true" />
+    <app_feature name="com.oplus.eap.anr_crash.logfile.switch" args="boolean:true" />
+    <app_feature name="com.oplus.eap.cloud_storage_pre_host" args="String:" />
+    <app_feature name="com.oplus.eap.cloud_storage_release_host" args="String:https://ocloud-httpdns-in.heytapmobile.com" />
+    <app_feature name="com.oplus.eap.cloud_storage_release_host_v3" args="String:https://ostorage-ocloud-in.allawnos.com" />
+</extend_features>

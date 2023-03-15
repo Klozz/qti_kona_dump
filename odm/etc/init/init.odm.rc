@@ -1,0 +1,3 @@
+on property:ro.product.first_api_level=29
+  mount ext4 /my_custom /my_company bind
+  mount ext4 /oppo_custom /my_company bind

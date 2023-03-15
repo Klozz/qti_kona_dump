@@ -1,0 +1,357 @@
+{
+  "comment": "alipay_support",
+  "version": 20200828,
+  "public": [
+    {
+      "ifaaModel": "ONEPLUS-KB2000",
+      "oppoModel": [
+        "KB2000",
+        "KB2001",
+        "KB2003",
+        "KB2005",
+        "KB2007",
+        "LE2100",
+        "LE2101"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-IN2010",
+      "oppoModel": [
+        "IN2010",
+        "IN2011",
+        "IN2013",
+        "IN2015",
+        "IN2017",
+        "IN2019",
+        "IN2020",
+        "IN2021",
+        "IN2023",
+        "IN2025",
+        "AC2001",
+        "AC2003"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-GM1910",
+      "oppoModel": [
+        "GM1900",
+        "GM1901",
+        "GM1903",
+        "GM1905",
+        "GM1910",
+        "GM1911",
+        "GM1913",
+        "GM1915",
+        "GM1917",
+        "HD1900",
+        "HD1901",
+        "HD1903",
+        "HD1905",
+        "HD1910",
+        "HD1911",
+        "HD1913",
+        "HD1907",
+        "HD1925"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R20820",
+      "oppoModel": [
+        "MT2110"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R20821",
+      "oppoModel": [
+        "MT2111"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R20846",
+      "oppoModel": [
+        "NE2210"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21861",
+      "oppoModel": [
+        "PGKM10"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21862",
+      "oppoModel": [
+        "CPH2411",
+        "CPH2423"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R20847",
+      "oppoModel": [
+        "NE2211",
+        "NE2213",
+        "NE2215",
+        "NE2217"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21841",
+      "oppoModel": [
+        "PGP110"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-DN2100",
+      "oppoModel": [
+        "DN2100",
+        "DN2101",
+        "DN2103"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21341",
+      "oppoModel": [
+        "CPH2381",
+        "CPH2409"
+      ],
+      "bioType": [
+        "fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R22801",
+      "oppoModel": [
+        "PGZ110"
+      ],
+      "bioType": [
+        "fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21851",
+      "oppoModel": [
+        "IV2201"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-LE2110",
+      "oppoModel": [
+        "LE2110",
+        "LE2111",
+        "LE2113",
+        "LE2115",
+        "LE2117",
+        "LE2119",
+        "LE2120",
+        "LE2121",
+        "LE2123",
+        "LE2125",
+        "LE2127"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    }
+  ],
+  "confidential": [
+    {
+      "ifaaModel": "ONEPLUS-R20820",
+      "oppoModel": [
+        "MT2110"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-GM1910",
+      "oppoModel": [
+        "HD1907",
+        "HD1925"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R20821",
+      "oppoModel": [
+        "MT2111"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R20846",
+      "oppoModel": [
+        "NE2210"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R20847",
+      "oppoModel": [
+        "NE2211",
+        "NE2213",
+        "NE2215",
+        "NE2217"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21841",
+      "oppoModel": [
+        "PGP110"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-DN2100",
+      "oppoModel": [
+        "DN2100",
+        "DN2101",
+        "DN2103"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21341",
+      "oppoModel": [
+        "CPH2381",
+        "CPH2409"
+      ],
+      "bioType": [
+        "fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R22801",
+      "oppoModel": [
+        "PGZ110"
+      ],
+      "bioType": [
+        "fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21861",
+      "oppoModel": [
+        "PGKM10"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21862",
+      "oppoModel": [
+        "CPH2411",
+        "CPH2423"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-R21851",
+      "oppoModel": [
+        "IV2201"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    },
+    {
+      "ifaaModel": "ONEPLUS-LE2110",
+      "oppoModel": [
+        "LE2110",
+        "LE2111",
+        "LE2113",
+        "LE2115",
+        "LE2117",
+        "LE2119",
+        "LE2120",
+        "LE2121",
+        "LE2123",
+        "LE2125",
+        "LE2127"
+      ],
+      "bioType": [
+        "optical_fingerprint"
+      ],
+      "ifaaVersion": "4"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <!-- tianjicun@APP.Launcher, 2021/03/18, 11.3 feature improve -->
+    <app_feature name="com.android.launcher.REGION_NAME" args="String:IN" />
+</extend_features>

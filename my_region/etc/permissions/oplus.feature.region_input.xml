@@ -1,0 +1,4 @@
+<oplus-config>
+    <!-- CaiChunchun@ANDROID.INPUT, 2020/06/19, Add for sos -->
+    <oplus-feature name="oplus.software.sos_special_function" />
+</oplus-config>

@@ -1,0 +1,3 @@
+com.coloros.systemclone:SystemClone.apk::false
+com.oneplus.wallpaper:OPLiveWallpaper.apk::false
+com.oplus.audio.effectcenter:AudioEffectCenter.apk::false

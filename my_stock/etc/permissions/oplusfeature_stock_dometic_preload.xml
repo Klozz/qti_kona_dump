@@ -1,0 +1,7 @@
+<oplus-config>
+    <!-- kevin.li@ANDROID.RESCONTROL, 2022/06/17, add for process preload -->
+    <oplus-feature name="oplus.software.next_preload" />
+	<oplus-feature name="oplus.software.parallel_preload" />
+	<oplus-feature name="oplus.software.vip_preload" />
+	<oplus-feature name="oplus.software.sau_preload" />
+</oplus-config>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vibration_effect_map>
+<effect effect_id="0" waveform_id="1" duration="35" type="RAM" usage="UNKNOWN" desc="effect_weakest_short_vibrate_once"/>
+<effect effect_id="1" waveform_id="2" duration="45" type="RAM" usage="RINGTONE" desc="effect_weak_short_vibrate_once"/>
+<effect effect_id="2" waveform_id="3" duration="110" type="RAM" usage="UNKNOWN" desc="effect_moderate_short_vibrate_once"/>
+<effect effect_id="9" waveform_id="13" duration="30" type="RAM" usage="UNKNOWN" desc="effect_other_big_scale"/>
+<effect effect_id="10" waveform_id="14" duration="15" type="RAM" usage="UNKNOWN" desc="effect_other_small_scale"/>
+<effect effect_id="11" waveform_id="10" duration="40" type="RAM" usage="UNKNOWN" desc="effect_pubg_rifle"/>
+<effect effect_id="12" waveform_id="11" duration="40" type="RAM" usage="UNKNOWN" desc="effect_pubg_short_gun"/>
+<effect effect_id="13" waveform_id="12" duration="50" type="RAM" usage="UNKNOWN" desc="effect_pubg_sniper"/>
+<effect effect_id="49" waveform_id="4" duration="80" type="RAM" usage="UNKNOWN" desc="effect_customized_three_dimension_touch"/>
+<effect effect_id="53" waveform_id="5" duration="110" type="RAM" usage="UNKNOWN" desc="effect_customized_rush_left_to_right"/>
+<effect effect_id="68" waveform_id="7" duration="30" type="RAM" usage="UNKNOWN" desc="effect_customized_weak_granular"/>
+<effect effect_id="69" waveform_id="6" duration="45" type="RAM" usage="UNKNOWN" desc="effect_customized_strong_granular"/>
+<effect effect_id="288" waveform_id="8" duration="14" type="RAM" usage="UNKNOWN" desc="effect_razer_clicky_press"/>
+<effect effect_id="289" waveform_id="9" duration="14" type="RAM" usage="UNKNOWN" desc="effect_razer_linear_press"/>
+<effect effect_id="3" waveform_id="46" duration="480" type="RTP" usage="UNKNOWN" desc="effect_moderate_short_vibrate_twice"/>
+<effect effect_id="4" waveform_id="41" duration="2729" type="RTP" usage="CUSTOMIZED_RINGTONE" desc="effect_notification_symphonic"/>
+<effect effect_id="5" waveform_id="42" duration="2081" type="RTP" usage="CUSTOMIZED_RINGTONE" desc="effect_notification_streak"/>
+<effect effect_id="6" waveform_id="43" duration="3968" type="RTP" usage="CUSTOMIZED_RINGTONE" desc="effect_notification_heartbeat"/>
+<effect effect_id="7" waveform_id="44" duration="6000" type="RTP" usage="CUSTOMIZED_RINGTONE" desc="effect_notification_remind"/>
+<effect effect_id="8" waveform_id="45" duration="4516" type="RTP" usage="CUSTOMIZED_RINGTONE" desc="effect_notification_rapid"/>
+<effect effect_id="50" waveform_id="47" duration="350" type="RTP" usage="UNKNOWN" desc="effect_customized_spread_out"/>
+<effect effect_id="54" waveform_id="60" duration="220" type="RTP" usage="UNKNOWN" desc="effect_sgame_first_blood"/>
+<effect effect_id="55" waveform_id="61" duration="210" type="RTP" usage="UNKNOWN" desc="effect_sgame_double_kill"/>
+<effect effect_id="56" waveform_id="62" duration="410" type="RTP" usage="UNKNOWN" desc="effect_sgame_trible_kill"/>
+<effect effect_id="57" waveform_id="63" duration="430" type="RTP" usage="UNKNOWN" desc="effect_sgame_ultra_kill"/>
+<effect effect_id="58" waveform_id="64" duration="790" type="RTP" usage="UNKNOWN" desc="effect_sgame_panta_kill"/>
+<effect effect_id="59" waveform_id="65" duration="520" type="RTP" usage="UNKNOWN" desc="effect_sgame_killing_spree"/>
+<effect effect_id="60" waveform_id="66" duration="470" type="RTP" usage="UNKNOWN" desc="effect_sgame_rampage"/>
+<effect effect_id="61" waveform_id="67" duration="590" type="RTP" usage="UNKNOWN" desc="effect_sgame_unstoppable"/>
+<effect effect_id="62" waveform_id="68" duration="630" type="RTP" usage="UNKNOWN" desc="effect_sgame_godlike"/>
+<effect effect_id="63" waveform_id="69" duration="1020" type="RTP" usage="UNKNOWN" desc="effect_sgame_legendary"/>
+<effect effect_id="70" waveform_id="56" duration="350" type="RTP" usage="UNKNOWN" desc="effect_customized_long_vibrate"/>
+<effect effect_id="71" waveform_id="57" duration="400" type="RTP" usage="UNKNOWN" desc="effect_customized_strong_pointfour_sencond"/>
+<effect effect_id="72" waveform_id="58" duration="1000" type="RTP" usage="UNKNOWN" desc="effect_customized_strong_one_sencond"/>
+<effect effect_id="73" waveform_id="54" duration="200" type="RTP" usage="UNKNOWN" desc="effect_customized_attach_to_middle"/>
+<effect effect_id="74" waveform_id="55" duration="620" type="RTP" usage="UNKNOWN" desc="effect_customized_breathe_spread_out"/>
+<effect effect_id="75" waveform_id="100" duration="230" type="RTP" usage="UNKNOWN" desc="effect_afgame_normal_kill"/>
+<effect effect_id="76" waveform_id="101" duration="290" type="RTP" usage="UNKNOWN" desc="effect_afgame_double_kill"/>
+<effect effect_id="77" waveform_id="102" duration="430" type="RTP" usage="UNKNOWN" desc="effect_afgame_triple_kill"/>
+<effect effect_id="78" waveform_id="103" duration="610" type="RTP" usage="UNKNOWN" desc="effect_afgame_ultra_kill"/>
+<effect effect_id="79" waveform_id="104" duration="750" type="RTP" usage="UNKNOWN" desc="effect_afgame_panta_kill"/>
+<effect effect_id="80" waveform_id="162" duration="21551" type="RTP" usage="UNKNOWN" desc="effect_ringtone_rm_tune"/>
+<effect effect_id="81" waveform_id="163" duration="1731" type="RTP" usage="UNKNOWN" desc="effect_ringtone_rm_jingle"/>
+<effect effect_id="82" waveform_id="161" duration="26157" type="RTP" usage="UNKNOWN" desc="effect_ringtone_rm_itsrm"/>
+<effect effect_id="100" waveform_id="140" duration="31014" type="RTP" usage="UNKNOWN" desc="effect_ringtone_calm"/>
+<effect effect_id="101" waveform_id="134" duration="26328" type="RTP" usage="UNKNOWN" desc="effect_ringtone_nostalgic"/>
+<effect effect_id="102" waveform_id="137" duration="26098" type="RTP" usage="UNKNOWN" desc="effect_ringtone_romance"/>
+<effect effect_id="103" waveform_id="139" duration="20018" type="RTP" usage="UNKNOWN" desc="effect_ringtone_dream"/>
+<effect effect_id="104" waveform_id="136" duration="28260" type="RTP" usage="UNKNOWN" desc="effect_ringtone_visions"/>
+<effect effect_id="105" waveform_id="124" duration="14015" type="RTP" usage="UNKNOWN" desc="effect_ringtone_longing"/>
+<effect effect_id="106" waveform_id="138" duration="26909" type="RTP" usage="UNKNOWN" desc="effect_ringtone_bliss"/>
+<effect effect_id="107" waveform_id="141" duration="20875" type="RTP" usage="UNKNOWN" desc="effect_ringtone_delight"/>
+<effect effect_id="108" waveform_id="135" duration="1975" type="RTP" usage="UNKNOWN" desc="effect_ringtone_classic"/>
+<effect effect_id="109" waveform_id="31" duration="17214" type="RTP" usage="UNKNOWN" desc="effect_ringtone_playpark"/>
+<effect effect_id="110" waveform_id="30" duration="18000" type="RTP" usage="UNKNOWN" desc="effect_ringtone_dance"/>
+<effect effect_id="111" waveform_id="38" duration="18925" type="RTP" usage="UNKNOWN" desc="effect_ringtone_trinkets"/>
+<effect effect_id="112" waveform_id="22" duration="11954" type="RTP" usage="UNKNOWN" desc="effect_ringtone_firefly"/>
+<effect effect_id="113" waveform_id="36" duration="21600" type="RTP" usage="UNKNOWN" desc="effect_ringtone_stars"/>
+<effect effect_id="114" waveform_id="35" duration="26666" type="RTP" usage="UNKNOWN" desc="effect_ringtone_silence"/>
+<effect effect_id="115" waveform_id="27" duration="22169" type="RTP" usage="UNKNOWN" desc="effect_ringtone_memories"/>
+<effect effect_id="116" waveform_id="29" duration="9546" type="RTP" usage="UNKNOWN" desc="effect_ringtone_night"/>
+<effect effect_id="117" waveform_id="25" duration="16172" type="RTP" usage="UNKNOWN" desc="effect_ringtone_lakeside"/>
+<effect effect_id="118" waveform_id="24" duration="12675" type="RTP" usage="UNKNOWN" desc="effect_ringtone_gazingout"/>
+<effect effect_id="119" waveform_id="28" duration="17650" type="RTP" usage="UNKNOWN" desc="effect_ringtone_dazzle"/>
+<effect effect_id="120" waveform_id="32" duration="8202" type="RTP" usage="UNKNOWN" desc="effect_ringtone_relax"/>
+<effect effect_id="121" waveform_id="19" duration="18866" type="RTP" usage="UNKNOWN" desc="effect_ringtone_childhood"/>
+<effect effect_id="122" waveform_id="17" duration="10575" type="RTP" usage="UNKNOWN" desc="effect_ringtone_school"/>
+<effect effect_id="123" waveform_id="20" duration="26942" type="RTP" usage="UNKNOWN" desc="effect_ringtone_commute"/>
+<effect effect_id="124" waveform_id="37" duration="15301" type="RTP" usage="UNKNOWN" desc="effect_ringtone_summer"/>
+<effect effect_id="125" waveform_id="121" duration="32571" type="RTP" usage="UNKNOWN" desc="effect_ringtone_fairviews"/>
+<effect effect_id="126" waveform_id="34" duration="27712" type="RTP" usage="UNKNOWN" desc="effect_ringtone_solitude"/>
+<effect effect_id="127" waveform_id="49" duration="10445" type="RTP" usage="UNKNOWN" desc="effect_ringtone_pure"/>
+<effect effect_id="128" waveform_id="133" duration="1140" type="RTP" usage="UNKNOWN" desc="effect_notification_simple"/>
+<effect effect_id="129" waveform_id="128" duration="382" type="RTP" usage="UNKNOWN" desc="effect_notification_crystalclear"/>
+<effect effect_id="130" waveform_id="125" duration="1036" type="RTP" usage="UNKNOWN" desc="effect_notification_tunes"/>
+<effect effect_id="131" waveform_id="123" duration="822" type="RTP" usage="UNKNOWN" desc="effect_notification_emerge"/>
+<effect effect_id="132" waveform_id="127" duration="879" type="RTP" usage="UNKNOWN" desc="effect_notification_ripples"/>
+<effect effect_id="133" waveform_id="131" duration="1928" type="RTP" usage="UNKNOWN" desc="effect_notification_harp"/>
+<effect effect_id="134" waveform_id="132" duration="830" type="RTP" usage="UNKNOWN" desc="effect_notification_overtone"/>
+<effect effect_id="135" waveform_id="126" duration="941" type="RTP" usage="UNKNOWN" desc="effect_notification_percussion"/>
+<effect effect_id="136" waveform_id="129" duration="866" type="RTP" usage="UNKNOWN" desc="effect_notification_joy"/>
+<effect effect_id="137" waveform_id="130" duration="1947" type="RTP" usage="UNKNOWN" desc="effect_notification_twinkle"/>
+<effect effect_id="138" waveform_id="2" duration="1044" type="RTP" usage="UNKNOWN" desc="effect_notification_instant"/>
+<effect effect_id="139" waveform_id="13" duration="1876" type="RTP" usage="UNKNOWN" desc="effect_notification_fun"/>
+<effect effect_id="140" waveform_id="15" duration="3958" type="RTP" usage="UNKNOWN" desc="effect_notification_receive"/>
+<effect effect_id="141" waveform_id="16" duration="2515" type="RTP" usage="UNKNOWN" desc="effect_notification_splash"/>
+<effect effect_id="142" waveform_id="12" duration="877" type="RTP" usage="UNKNOWN" desc="effect_notification_ingenious"/>
+<effect effect_id="143" waveform_id="9" duration="2387" type="RTP" usage="UNKNOWN" desc="effect_notification_granules"/>
+<effect effect_id="144" waveform_id="142" duration="19226" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_wind"/>
+<effect effect_id="145" waveform_id="143" duration="21036" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_cloudy"/>
+<effect effect_id="146" waveform_id="144" duration="15967" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_thunderstorm"/>
+<effect effect_id="147" waveform_id="145" duration="30336" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_default"/>
+<effect effect_id="148" waveform_id="146" duration="21434" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_sunny"/>
+<effect effect_id="149" waveform_id="147" duration="16759" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_smog"/>
+<effect effect_id="150" waveform_id="148" duration="18201" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_snow"/>
+<effect effect_id="151" waveform_id="149" duration="16533" type="RTP" usage="UNKNOWN" desc="effect_alarm_weather_rain"/>
+<effect effect_id="152" waveform_id="105" duration="66" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_stepable_regulate"/>
+<effect effect_id="153" waveform_id="106" duration="297" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_voice_level_bar_edge"/>
+<effect effect_id="154" waveform_id="107" duration="146" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_strength_level_bar_edge"/>
+<effect effect_id="156" waveform_id="109" duration="709" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_fingerprint_correct_effect"/>
+<effect effect_id="157" waveform_id="110" duration="36" type="RTP" usage="TOUCH" desc="effect_other_keyboard_weak"/>
+<effect effect_id="158" waveform_id="111" duration="36" type="RTP" usage="TOUCH" desc="effect_other_keyboard_medium"/>
+<effect effect_id="159" waveform_id="112" duration="36" type="RTP" usage="TOUCH" desc="effect_other_keyboard_strong"/>
+<effect effect_id="165" waveform_id="118" duration="3187" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_breath_simulation"/>
+<effect effect_id="166" waveform_id="108" duration="935" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_charging_simulation"/>
+<effect effect_id="167" waveform_id="122" duration="151" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_voice_assistant"/>
+<effect effect_id="180" waveform_id="201" duration="13680" type="RTP" usage="UNKNOWN" desc="effect_ringtone_alacrity"/>
+<effect effect_id="181" waveform_id="202" duration="15602" type="RTP" usage="UNKNOWN" desc="effect_ringtone_amenity"/>
+<effect effect_id="182" waveform_id="203" duration="18563" type="RTP" usage="UNKNOWN" desc="effect_ringtone_blues"/>
+<effect effect_id="183" waveform_id="204" duration="10769" type="RTP" usage="UNKNOWN" desc="effect_ringtone_bounce"/>
+<effect effect_id="184" waveform_id="205" duration="6140" type="RTP" usage="UNKNOWN" desc="effect_ringtone_oneplus_calm"/>
+<effect effect_id="185" waveform_id="206" duration="12505" type="RTP" usage="UNKNOWN" desc="effect_ringtone_cloud"/>
+<effect effect_id="186" waveform_id="207" duration="16388" type="RTP" usage="UNKNOWN" desc="effect_ringtone_cyclotron"/>
+<effect effect_id="187" waveform_id="208" duration="6466" type="RTP" usage="UNKNOWN" desc="effect_ringtone_distinct"/>
+<effect effect_id="188" waveform_id="209" duration="19166" type="RTP" usage="UNKNOWN" desc="effect_ringtone_dynamic"/>
+<effect effect_id="189" waveform_id="210" duration="15501" type="RTP" usage="UNKNOWN" desc="effect_ringtone_echo"/>
+<effect effect_id="190" waveform_id="211" duration="7490" type="RTP" usage="UNKNOWN" desc="effect_ringtone_expect"/>
+<effect effect_id="191" waveform_id="212" duration="23926" type="RTP" usage="UNKNOWN" desc="effect_ringtone_fanatical"/>
+<effect effect_id="192" waveform_id="213" duration="8897" type="RTP" usage="UNKNOWN" desc="effect_ringtone_funky"/>
+<effect effect_id="193" waveform_id="214" duration="16096" type="RTP" usage="UNKNOWN" desc="effect_ringtone_guitar"/>
+<effect effect_id="194" waveform_id="215" duration="13344" type="RTP" usage="UNKNOWN" desc="effect_ringtone_harping"/>
+<effect effect_id="195" waveform_id="216" duration="6872" type="RTP" usage="UNKNOWN" desc="effect_ringtone_highlight"/>
+<effect effect_id="196" waveform_id="217" duration="16848" type="RTP" usage="UNKNOWN" desc="effect_ringtone_ldyl"/>
+<effect effect_id="197" waveform_id="218" duration="20830" type="RTP" usage="UNKNOWN" desc="effect_ringtone_innocence"/>
+<effect effect_id="198" waveform_id="219" duration="24926" type="RTP" usage="UNKNOWN" desc="effect_ringtone_journey"/>
+<effect effect_id="199" waveform_id="220" duration="5844" type="RTP" usage="UNKNOWN" desc="effect_ringtone_joyous"/>
+<effect effect_id="200" waveform_id="221" duration="18341" type="RTP" usage="UNKNOWN" desc="effect_ringtone_lazy"/>
+<effect effect_id="201" waveform_id="222" duration="8234" type="RTP" usage="UNKNOWN" desc="effect_ringtone_marimba"/>
+<effect effect_id="202" waveform_id="223" duration="18040" type="RTP" usage="UNKNOWN" desc="effect_ringtone_mystical"/>
+<effect effect_id="203" waveform_id="224" duration="6324" type="RTP" usage="UNKNOWN" desc="effect_ringtone_old_telephone"/>
+<effect effect_id="204" waveform_id="225" duration="14774" type="RTP" usage="UNKNOWN" desc="effect_ringtone_oneplus_tune"/>
+<effect effect_id="205" waveform_id="226" duration="17807" type="RTP" usage="UNKNOWN" desc="effect_ringtone_rhythm"/>
+<effect effect_id="206" waveform_id="227" duration="19962" type="RTP" usage="UNKNOWN" desc="effect_ringtone_optimistic"/>
+<effect effect_id="207" waveform_id="228" duration="22222" type="RTP" usage="UNKNOWN" desc="effect_ringtone_piano"/>
+<effect effect_id="208" waveform_id="229" duration="11048" type="RTP" usage="UNKNOWN" desc="effect_ringtone_whirl"/>
+<effect effect_id="209" waveform_id="232" duration="24614" type="RTP" usage="UNKNOWN" desc="effect_ringtone_eager"/>
+<effect effect_id="210" waveform_id="233" duration="16246" type="RTP" usage="UNKNOWN" desc="effect_ringtone_ebullition"/>
+<effect effect_id="211" waveform_id="234" duration="23824" type="RTP" usage="UNKNOWN" desc="effect_ringtone_friendship"/>
+<effect effect_id="212" waveform_id="235" duration="20556" type="RTP" usage="UNKNOWN" desc="effect_ringtone_jazz_life"/>
+<effect effect_id="213" waveform_id="236" duration="18391" type="RTP" usage="UNKNOWN" desc="effect_ringtone_sun_glittering"/>
+<effect effect_id="214" waveform_id="237" duration="451" type="RTP" usage="UNKNOWN" desc="effect_notification_allay"/>
+<effect effect_id="215" waveform_id="238" duration="960" type="RTP" usage="UNKNOWN" desc="effect_notification_allusion"/>
+<effect effect_id="216" waveform_id="239" duration="1622" type="RTP" usage="UNKNOWN" desc="effect_notification_amiable"/>
+<effect effect_id="217" waveform_id="240" duration="1388" type="RTP" usage="UNKNOWN" desc="effect_notification_blare"/>
+<effect effect_id="218" waveform_id="241" duration="2099" type="RTP" usage="UNKNOWN" desc="effect_notification_blissful"/>
+<effect effect_id="219" waveform_id="242" duration="570" type="RTP" usage="UNKNOWN" desc="effect_notification_brisk"/>
+<effect effect_id="220" waveform_id="243" duration="342" type="RTP" usage="UNKNOWN" desc="effect_notification_bubble"/>
+<effect effect_id="221" waveform_id="244" duration="544" type="RTP" usage="UNKNOWN" desc="effect_notification_cheerful"/>
+<effect effect_id="222" waveform_id="245" duration="457" type="RTP" usage="UNKNOWN" desc="effect_notification_clear"/>
+<effect effect_id="223" waveform_id="246" duration="3024" type="RTP" usage="UNKNOWN" desc="effect_notification_comely"/>
+<effect effect_id="224" waveform_id="247" duration="2303" type="RTP" usage="UNKNOWN" desc="effect_notification_cozy"/>
+<effect effect_id="225" waveform_id="248" duration="1697" type="RTP" usage="UNKNOWN" desc="effect_notification_ding"/>
+<effect effect_id="226" waveform_id="249" duration="1506" type="RTP" usage="UNKNOWN" desc="effect_notification_effervesce"/>
+<effect effect_id="227" waveform_id="250" duration="1893" type="RTP" usage="UNKNOWN" desc="effect_notification_elegant"/>
+<effect effect_id="228" waveform_id="251" duration="1416" type="RTP" usage="UNKNOWN" desc="effect_notification_free"/>
+<effect effect_id="229" waveform_id="252" duration="1401" type="RTP" usage="UNKNOWN" desc="effect_notification_hallucination"/>
+<effect effect_id="230" waveform_id="253" duration="1583" type="RTP" usage="UNKNOWN" desc="effect_notification_inbound"/>
+<effect effect_id="231" waveform_id="254" duration="1100" type="RTP" usage="UNKNOWN" desc="effect_notification_light"/>
+<effect effect_id="232" waveform_id="255" duration="871" type="RTP" usage="UNKNOWN" desc="effect_notification_meet"/>
+<effect effect_id="233" waveform_id="256" duration="1878" type="RTP" usage="UNKNOWN" desc="effect_notification_naivety"/>
+<effect effect_id="234" waveform_id="257" duration="612" type="RTP" usage="UNKNOWN" desc="effect_notification_quickly"/>
+<effect effect_id="235" waveform_id="258" duration="842" type="RTP" usage="UNKNOWN" desc="effect_notification_rhythm"/>
+<effect effect_id="236" waveform_id="259" duration="1067" type="RTP" usage="UNKNOWN" desc="effect_notification_surprise"/>
+<effect effect_id="237" waveform_id="260" duration="2206" type="RTP" usage="UNKNOWN" desc="effect_notification_oneplus_twinkle"/>
+<effect effect_id="238" waveform_id="262" duration="2115" type="RTP" usage="UNKNOWN" desc="effect_alarm_alarm_clock"/>
+<effect effect_id="239" waveform_id="263" duration="2373" type="RTP" usage="UNKNOWN" desc="effect_alarm_beep"/>
+<effect effect_id="240" waveform_id="264" duration="32511" type="RTP" usage="UNKNOWN" desc="effect_alarm_breeze"/>
+<effect effect_id="241" waveform_id="265" duration="35086" type="RTP" usage="UNKNOWN" desc="effect_alarm_dawn"/>
+<effect effect_id="242" waveform_id="266" duration="38500" type="RTP" usage="UNKNOWN" desc="effect_alarm_dream"/>
+<effect effect_id="243" waveform_id="267" duration="22410" type="RTP" usage="UNKNOWN" desc="effect_alarm_fluttering"/>
+<effect effect_id="244" waveform_id="268" duration="20108" type="RTP" usage="UNKNOWN" desc="effect_alarm_flyer"/>
+<effect effect_id="245" waveform_id="269" duration="10584" type="RTP" usage="UNKNOWN" desc="effect_alarm_interesting"/>
+<effect effect_id="246" waveform_id="270" duration="18442" type="RTP" usage="UNKNOWN" desc="effect_alarm_leisurely"/>
+<effect effect_id="247" waveform_id="271" duration="27611" type="RTP" usage="UNKNOWN" desc="effect_alarm_memory"/>
+<effect effect_id="248" waveform_id="272" duration="26404" type="RTP" usage="UNKNOWN" desc="effect_alarm_relieved"/>
+<effect effect_id="249" waveform_id="273" duration="7590" type="RTP" usage="UNKNOWN" desc="effect_alarm_ripple"/>
+<effect effect_id="250" waveform_id="274" duration="50077" type="RTP" usage="UNKNOWN" desc="effect_alarm_slowly"/>
+<effect effect_id="251" waveform_id="275" duration="24457" type="RTP" usage="UNKNOWN" desc="effect_alarm_spring"/>
+<effect effect_id="252" waveform_id="276" duration="22488" type="RTP" usage="UNKNOWN" desc="effect_alarm_stars"/>
+<effect effect_id="253" waveform_id="277" duration="12847" type="RTP" usage="UNKNOWN" desc="effect_alarm_surging"/>
+<effect effect_id="254" waveform_id="278" duration="20299" type="RTP" usage="UNKNOWN" desc="effect_alarm_tactfully"/>
+<effect effect_id="255" waveform_id="279" duration="23264" type="RTP" usage="UNKNOWN" desc="effect_alarm_the_wind"/>
+<effect effect_id="256" waveform_id="280" duration="18551" type="RTP" usage="UNKNOWN" desc="effect_alarm_walking_in_the_rain"/>
+<effect effect_id="268" waveform_id="292" duration="52151" type="RTP" usage="UNKNOWN" desc="effect_climber"/>
+<effect effect_id="269" waveform_id="293" duration="52612" type="RTP" usage="UNKNOWN" desc="effect_chase"/>
+<effect effect_id="270" waveform_id="171" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_threefingers_long"/>
+<effect effect_id="271" waveform_id="172" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_threefingers_up"/>
+<effect effect_id="272" waveform_id="173" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_threefingers_screenshot"/>
+<effect effect_id="273" waveform_id="174" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_unfold"/>
+<effect effect_id="274" waveform_id="175" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_close"/>
+<effect effect_id="275" waveform_id="176" duration="35" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_half_lap"/>
+<effect effect_id="276" waveform_id="177" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_twofingers_down"/>
+<effect effect_id="277" waveform_id="178" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_twofingers_long"/>
+<effect effect_id="278" waveform_id="179" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_compatible_1"/>
+<effect effect_id="279" waveform_id="180" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_compatible_2"/>
+<effect effect_id="280" waveform_id="181" duration="6699" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_styleswitch"/>
+<effect effect_id="282" waveform_id="183" duration="100" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_suspendbutton_bottomout"/>
+<effect effect_id="283" waveform_id="184" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_suspendbutton_menu"/>
+<effect effect_id="284" waveform_id="185" duration="16" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_complete"/>
+<effect effect_id="285" waveform_id="186" duration="121" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_bulb"/>
+<effect effect_id="286" waveform_id="187" duration="121" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_elasticity"/>
+<effect effect_id="287" waveform_id="188" duration="6699" type="RTP" usage="TOUCH|CUSTOMIZED_RINGTONE" desc="effect_other_styleswitch_soft"/>
+<effect effect_id="302" waveform_id="302" duration="35" type="RTP" usage="TOUCH" desc="effect_emulation_keyboard_down"/>
+<effect effect_id="303" waveform_id="303" duration="26" type="RTP" usage="TOUCH" desc="effect_emulation_keyboard_up"/>
+<effect effect_id="304" waveform_id="304" duration="35" type="RTP" usage="TOUCH" desc="effect_weak_emulation_keyboard_down"/>
+<effect effect_id="305" waveform_id="305" duration="26" type="RTP" usage="TOUCH" desc="effect_weak_emulation_keyboard_up"/>
+<effect effect_id="307" waveform_id="231" duration="2112" type="RTP" usage="UNKNOWN" desc="effect_ringtone_t_jingle"/>
+<effect effect_id="308" waveform_id="308" duration="260" type="RTP" usage="UNKNOWN" desc="effect_alertslider_down"/>
+<effect effect_id="310" waveform_id="150" duration="2733" type="RTP" usage="UNKNOWN" desc="effect_artist_notification"/>
+<effect effect_id="311" waveform_id="151" duration="20695" type="RTP" usage="UNKNOWN" desc="effect_artist_ringtone"/>
+<effect effect_id="312" waveform_id="152" duration="4767" type="RTP" usage="UNKNOWN" desc="effect_artist_text"/>
+<effect effect_id="313" waveform_id="153" duration="15686" type="RTP" usage="UNKNOWN" desc="effect_artist_alarm"/>
+<effect effect_id="314" waveform_id="170" duration="1080" type="RTP" usage="UNKNOWN" desc="effect_vibrate_with_gt"/>
+<effect effect_id="315" waveform_id="200" duration="10537" type="RTP" usage="UNKNOWN" desc="effect_ringtone_pacman"/>
+<effect effect_id="316" waveform_id="199" duration="212" type="RTP" usage="UNKNOWN" desc="effect_notification_pacman"/>
+<effect effect_id="317" waveform_id="198" duration="33409" type="RTP" usage="UNKNOWN" desc="effect_alarm_pacman"/>
+<effect effect_id="320" waveform_id="77" duration="28818" type="RTP" usage="UNKNOWN" desc="effect_ringtone_templesound"/>
+<effect effect_id="321" waveform_id="78" duration="21600" type="RTP" usage="UNKNOWN" desc="effect_ringtone_dreamjazz"/>
+<effect effect_id="322" waveform_id="76" duration="19181" type="RTP" usage="UNKNOWN" desc="effect_ringtone_housemusic"/>
+<effect effect_id="323" waveform_id="73" duration="18911" type="RTP" usage="UNKNOWN" desc="effect_ringtone_eclub"/>
+<effect effect_id="324" waveform_id="75" duration="18778" type="RTP" usage="UNKNOWN" desc="effect_ringtone_funk"/>
+<effect effect_id="325" waveform_id="70" duration="23810" type="RTP" usage="UNKNOWN" desc="effect_ringtone_freshmorning"/>
+<effect effect_id="326" waveform_id="74" duration="24970" type="RTP" usage="UNKNOWN" desc="effect_ringtone_holiday"/>
+<effect effect_id="327" waveform_id="72" duration="17751" type="RTP" usage="UNKNOWN" desc="effect_ringtone_watercicade"/>
+<effect effect_id="328" waveform_id="79" duration="24040" type="RTP" usage="UNKNOWN" desc="effect_ringtone_modern"/>
+<effect effect_id="329" waveform_id="71" duration="23091" type="RTP" usage="UNKNOWN" desc="effect_ringtone_eastern_tranquility"/>
+<effect effect_id="330" waveform_id="88" duration="4115" type="RTP" usage="UNKNOWN" desc="effect_notification_bowlbell"/>
+<effect effect_id="331" waveform_id="81" duration="3044" type="RTP" usage="UNKNOWN" desc="effect_notification_rise"/>
+<effect effect_id="332" waveform_id="83" duration="3940" type="RTP" usage="UNKNOWN" desc="effect_notification_hey"/>
+<effect effect_id="333" waveform_id="85" duration="3082" type="RTP" usage="UNKNOWN" desc="effect_notification_news"/>
+<effect effect_id="334" waveform_id="89" duration="3007" type="RTP" usage="UNKNOWN" desc="effect_notification_beating"/>
+<effect effect_id="335" waveform_id="87" duration="2155" type="RTP" usage="UNKNOWN" desc="effect_notification_short"/>
+<effect effect_id="336" waveform_id="86" duration="2412" type="RTP" usage="UNKNOWN" desc="effect_notification_top"/>
+<effect effect_id="337" waveform_id="80" duration="3648" type="RTP" usage="UNKNOWN" desc="effect_notification_circle"/>
+<effect effect_id="338" waveform_id="82" duration="436" type="RTP" usage="UNKNOWN" desc="effect_notification_block"/>
+<effect effect_id="339" waveform_id="84" duration="1460" type="RTP" usage="UNKNOWN" desc="effect_notification_zanza"/>
+<effect effect_id="341" waveform_id="94" duration="29278" type="RTP" usage="UNKNOWN" desc="effect_alarm_cloudscape"/>
+<effect effect_id="342" waveform_id="95" duration="27804" type="RTP" usage="UNKNOWN" desc="effect_alarm_goodenergy"/>
+<effect effect_id="343" waveform_id="96" duration="331" type="RTP" usage="UNKNOWN" desc="effect_notification_blink"/>
+<effect effect_id="344" waveform_id="97" duration="386" type="RTP" usage="UNKNOWN" desc="effect_notification_whoopdoop"/>
+<effect effect_id="345" waveform_id="98" duration="19868" type="RTP" usage="UNKNOWN" desc="effect_ringtone_feeling"/>
+<effect effect_id="346" waveform_id="99" duration="17963" type="RTP" usage="UNKNOWN" desc="effect_ringtone_nature"/>
+<effect effect_id="350" waveform_id="119" duration="58853" type="RTP" usage="UNKNOWN" desc="effect_telcel_rie"/>
+<effect effect_id="351" waveform_id="90" duration="16417" type="RTP" usage="UNKNOWN" desc="effect_canyon_call"/>
+<effect effect_id="352" waveform_id="91" duration="2755" type="RTP" usage="UNKNOWN" desc="effect_mystic_store"/>
+<effect effect_id="360" waveform_id="296" duration="37155" type="RTP" usage="UNKNOWN" desc="effect_ringtone_rock"/>
+<effect effect_id="361" waveform_id="297" duration="15370" type="RTP" usage="UNKNOWN" desc="effect_ringtone_in_game_rington"/>
+<effect effect_id="363" waveform_id="298" duration="44094" type="RTP" usage="UNKNOWN" desc="effect_alarm_wake_up_samurai"/>
+<effect effect_id="364" waveform_id="299" duration="21968" type="RTP" usage="UNKNOWN" desc="effect_alarm_in_game_alarm"/>
+<effect effect_id="365" waveform_id="300" duration="300" type="RTP" usage="UNKNOWN" desc="effect_notification_in_game_sms"/>
+<effect effect_id="366" waveform_id="301" duration="301" type="RTP" usage="UNKNOWN" desc="effect_notification_audition"/>
+<ringtone_effect ringtone_name="Joyous" effect_id="199" desc="joyous_ringtone"/>
+<ringtone_effect ringtone_name="Memory" effect_id="247" desc="memory_alarm"/>
+<ringtone_effect ringtone_name="Quickly" effect_id="234" desc="quickly_notification"/>
+<ringtone_effect ringtone_name="Nature" effect_id="346" desc="Nature"/>
+<ringtone_effect ringtone_name="Harping" effect_id="194" desc="harping_ringtone"/>
+<ringtone_effect ringtone_name="Rhythm" effect_id="235" desc="rhythm_notification"/>
+<ringtone_effect ringtone_name="Ripple" effect_id="249" desc="ripple_alarm"/>
+<ringtone_effect ringtone_name="Slowly" effect_id="250" desc="slowly_alarm"/>
+<ringtone_effect ringtone_name="Spring" effect_id="251" desc="spring_alarm"/>
+<ringtone_effect ringtone_name="Marimba" effect_id="201" desc="marimba_ringtone"/>
+<ringtone_effect ringtone_name="Climber" effect_id="268" desc="climber_ringtone"/>
+<ringtone_effect ringtone_name="Fluttering" effect_id="243" desc="fluttering_alarm"/>
+<ringtone_effect ringtone_name="OnePlus_tune_rhythm" effect_id="205" desc="oneplus_tune_rhythm_ringtone"/>
+<ringtone_effect ringtone_name="in_game_alarm" effect_id="364" desc="in_game_alarm"/>
+<ringtone_effect ringtone_name="canyon_call" effect_id="351" desc="canyon_call"/>
+<ringtone_effect ringtone_name="Surprise" effect_id="236" desc="surprise_notification"/>
+<ringtone_effect ringtone_name="in_game_sms" effect_id="365" desc="in_game_sms"/>
+<ringtone_effect ringtone_name="ringtone_master" effect_id="311" desc="Master Ringtone"/>
+<ringtone_effect ringtone_name="Walking_in_the_rain" effect_id="256" desc="walking_in_the_rain_alarm"/>
+<ringtone_effect ringtone_name="Pacman_notification" effect_id="316" desc="Pacman_notification"/>
+<ringtone_effect ringtone_name="ringtone_cloud" effect_id="145" desc="Cloudy"/>
+<ringtone_effect ringtone_name="Optimistic" effect_id="206" desc="optimistic_ringtone"/>
+<ringtone_effect ringtone_name="Naivety" effect_id="233" desc="naivety_notification"/>
+<ringtone_effect ringtone_name="Blissful" effect_id="218" desc="blissful_notification"/>
+<ringtone_effect ringtone_name="wake_up_samurai" effect_id="363" desc="wake_up_samurai"/>
+<ringtone_effect ringtone_name="Inbound" effect_id="230" desc="inbound_notification"/>
+<ringtone_effect ringtone_name="Old_telephone" effect_id="203" desc="old_telephone_ringtone"/>
+<ringtone_effect ringtone_name="Interesting" effect_id="245" desc="interesting_alarm"/>
+<ringtone_effect ringtone_name="OnePlus_tune" effect_id="204" desc="oneplus_tune_ringtone"/>
+<ringtone_effect ringtone_name="ringtone_000" effect_id="82" desc="ringtone_000"/>
+<ringtone_effect ringtone_name="ringtone_001" effect_id="100" desc="Calm"/>
+<ringtone_effect ringtone_name="ringtone_002" effect_id="101" desc="Nostalgic"/>
+<ringtone_effect ringtone_name="ringtone_003" effect_id="102" desc="Romance"/>
+<ringtone_effect ringtone_name="ringtone_004" effect_id="103" desc="Dream"/>
+<ringtone_effect ringtone_name="ringtone_005" effect_id="104" desc="Visions"/>
+<ringtone_effect ringtone_name="ringtone_006" effect_id="105" desc="Longing"/>
+<ringtone_effect ringtone_name="ringtone_007" effect_id="106" desc="Bliss"/>
+<ringtone_effect ringtone_name="ringtone_008" effect_id="107" desc="Delight"/>
+<ringtone_effect ringtone_name="ringtone_009" effect_id="108" desc="Classic"/>
+<ringtone_effect ringtone_name="ringtone_010" effect_id="109" desc="Playpark"/>
+<ringtone_effect ringtone_name="ringtone_011" effect_id="110" desc="Dance"/>
+<ringtone_effect ringtone_name="ringtone_012" effect_id="111" desc="Trinkets"/>
+<ringtone_effect ringtone_name="ringtone_013" effect_id="112" desc="Firefly"/>
+<ringtone_effect ringtone_name="ringtone_014" effect_id="113" desc="Stars"/>
+<ringtone_effect ringtone_name="ringtone_015" effect_id="114" desc="Silence"/>
+<ringtone_effect ringtone_name="ringtone_016" effect_id="115" desc="Memories"/>
+<ringtone_effect ringtone_name="ringtone_017" effect_id="116" desc="Night"/>
+<ringtone_effect ringtone_name="ringtone_018" effect_id="117" desc="Lakeside"/>
+<ringtone_effect ringtone_name="ringtone_019" effect_id="118" desc="Gazingout"/>
+<ringtone_effect ringtone_name="ringtone_020" effect_id="119" desc="Dazzle"/>
+<ringtone_effect ringtone_name="ringtone_021" effect_id="120" desc="Relax"/>
+<ringtone_effect ringtone_name="ringtone_022" effect_id="121" desc="Childhood"/>
+<ringtone_effect ringtone_name="ringtone_023" effect_id="122" desc="School"/>
+<ringtone_effect ringtone_name="ringtone_024" effect_id="123" desc="Commute"/>
+<ringtone_effect ringtone_name="ringtone_025" effect_id="124" desc="Summer"/>
+<ringtone_effect ringtone_name="ringtone_026" effect_id="125" desc="Fairviews"/>
+<ringtone_effect ringtone_name="ringtone_027" effect_id="126" desc="Solitude"/>
+<ringtone_effect ringtone_name="ringtone_028" effect_id="127" desc="Pure"/>
+<ringtone_effect ringtone_name="ringtone_029" effect_id="320" desc="temple_sound"/>
+<ringtone_effect ringtone_name="ringtone_030" effect_id="321" desc="dream_jazz"/>
+<ringtone_effect ringtone_name="ringtone_031" effect_id="322" desc="house_music"/>
+<ringtone_effect ringtone_name="ringtone_032" effect_id="323" desc="e_club"/>
+<ringtone_effect ringtone_name="ringtone_033" effect_id="324" desc="funk"/>
+<ringtone_effect ringtone_name="ringtone_034" effect_id="325" desc="fresh_morning"/>
+<ringtone_effect ringtone_name="ringtone_035" effect_id="326" desc="holiday"/>
+<ringtone_effect ringtone_name="ringtone_036" effect_id="327" desc="water_cicade"/>
+<ringtone_effect ringtone_name="ringtone_037" effect_id="328" desc="modern"/>
+<ringtone_effect ringtone_name="ringtone_038" effect_id="329" desc="eastern_tranquility"/>
+<ringtone_effect ringtone_name="ringtone_sun" effect_id="148" desc="Sunny"/>
+<ringtone_effect ringtone_name="Dynamic" effect_id="188" desc="dynamic_ringtone"/>
+<ringtone_effect ringtone_name="Relieved" effect_id="248" desc="relieved_alarm"/>
+<ringtone_effect ringtone_name="T-Jingle" effect_id="307" desc="t_jingle_ringtone"/>
+<ringtone_effect ringtone_name="sms_master" effect_id="312" desc="Master Text"/>
+<ringtone_effect ringtone_name="alarm_master" effect_id="313" desc="Master Alarm"/>
+<ringtone_effect ringtone_name="Surging" effect_id="253" desc="surging_alarm"/>
+<ringtone_effect ringtone_name="Effervesce" effect_id="226" desc="effervesce_notification"/>
+<ringtone_effect ringtone_name="OnePlus_new_feeling" effect_id="345" desc="Feeling"/>
+<ringtone_effect ringtone_name="Whoop_doop" effect_id="344" desc="Whoopdoop"/>
+<ringtone_effect ringtone_name="Elegant" effect_id="227" desc="elegant_notification"/>
+<ringtone_effect ringtone_name="Beep" effect_id="239" desc="beep_alarm"/>
+<ringtone_effect ringtone_name="Calm" effect_id="184" desc="calm_ringtone"/>
+<ringtone_effect ringtone_name="Cozy" effect_id="224" desc="cozy_notification"/>
+<ringtone_effect ringtone_name="Dawn" effect_id="241" desc="dawn_alarm"/>
+<ringtone_effect ringtone_name="Ding" effect_id="225" desc="ding_notification"/>
+<ringtone_effect ringtone_name="Echo" effect_id="189" desc="echo_ringtone"/>
+<ringtone_effect ringtone_name="Free" effect_id="228" desc="free_notification"/>
+<ringtone_effect ringtone_name="Idyl" effect_id="196" desc="idyl_ringtone"/>
+<ringtone_effect ringtone_name="Lazy" effect_id="200" desc="lazy_ringtone"/>
+<ringtone_effect ringtone_name="Meet" effect_id="232" desc="meet_notification"/>
+<ringtone_effect ringtone_name="rock" effect_id="360" desc="rock"/>
+<ringtone_effect ringtone_name="Sun_glittering" effect_id="213" desc="sun_glittering_ringtone"/>
+<ringtone_effect ringtone_name="Allay" effect_id="214" desc="allay_notification"/>
+<ringtone_effect ringtone_name="Blare" effect_id="217" desc="blare_notification"/>
+<ringtone_effect ringtone_name="Blink" effect_id="343" desc="Blink"/>
+<ringtone_effect ringtone_name="Blues" effect_id="182" desc="blues_ringtone"/>
+<ringtone_effect ringtone_name="Brisk" effect_id="219" desc="brisk_notification"/>
+<ringtone_effect ringtone_name="Chase" effect_id="269" desc="chase_ringtone"/>
+<ringtone_effect ringtone_name="Clear" effect_id="222" desc="clear_notification"/>
+<ringtone_effect ringtone_name="Cloud" effect_id="185" desc="cloud_ringtone"/>
+<ringtone_effect ringtone_name="Dream" effect_id="242" desc="dream_alarm"/>
+<ringtone_effect ringtone_name="Eager" effect_id="209" desc="eager_ringtone"/>
+<ringtone_effect ringtone_name="Flyer" effect_id="244" desc="flyer_alarm"/>
+<ringtone_effect ringtone_name="Funky" effect_id="192" desc="funky_ringtone"/>
+<ringtone_effect ringtone_name="Light" effect_id="231" desc="light_notification"/>
+<ringtone_effect ringtone_name="Piano" effect_id="207" desc="piano_ringtone"/>
+<ringtone_effect ringtone_name="Stars" effect_id="252" desc="stars_alarm"/>
+<ringtone_effect ringtone_name="Whirl" effect_id="208" desc="whirl_ringtone"/>
+<ringtone_effect ringtone_name="Mystical" effect_id="202" desc="mystical_ringtone"/>
+<ringtone_effect ringtone_name="Friendship" effect_id="211" desc="friendship_ringtone"/>
+<ringtone_effect ringtone_name="Journey" effect_id="198" desc="journey_ringtone"/>
+<ringtone_effect ringtone_name="Distinct" effect_id="187" desc="distinct_ringtone"/>
+<ringtone_effect ringtone_name="Cyclotron" effect_id="186" desc="cyclotron_ringtone"/>
+<ringtone_effect ringtone_name="Ebullition" effect_id="210" desc="ebullition_ringtone"/>
+<ringtone_effect ringtone_name="Pacman_alarm" effect_id="317" desc="Pacman_alarm"/>
+<ringtone_effect ringtone_name="Twinkle" effect_id="237" desc="twinkle_notification"/>
+<ringtone_effect ringtone_name="Amenity" effect_id="181" desc="amenity_ringtone"/>
+<ringtone_effect ringtone_name="Amiable" effect_id="216" desc="amiable_notification"/>
+<ringtone_effect ringtone_name="ringtone_weather_default" effect_id="147" desc="WeatherDefault"/>
+<ringtone_effect ringtone_name="Ringtone_TelcelRíe" effect_id="350" desc="Telcel_Rie"/>
+<ringtone_effect ringtone_name="audition" effect_id="366" desc="audition"/>
+<ringtone_effect ringtone_name="ringtone_thunderstorm" effect_id="146" desc="ThunderStorm"/>
+<ringtone_effect ringtone_name="notification_master" effect_id="310" desc="Master Notification"/>
+<ringtone_effect ringtone_name="Hallucination" effect_id="229" desc="hallucination_notification"/>
+<ringtone_effect ringtone_name="Jazz_life" effect_id="212" desc="jazz_life_ringtone"/>
+<ringtone_effect ringtone_name="Tactfully" effect_id="254" desc="tactfully_alarm"/>
+<ringtone_effect ringtone_name="The_wind" effect_id="255" desc="the_wind_alarm"/>
+<ringtone_effect ringtone_name="ringtone_0001" effect_id="80" desc="ringtone_0001"/>
+<ringtone_effect ringtone_name="ringtone_haze" effect_id="149" desc="Haze"/>
+<ringtone_effect ringtone_name="ringtone_rain" effect_id="151" desc="Rain"/>
+<ringtone_effect ringtone_name="ringtone_snow" effect_id="150" desc="Snow"/>
+<ringtone_effect ringtone_name="ringtone_wind" effect_id="144" desc="Wind"/>
+<ringtone_effect ringtone_name="mystic_store" effect_id="352" desc="mystic_store"/>
+<ringtone_effect ringtone_name="Fanatical" effect_id="191" desc="fanatical_ringtone"/>
+<ringtone_effect ringtone_name="Highlight" effect_id="195" desc="highlight_ringtone"/>
+<ringtone_effect ringtone_name="in_game_ringtone" effect_id="361" desc="in_game_ringtone"/>
+<ringtone_effect ringtone_name="Alacrity" effect_id="180" desc="alacrity_ringtone"/>
+<ringtone_effect ringtone_name="Cheerful" effect_id="221" desc="cheerful_notification"/>
+<ringtone_effect ringtone_name="notification_000" effect_id="81" desc="notification_000"/>
+<ringtone_effect ringtone_name="notification_001" effect_id="128" desc="Simple"/>
+<ringtone_effect ringtone_name="notification_002" effect_id="129" desc="CrystalClear"/>
+<ringtone_effect ringtone_name="notification_003" effect_id="130" desc="Tunes"/>
+<ringtone_effect ringtone_name="notification_004" effect_id="131" desc="Emerge"/>
+<ringtone_effect ringtone_name="notification_005" effect_id="132" desc="Ripples"/>
+<ringtone_effect ringtone_name="notification_006" effect_id="133" desc="Harp"/>
+<ringtone_effect ringtone_name="notification_007" effect_id="134" desc="Overtone"/>
+<ringtone_effect ringtone_name="notification_008" effect_id="135" desc="Percussion"/>
+<ringtone_effect ringtone_name="notification_009" effect_id="136" desc="Joy"/>
+<ringtone_effect ringtone_name="notification_010" effect_id="137" desc="Twinkle"/>
+<ringtone_effect ringtone_name="notification_011" effect_id="138" desc="Instant"/>
+<ringtone_effect ringtone_name="notification_012" effect_id="139" desc="Fun"/>
+<ringtone_effect ringtone_name="notification_013" effect_id="140" desc="Receive"/>
+<ringtone_effect ringtone_name="notification_014" effect_id="141" desc="Splash"/>
+<ringtone_effect ringtone_name="notification_015" effect_id="142" desc="Ingenious"/>
+<ringtone_effect ringtone_name="notification_016" effect_id="143" desc="Granules"/>
+<ringtone_effect ringtone_name="notification_017" effect_id="330" desc="bowl_bell"/>
+<ringtone_effect ringtone_name="notification_018" effect_id="331" desc="rise"/>
+<ringtone_effect ringtone_name="notification_019" effect_id="332" desc="hey"/>
+<ringtone_effect ringtone_name="notification_020" effect_id="333" desc="news"/>
+<ringtone_effect ringtone_name="notification_021" effect_id="334" desc="beating"/>
+<ringtone_effect ringtone_name="notification_022" effect_id="335" desc="short"/>
+<ringtone_effect ringtone_name="notification_023" effect_id="336" desc="top"/>
+<ringtone_effect ringtone_name="notification_024" effect_id="337" desc="circle"/>
+<ringtone_effect ringtone_name="notification_025" effect_id="338" desc="block"/>
+<ringtone_effect ringtone_name="notification_026" effect_id="339" desc="zanza"/>
+<ringtone_effect ringtone_name="Cloudscape" effect_id="341" desc="Cloudscape"/>
+<ringtone_effect ringtone_name="Innocence" effect_id="197" desc="innocence_ringtone"/>
+<ringtone_effect ringtone_name="Good_energy" effect_id="342" desc="Goodenergy"/>
+<ringtone_effect ringtone_name="Allusion" effect_id="215" desc="allusion_notification"/>
+<ringtone_effect ringtone_name="Pacman_ring" effect_id="315" desc="Pacman_ring"/>
+<ringtone_effect ringtone_name="Bounce" effect_id="183" desc="bounce_ringtone"/>
+<ringtone_effect ringtone_name="Breeze" effect_id="240" desc="breeze_alarm"/>
+<ringtone_effect ringtone_name="Bubble" effect_id="220" desc="bubble_notification"/>
+<ringtone_effect ringtone_name="Comely" effect_id="223" desc="comely_notification"/>
+<ringtone_effect ringtone_name="Alarm_clock" effect_id="238" desc="alarm_clock_alarm"/>
+<ringtone_effect ringtone_name="Expect" effect_id="190" desc="expect_ringtone"/>
+<ringtone_effect ringtone_name="Leisurely" effect_id="246" desc="leisurely_alarm"/>
+<ringtone_effect ringtone_name="Guitar" effect_id="193" desc="guitar_ringtone"/>
+</vibration_effect_map>

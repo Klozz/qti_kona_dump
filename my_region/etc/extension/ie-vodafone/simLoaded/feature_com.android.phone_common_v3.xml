@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature args="StringList:type" name="com.android.phone.simsettings.disable_apn_preferences">
+        <StringList args="bearer" name="type"/>
+    </app_feature>
+    <app_feature name="com.android.phone.simsettings.customize_vowifi_switch_title_dynamic" args="String:uk_vdf_vowifi_enable_title" />
+    <app_feature name="com.android.phone.simsettings.vdf_vowifi_dialog_dynamic" />
+    <app_feature name="com.android.phone.simsettings.customize_vowifi_dialog_dynamic" args="StringList:value">
+        <StringList name="value" args="key_title;wifi_calling_vodafone_title"/>
+        <StringList name="value" args="key_message;wifi_calling_vodafone_message"/>
+        <StringList name="value" args="key_positive_button;wifi_calling_positive_button"/>
+        <StringList name="value" args="key_negative_button;wifi_calling_negative_button"/>
+        <StringList name="value" args="key_dialog_type;not_ask_dialog"/>
+    </app_feature>
+</extend_features>

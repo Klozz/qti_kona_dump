@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!--show_appointment_entry ,default:true-->
+    <app_feature name="com.oplus.ota.show_appointment_entry" args="boolean:true"/>
+    <!--cellular_download_choice_type ,default:1-->
+    <app_feature name="com.oplus.ota.cellular_download_choice_type" args="int:1"/>
+    <!--show_version_type ,default:1-->
+    <app_feature name="com.oplus.ota.show_version_type" args="int:2"/>
+    <!--print otaVersion switch ,default:false-->
+    <app_feature name="com.oplus.ota.print_log" args="boolean:false"/>
+    <!--appointment account login,default:"true"-->
+    <app_feature name="com.oplus.ota.account_login" args="boolean:false"/>
+    <!--appointment silence update,default:"true"-->
+    <app_feature name="com.oplus.ota.silence_update" args="boolean:false"/>
+    <app_feature name="com.oplus.ota.brand" args="String:oneplus-exp"/>
+</extend_features>
