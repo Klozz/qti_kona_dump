@@ -1,0 +1,3 @@
+<extend_features>
+    <app_feature name="com.oplus.opusermanual.assistance_base_url" args="String:https://guide.oneplus.com/" />
+</extend_features>

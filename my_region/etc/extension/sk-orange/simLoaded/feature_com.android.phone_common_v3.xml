@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.simsettings.show_vowifi_tile_in_control_center_dynamic" />
+    <app_feature name="com.android.phone.simsettings.show_guide_to_vowifi_help_dynamic" />
+    <app_feature name="com.android.phone.simsettings.update_volte_switch_title_dynamic" />
+    <app_feature name="com.android.phone.simsettings.customize_or_orange_vowifi_dialog_dynamic" />
+    <app_feature name="com.android.phone.simsettings.customize_vowifi_dialog_dynamic" args="StringList:value">
+        <StringList name="value" args="key_title;wifi_calling_enable_dialog_title"/>
+        <StringList name="value" args="key_message;wifi_calling_enable_dialog_msg"/>
+        <StringList name="value" args="key_positive_button;wifi_calling_positive_button"/>
+        <StringList name="value" args="key_negative_button;wifi_calling_negative_button"/>
+        <StringList name="value" args="key_dialog_type;first_ask_dialog"/>
+    </app_feature>
+    <app_feature name="com.android.phone.simsettings.show_vowifi_help_menu_dynamic" />
+    <app_feature name="com.android.phone.simsettings.click_control_center_vowifi_intent_dynamic" />
+</extend_features>

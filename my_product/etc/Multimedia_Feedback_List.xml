@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<filter-conf>
+  <version>20220811</version>
+  <isOpen>true</isOpen>
+  <totalAudioLogs>20</totalAudioLogs>
+    <perAudioLogs>2</perAudioLogs>
+
+  <totalVideoLogs>20</totalVideoLogs>
+    <perVideoLogs>4</perVideoLogs>
+
+  <totalDisplayLogs>20</totalDisplayLogs>
+    <perDisplayLogs>0</perDisplayLogs>
+
+  <totalDefaultLogs>20</totalDefaultLogs>
+    <perDefaultLogs>0</perDefaultLogs>
+  <filter-name>Multimedia_Feedback_List</filter-name>
+
+    <!-- audio event id" -->
+    <event id="10001" diagid="090001" ison="11" region="all" buildType="all" reportFreq="300" logInterval="3600" logType="0" desc="audio adsp crash"/>
+    <event id="10002" diagid="090002" ison="11" region="all" buildType="all" reportFreq="120" logInterval="3600" logType="F" desc="audio server crash"/>
+    <event id="10003" diagid="090003" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="3" desc="audio hal pcm_open err"/>
+    <event id="10004" diagid="090004" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="0" desc="audio hal out_write in_read err"/>
+    <event id="10005" diagid="090005" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="3" desc="audio hal start stream err"/>
+    <event id="10006" diagid="090006" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="3" desc="audio hal open stream err"/>
+    <event id="10007" diagid="090007" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="3" desc="audio hal enable snd device err"/>
+    <event id="10008" diagid=""       ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="3" desc="audio hal MTK assert"/>
+    <event id="10009" diagid="090009" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="3" desc="audio headset detection err"/>
+    <event id="10034" diagid="090034" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="F" desc="audio server TimecheckTimeout"/>
+    <event id="10035" diagid="090035" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="B" desc="audio server record data err"/>
+    <event id="10036" diagid="090036" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="B" desc="audio server track exhaustion"/>
+    <event id="10037" diagid="090037" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="B" desc="audio server outOfMemory"/>
+    <event id="20001" diagid=""       ison="00" region="all" buildType="all" reportFreq="300" logInterval="3600" logType="0" desc="audio record info"/>
+    <event id="20002" diagid=""       ison="00" region="all" buildType="all" reportFreq="300" logInterval="3600" logType="0" desc="audio playback info"/>
+
+    <!-- video event id" -->
+    <event id="11001" diagid="090101" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="3" desc="video ACodec err"/>
+    <event id="11002" diagid="090102" ison="11" region="all" buildType="all" reportFreq="60" logInterval="3600" logType="0" desc="video stuck"/>
+
+    <!-- display event id" -->
+    <event id="12001" diagid="090201" ison="11" region="all" buildType="all" reportFreq="0" logInterval="3600" logType="0" desc="display black screen"/>
+    <event id="12002" diagid="090202" ison="11" region="all" buildType="all" reportFreq="0" logInterval="3600" logType="0" desc="display driver err"/>
+    <event id="12003" diagid="090203" ison="11" region="all" buildType="all" reportFreq="0" logInterval="3600" logType="0" desc="display hung screen"/>
+    <event id="12004" diagid="090204" ison="11" region="all" buildType="all" reportFreq="0" logInterval="3600" logType="0" desc="display hung screen to restart"/>
+    <event id="12005" diagid="090205" ison="11" region="all" buildType="all" reportFreq="0" logInterval="3600" logType="0" desc="display GPU Page Fault"/>
+</filter-conf>

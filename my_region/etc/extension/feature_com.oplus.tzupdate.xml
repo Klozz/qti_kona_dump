@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!--UserId:472283-->
+    <app_feature name="com.oplus.tzupdate.timezone_url" args="String:https://weather-api-in.allawnos.com"/>
+</extend_features>

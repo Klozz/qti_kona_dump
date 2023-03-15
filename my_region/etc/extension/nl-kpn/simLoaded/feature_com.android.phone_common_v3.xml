@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.simsettings.kpn_vowifi_dialog_dynamic" />
+    <app_feature name="com.android.phone.simsettings.votle_affect_vowifi_dialog_dynamic" />
+</extend_features>

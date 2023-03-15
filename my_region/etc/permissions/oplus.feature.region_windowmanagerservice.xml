@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<oplus-config>
+    <!-- XiongJizhang@ANDROID.WMS, 2021/12/02, Add for background stream -->
+    <oplus-feature name="oplus.software.background_stream_tileservice_enabled" />
+</oplus-config>

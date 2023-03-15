@@ -1,0 +1,12 @@
+<oplus-config>
+    <!-- HeZhihui@NETWORK.REG.8515, 2020/06/12, modify for Feature Toggle -->
+    <!-- <oplus-feature name="oplus.software.radio.signal_smooth_disabled" -->
+    <!-- <unavailable-oplus-feature name="oplus.software.radio.nr_icon_optimized_enabled"/> -->
+    <oplus-feature name="oplus.software.radio.fetch_number_country_name"/>
+    <oplus-feature name="oplus.software.radio.custom_plmn_for_special_operator"/>
+    <oplus-feature name="oplus.software.radio.mix_sim_name_len_default_ten" />
+    <oplus-feature name="oplus.software.radio.process_change_region" />
+    <oplus-feature name="oplus.software.radio.sim_name_length_default_ten" />
+    <!-- ZhuangYunteng@NETWORK.REG.7403, 2020/11/10, add for Feature Toggle phase2 -->
+    <oplus-feature name="oplus.software.radio.smart5g_exp_cfg"/>
+</oplus-config>

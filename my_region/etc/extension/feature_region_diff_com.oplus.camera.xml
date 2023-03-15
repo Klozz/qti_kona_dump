@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.oplus.camera.soloop_route_url" args="String:https://videoeditor-in.soloop.heytapmobile.com" />
+    <app_feature name="com.oplus.camera.sticker_base_url" args="String:https://sticker-service-in.allawnos.com" />
+</extend_features>

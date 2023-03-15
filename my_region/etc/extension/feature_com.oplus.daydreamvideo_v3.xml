@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.oplus.daydreamvideo.sau"
+        args="String:https://sau-server-in.allawnos.com" />
+
+    <app_feature name="com.oplus.daydreamvideo.rus"
+        args="String:https://rus-service-in.allawnos.com" />
+
+    <app_feature name="com.oplus.daydreamvideo.demo_phone_reg"
+        args="String:https://smdemo-service-in.allawnos.com" />
+
+    <app_feature name="com.oplus.daydreamvideo.demo_phone_dau"
+        args="String:https://smdemo-service-in.allawnos.com" />
+
+    <app_feature name="com.oplus.daydreamvideo.exit_sale_mode"
+        args="String:https://storemode-service-in.allawnos.com" />
+
+    <app_feature name="com.oplus.daydreamvideo.cloud_config" args="String:2" />
+</extend_features>

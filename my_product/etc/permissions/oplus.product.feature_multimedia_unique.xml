@@ -1,0 +1,43 @@
+<oplus-config>
+    <!-- fanxu@MULTIMEDIA.AUDIOSERVER.BASE.2020/6/23. Add for voice wakeup features start-->
+    <oplus-feature name="oplus.software.audio.voice_wakeup_support"/>
+    <oplus-feature name="oplus.software.audio.voice_wakeup_3words_support"/>
+    <!-- fanxu@MULTIMEDIA.AUDIOSERVER.BASE.2020/6/23. Add for voice wakeup features end-->
+    <!-- yanweibo@MULTIMEDIA.AUDIOSERVER>BASE.2020/12/08. Add for Alert Slider feature start -->
+    <oplus-feature name="oplus.software.display.cinema_mode_support" />
+    <oplus-feature name="oplus.software.display.origin_roundcorner_support" />
+    <oplus-feature name="oplus.software.audio.alert_slider" />
+    <!-- yanweibo@MULTIMEDIA.AUDIOSERVER>BASE.2020/12/08. Add for Alert Slider feature end -->
+    <!-- steven.guo@MULTIMEDIA.AUDIOSERVER>BASE.20201214. Add for display feature start -->
+    <oplus-feature name="oplus.software.display.colormode_support" />
+    <oplus-feature name="oplus.software.display.screen_gloablehbm_support" />
+    <oplus-feature name="oplus.software.display.aod_support" />
+    <oplus-feature name="oplus.software.display.aod_prevent_burn_support" />
+    <oplus-feature name="oplus.software.display.screen_heteromorphism" />
+    <oplus-feature name="oplus.software.display.dynamic_fps_switch" />
+    <oplus-feature name="oplus.software.display.colormode_calibrate_support" />
+    <oplus-feature name="oplus.software.display.hdr_enhance_brightness_support" />
+    <oplus-feature name="oplus.software.display.game_color_plus_v2_support"/>
+    <oplus-feature name="oplus.software.display.colormode_calibrate_p3_65_support" />
+    <!-- steven.guo@MULTIMEDIA.AUDIOSERVER>BASE.20201214. Add for display feature end -->
+    <!-- gary.guo@MULTIMEDIA.AUDIOSERVER>BASE.20200106. to fix setting brightness error start -->
+    <oplus-feature name="oplus.software.display.multibits_dimming_support" />
+    <oplus-feature name="oplus.software.display.brightness_mode_automatic" />
+    <oplus-feature name="oplus.software.display.fingerprint_disable_dimlayer" />
+    <oplus-feature name="oplus.software.display.autobrightctl_animation_support" />
+    <!-- gary.guo@MULTIMEDIA.AUDIOSERVER>BASE.20200106. Add for display feature end -->
+    <!-- zhuxiuli@GAMEECO.COOLEFFECT.COOLEX, 2020/12/22, Add for coolex feature start -->
+    <oplus-feature name="oplus.software.coolex.support"/>
+    <!-- wangbuqing@MULTIMEDIA.MEDIASERVER.RECORDER, 2020/12/25, Add for osie and sr feature start -->
+    <oplus-feature name="oplus.software.video.osie_support"/>
+    <!-- wangbuqing@MULTIMEDIA.MEDIASERVER.RECORDER, 2020/12/25, Add for osie and sr feature end -->
+    <!-- end -->
+    <!-- walter.he@SYSTEM, 2021/01/14, Add for FourD Vibrate feature start -->
+    <oplus-feature name="oplus.software.haptic_vibrator_v1.support"/>
+    <!-- end -->
+    <!-- lynn.guo@Display, 2020/07/06, Add to support dual light sensor start -->
+    <oplus-feature name="oplus.software.display.dual_lightsensor_support"/>
+    <!-- lynn.guo@Display, 2020/07/06, Add to support dual light sensor end  -->
+    <oplus-feature name="oplus.software.display.multi_device_decrease_refresh_rate"/>
+    <oplus-feature name="oplus.software.display.colorful_mode_support" />
+</oplus-config>

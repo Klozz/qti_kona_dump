@@ -1,0 +1,5 @@
+name="AthenaConfigPlugin.apk" info_1="609343c51bbce9849561f1d6d36983e7" info_2="258d59d4b2ae9e646537365ac4a627a5" location="plugin/AthenaConfigPlugin/AthenaConfigPlugin.apk"
+name="LogKitUploadPlugin.apk" info_1="609343c51bbce9849561f1d6d36983e7" info_2="258d59d4b2ae9e646537365ac4a627a5" location="plugin/LogKitUploadPlugin/LogKitUploadPlugin.apk"
+name="SafeCenterConfigPlugin.apk" info_1="609343c51bbce9849561f1d6d36983e7" info_2="258d59d4b2ae9e646537365ac4a627a5" location="plugin/SafeCenterConfigPlugin/SafeCenterConfigPlugin.apk"
+name="TSDM.apk" info_1="609343c51bbce9849561f1d6d36983e7" info_2="258d59d4b2ae9e646537365ac4a627a5" location="non_overlay/priv-app/TSDM/TSDM.apk"
+name="subsdm.apk" info_1="609343c51bbce9849561f1d6d36983e7" info_2="258d59d4b2ae9e646537365ac4a627a5" location="non_overlay/priv-app/subsdm/subsdm.apk"

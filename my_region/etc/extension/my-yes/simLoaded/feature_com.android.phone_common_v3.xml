@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.network_list_visible_5G_dynamic" args="String:show" />
+    <app_feature name="com.android.phone.network_list_visible_dynamic" args="String:hide" />
+    <app_feature args="StringList:type" name="com.android.phone.customize_network_name_list_5g_dynamic">
+        <StringList args="oplus_5g_4g_3g_2g_auto" name="type"/>
+        <StringList args="oplus_4g_3g_2g_auto" name="type"/>
+    </app_feature>
+    <app_feature args="StringList:type" name="com.android.phone.customize_network_value_list_5g_dynamic">
+        <StringList args="33" name="type"/>
+        <StringList args="20" name="type"/>
+    </app_feature>
+</extend_features>

@@ -1,0 +1,2 @@
+com.oplus.logkit.plugin.upload:LogKitUploadPlugin.apk::false
+com.oplus.athena.config_plugin:AthenaConfigPlugin.apk::false

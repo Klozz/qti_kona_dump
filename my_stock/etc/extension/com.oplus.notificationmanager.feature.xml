@@ -1,0 +1,4 @@
+<extend_features>
+    <app_feature name="com.oplus.notificationmanager.glance"/>
+    <app_feature name="com.oplus.notificationmanager.notification.switch"/>
+</extend_features>

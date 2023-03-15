@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<res>
+    <versionCode>1102000</versionCode>
+
+    <wallpaper_file_name_array>
+        <item>product_wallpaper1</item>
+        <item>product_wallpaper2</item>
+        <item>product_wallpaper3</item>
+        <item>product_wallpaper4</item>
+        <item>product_wallpaper5</item>
+        <item>product_wallpaper6</item>
+        <item>product_wallpaper7</item>
+        <item>product_wallpaper8</item>
+        <item>product_wallpaper9</item>
+        <item>product_wallpaper10</item>
+        <item>product_wallpaper11</item>
+        <item>product_wallpaper12</item>
+        <item>product_wallpaper13</item>
+    </wallpaper_file_name_array>
+</res>

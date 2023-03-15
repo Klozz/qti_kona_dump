@@ -1,0 +1,9 @@
+//my_region/etc/NOTICE.xml.gz 1
+//my_region/etc/oplus_carrier_config.xml 26
+//my_region/etc/startup/blacklist_default.xml 28-32
+//my_region/etc/startup/safe_boot_whitelist.xml 33-34
+//my_region/etc/startup/sys_startup_v3_config_list.xml 35-37
+//my_region/etc/startup/sys_startupmanager_config_list.xml 38-40
+//my_region/plugin/AthenaConfigPlugin/AthenaConfigPlugin.apk 41-58
+//my_region/plugin/LogKitUploadPlugin/LogKitUploadPlugin.apk 59-761
+//my_region/plugin/SafeCenterConfigPlugin/SafeCenterConfigPlugin.apk 763-913

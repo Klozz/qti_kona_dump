@@ -1,0 +1,78 @@
+
+on post-fs-data
+    exec u:r:engineer_vendor_daemon:s0 radio system -- /odm/bin/engineer_vendor_shell.sh addRadioFile
+
+    mkdir /mnt/vendor/persist/engineermode
+    chown system system /mnt/vendor/persist/engineermode
+    chmod 0775 /mnt/vendor/persist/engineermode
+    chmod 0775 /mnt/vendor/persist/engineermode/engineermode_config
+    chmod 0644 /mnt/vendor/persist/engineermode/ENG_RESULT
+    mkdir /mnt/vendor/persist/engineermode/config
+    chown system system /mnt/vendor/persist/engineermode/config
+    chmod 0775 /mnt/vendor/persist/engineermode/config
+    chown system system /mnt/vendor/persist/engineermode/config/aging.cfg
+    chmod 0644 /mnt/vendor/persist/engineermode/config/aging.cfg
+    chown system system /mnt/vendor/persist/engineermode/config/test.cfg
+    chmod 0644 /mnt/vendor/persist/engineermode/config/test.cfg
+    mkdir /mnt/vendor/persist/camera
+    chown system system /mnt/vendor/persist/camera
+    chmod 0777 /mnt/vendor/persist/camera
+    mkdir /mnt/vendor/persist/camera/dual_calibration
+    chown system system /mnt/vendor/persist/camera/dual_calibration
+    chmod 0777 /mnt/vendor/persist/camera/dual_calibration
+    mkdir /mnt/vendor/persist/camera/front_dual_calibration
+    chown system system /mnt/vendor/persist/camera/front_dual_calibration
+    chmod 0777 /mnt/vendor/persist/camera/front_dual_calibration
+    mkdir /mnt/vendor/persist/camera/megvii
+    chown system system /mnt/vendor/persist/camera/megvii
+    chmod 0775 /mnt/vendor/persist/camera/megvii
+
+    mkdir /mnt/vendor/persist/engineermode/test_data
+    mkdir /mnt/vendor/persist/engineermode/test_record
+    chown system system /mnt/vendor/persist/engineermode/test_data
+    chown system system /mnt/vendor/persist/engineermode/test_record
+    chmod 0775 /mnt/vendor/persist/engineermode/test_data
+    chmod 0775 /mnt/vendor/persist/engineermode/test_record
+
+
+    mkdir /mnt/vendor/oplusreserve/factory
+    chown system system /mnt/vendor/oplusreserve/factory
+    chmod 0775 /mnt/vendor/oplusreserve/factory
+
+service startDiagSocket /vendor/bin/sh /odm/bin/engineer_vendor_shell.sh startDiagSocketLog
+    user root
+    group root vendor_qti_diag wakelock
+    disabled
+    oneshot
+    seclabel u:r:engineer_vendor_daemon:s0
+
+service stopDiagSocket /vendor/bin/sh /odm/bin/engineer_vendor_shell.sh stopDiagSocketLog
+    user root
+    group root vendor_qti_diag wakelock
+    disabled
+    oneshot
+    seclabel u:r:engineer_vendor_daemon:s0
+
+service OplusSysDaemon /odm/bin/oplus_sys_daemon
+    user root
+    group root vendor_qti_diag
+    disabled
+    oneshot
+    seclabel u:r:engineer_vendor_daemon:s0
+
+#add for non-signal test
+on property:vendor.oplus.eng.nonsignal=1
+    start oplus.transfer-1-0
+    start OplusSysDaemon
+
+on property:vendor.oplus.eng.nonsignal=0
+    stop OplusSysDaemon
+    stop oplus.transfer-1-0
+
+#add for gps/wifi test launch oplus_sys_daemon to control motor block, enabled by wifi_diag
+on property:vendor.wifi.ftmtest=1
+    start OplusSysDaemon
+
+on property:vendor.wifi.ftmtest=0
+    stop OplusSysDaemon
+

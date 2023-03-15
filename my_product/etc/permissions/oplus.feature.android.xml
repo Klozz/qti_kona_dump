@@ -1,0 +1,9 @@
+<oplus-config>
+    <!-- Guofu.Yang@ANDROID.WMS.2458273, 2020/08/13, Add for app resolution switch -->
+    <oplus-feature name="oplus.software.app_resolution_switch" />
+    <!-- Allen.Xu@ANDROID.SYSTEM, 2021/06/25, add for detect op brand to add more allowed multi app -->
+    <oplus-feature name="oplus.software.multiapp.add_more_multiapps" />
+    <!-- Allen.Xu@ANDROID.SYSTEM, 2021/06/25, add end -->
+    <!-- Zilun.Liu@ANDROID.WMS 2022/06/29, Add for app resolution switch -->
+    <oplus-feature name="oplus.software.app_resolution_auto" />
+</oplus-config>

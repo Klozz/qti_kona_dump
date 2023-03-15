@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!--UserId:742474-->
+    <app_feature name="com.redteamobile.roaming.regionmark" args="String:IN"/>
+</extend_features>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.oplus.calculator.current_region" args="String:IN"/>
+    <app_feature name="com.oplus.calculator.rate_address" args="String:https://calculator-api-in.allawnos.com/"/>
+</extend_features>

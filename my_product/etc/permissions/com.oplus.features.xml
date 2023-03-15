@@ -1,0 +1,6 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<!-- COLOR_EDIT.  add oppo.screen.hovering.support ;remove oppo.narrow.frame -->
+<permissions>
+    <feature name="oplus.hw.manufacturer.qualcomm" />
+    <feature name="oppo.qualcomm.gemini.support" />
+</permissions>

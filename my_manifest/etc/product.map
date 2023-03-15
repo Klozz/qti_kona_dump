@@ -1,0 +1,201 @@
+/product/app/ConfURIDialer/ConfURIDialer.apk 29-38
+/product/app/ConfURIDialer/oat/arm64/ConfURIDialer.odex 41-45
+/product/app/ConfURIDialer/oat/arm64/ConfURIDialer.vdex 46
+/product/app/PowerOffAlarm/PowerOffAlarm.apk 48-58
+/product/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.odex 61-63 44 64
+/product/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.vdex 65
+/product/app/RideModeAudio/RideModeAudio.apk 67-1488
+/product/app/RideModeAudio/oat/arm64/RideModeAudio.odex 1491-1496 1496 1496-1500
+/product/app/RideModeAudio/oat/arm64/RideModeAudio.vdex 1501-1515
+/product/app/com.google.android.modulemetadata/com.google.android.modulemetadata.apk 1517-1523
+/product/app/com.google.mainline.adservices/com.google.mainline.adservices.apk 1525-1530
+/product/app/com.google.mainline.telemetry/com.google.mainline.telemetry.apk 1532-1537
+/product/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk 1539-1541
+/product/app/remotesimlockservice/oat/arm64/remotesimlockservice.odex 1545-1547 44 1548
+/product/app/remotesimlockservice/oat/arm64/remotesimlockservice.vdex 1549
+/product/app/remotesimlockservice/remotesimlockservice.apk 1550-1556
+/product/app/uimgbaservice/oat/arm64/uimgbaservice.odex 1560-1562 44 1563
+/product/app/uimgbaservice/oat/arm64/uimgbaservice.vdex 1564
+/product/app/uimgbaservice/uimgbaservice.apk 1565-1571
+/product/app/uimlpaservice/oat/arm64/uimlpaservice.odex 1575-1577 44 1578
+/product/app/uimlpaservice/oat/arm64/uimlpaservice.vdex 1579
+/product/app/uimlpaservice/uimlpaservice.apk 1580-1623
+/product/app/uimremoteclient/oat/arm64/uimremoteclient.odex 1627-1629 44 1630
+/product/app/uimremoteclient/oat/arm64/uimremoteclient.vdex 1631
+/product/app/uimremoteclient/uimremoteclient.apk 1632-1658
+/product/app/uimremoteserver/oat/arm64/uimremoteserver.odex 1662-1664 44 1665
+/product/app/uimremoteserver/oat/arm64/uimremoteserver.vdex 1666
+/product/app/uimremoteserver/uimremoteserver.apk 1667-1690
+/product/app/xdivert/oat/arm64/xdivert.odex 1694-1696 44 1697
+/product/app/xdivert/oat/arm64/xdivert.vdex 1698
+/product/app/xdivert/xdivert.apk 1699-1719
+/product/bin/init.oplus.nandswap.sh 1721-1723
+/product/bin/init.qti.display.sh 1724
+/product/bin/nandswap_tool 1725-1727
+/product/bin/qvirtmgr 1728-1738
+/product/etc/apns-conf.xml 1740-2037
+/product/etc/apns-version.xml 2038
+/product/etc/build.prop 2039
+/product/etc/init/init.oplus.nandswap.rc 2041-2042
+/product/etc/init/init.qti.display.rc 2043
+/product/etc/init/qvirtmgr.rc 2044
+/product/etc/libnfc-nci.conf 2045-2046
+/product/etc/permissions/RemoteSimlock.xml 2048
+/product/etc/permissions/RemoteSimlockManager.xml 2049
+/product/etc/permissions/UimGba.xml 2050
+/product/etc/permissions/UimGbaManager.xml 2051
+/product/etc/permissions/UimService.xml 2052
+/product/etc/permissions/com.android.imsserviceentitlement.xml 2053
+/product/etc/permissions/com.android.settings.intelligence.xml 2054
+/product/etc/permissions/com.qti.snapdragon.sdk.display.xml 2055
+/product/etc/permissions/extphonelib_product.xml 2056
+/product/etc/permissions/fingerprint_auth_prompt_skip_list.xml 2057
+/product/etc/permissions/ims_ext_common.xml 2058
+/product/etc/permissions/lpa.xml 2059
+/product/etc/permissions/privapp-permissions-oplus.xml 2060-2069
+/product/etc/permissions/privapp-permissions-soundrecorder.xml 2070
+/product/etc/permissions/qti_telephony_hidl_wrapper_prd.xml 2071
+/product/etc/permissions/qti_telephony_utils_prd.xml 2072
+/product/etc/permissions/telephony_product_privapp-permissions-qti.xml 2073
+/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml 2074
+/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml 2075
+/product/etc/qvirtmgr.json 2076
+/product/etc/security/fsverity/gms_fsverity_cert.der 2079
+/product/etc/security/fsverity/play_store_fsi_cert.der 2080
+/product/etc/selinux/mapping/28.0.cil 2083
+/product/etc/selinux/mapping/29.0.cil 2083
+/product/etc/selinux/mapping/30.0.cil 2084
+/product/etc/selinux/mapping/31.0.cil 2085
+/product/etc/selinux/mapping/32.0.cil 2086
+/product/etc/selinux/mapping/33.0.cil 2087
+/product/etc/selinux/product_file_contexts 2088
+/product/etc/selinux/product_hwservice_contexts 2089
+/product/etc/selinux/product_mac_permissions.xml 2090
+/product/etc/selinux/product_property_contexts 2091
+/product/etc/selinux/product_seapp_contexts 2092
+/product/etc/selinux/product_sepolicy.cil 2093-2106
+/product/etc/selinux/product_sepolicy_and_mapping.sha256 2107
+/product/etc/selinux/product_sepolicy_and_mapping_debug.sha256 2108
+/product/etc/selinux/product_sepolicy_debug.cil 2093-2102 2109-2112
+/product/etc/sysconfig/GoogleCellBroadcast_config.xml 2114
+/product/etc/sysconfig/google-rollback-package-whitelist.xml 2115
+/product/etc/sysconfig/google-staged-installer-whitelist.xml 2116
+/product/etc/sysconfig/google.xml 2117
+/product/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml 2118
+/product/etc/sysconfig/preinstalled-packages-platform-overlays.xml 2119-2121
+/product/framework/com.google.android.dialer.support.jar 2123
+/product/framework/com.qti.snapdragon.sdk.display.jar 2124-2139
+/product/framework/extphonelib-product.jar 2140-2163
+/product/framework/ims-ext-common.jar 2164-2190
+/product/framework/oat/arm/com.qti.snapdragon.sdk.display.odex 2193-2197
+/product/framework/oat/arm/com.qti.snapdragon.sdk.display.vdex 2198
+/product/framework/oat/arm/extphonelib-product.odex 2199-2201 2196 2202
+/product/framework/oat/arm/extphonelib-product.vdex 2203
+/product/framework/oat/arm/ims-ext-common.odex 2204-2206 2196 2207
+/product/framework/oat/arm/ims-ext-common.vdex 2208
+/product/framework/oat/arm/qti-telephony-hidl-wrapper-prd.odex 2209-2211 2196 2212
+/product/framework/oat/arm/qti-telephony-hidl-wrapper-prd.vdex 2213
+/product/framework/oat/arm/qti-telephony-utils-prd.odex 2214-2216 2196 2217
+/product/framework/oat/arm/qti-telephony-utils-prd.vdex 2218
+/product/framework/oat/arm/remotesimlockmanagerlibrary.odex 2219-2221 2196 2222
+/product/framework/oat/arm/remotesimlockmanagerlibrary.vdex 2223
+/product/framework/oat/arm/uimgbalibrary.odex 2224-2226 2196 2227
+/product/framework/oat/arm/uimgbalibrary.vdex 2228
+/product/framework/oat/arm/uimgbamanagerlibrary.odex 2229-2231 2196 2232
+/product/framework/oat/arm/uimgbamanagerlibrary.vdex 2233
+/product/framework/oat/arm/uimlpalibrary.odex 2234-2236 2196 2237
+/product/framework/oat/arm/uimlpalibrary.vdex 2238
+/product/framework/oat/arm/uimremoteclientlibrary.odex 2239-2240 2226 2196 2227
+/product/framework/oat/arm/uimremoteclientlibrary.vdex 2241
+/product/framework/oat/arm/uimremoteserverlibrary.odex 2242-2243 2226 2196 2227
+/product/framework/oat/arm/uimremoteserverlibrary.vdex 2244
+/product/framework/oat/arm/uimremotesimlocklibrary.odex 2245-2246 2226 2196 2227
+/product/framework/oat/arm/uimremotesimlocklibrary.vdex 2247
+/product/framework/oat/arm64/com.qti.snapdragon.sdk.display.odex 2249-2251 44 2252
+/product/framework/oat/arm64/com.qti.snapdragon.sdk.display.vdex 2198
+/product/framework/oat/arm64/extphonelib-product.odex 2253-2255 44 2256
+/product/framework/oat/arm64/extphonelib-product.vdex 2203
+/product/framework/oat/arm64/ims-ext-common.odex 2257-2259 44 2260
+/product/framework/oat/arm64/ims-ext-common.vdex 2208
+/product/framework/oat/arm64/qti-telephony-hidl-wrapper-prd.odex 2261-2263 44 2264
+/product/framework/oat/arm64/qti-telephony-hidl-wrapper-prd.vdex 2213
+/product/framework/oat/arm64/qti-telephony-utils-prd.odex 2265-2267 44 2268
+/product/framework/oat/arm64/qti-telephony-utils-prd.vdex 2218
+/product/framework/oat/arm64/remotesimlockmanagerlibrary.odex 2269-2271 44 2272
+/product/framework/oat/arm64/remotesimlockmanagerlibrary.vdex 2223
+/product/framework/oat/arm64/uimgbalibrary.odex 2273-2275 44 2276
+/product/framework/oat/arm64/uimgbalibrary.vdex 2228
+/product/framework/oat/arm64/uimgbamanagerlibrary.odex 2277-2279 44 2280
+/product/framework/oat/arm64/uimgbamanagerlibrary.vdex 2233
+/product/framework/oat/arm64/uimlpalibrary.odex 2281-2283 44 2284
+/product/framework/oat/arm64/uimlpalibrary.vdex 2238
+/product/framework/oat/arm64/uimremoteclientlibrary.odex 2285-2286 2275 44 2276
+/product/framework/oat/arm64/uimremoteclientlibrary.vdex 2241
+/product/framework/oat/arm64/uimremoteserverlibrary.odex 2287-2288 2275 44 2276
+/product/framework/oat/arm64/uimremoteserverlibrary.vdex 2244
+/product/framework/oat/arm64/uimremotesimlocklibrary.odex 2289-2290 2275 44 2276
+/product/framework/oat/arm64/uimremotesimlocklibrary.vdex 2247
+/product/framework/qti-telephony-hidl-wrapper-prd.jar 2291-2298
+/product/framework/qti-telephony-utils-prd.jar 2299-2311
+/product/framework/remotesimlockmanagerlibrary.jar 2312-2314
+/product/framework/uimgbalibrary.jar 2315-2316
+/product/framework/uimgbamanagerlibrary.jar 2317-2318
+/product/framework/uimlpalibrary.jar 2319-2325
+/product/framework/uimremoteclientlibrary.jar 2326-2328
+/product/framework/uimremoteserverlibrary.jar 2329-2331
+/product/framework/uimremotesimlocklibrary.jar 2332-2335
+/product/framework/uimservicelibrary.jar 2336-2354
+/product/lib64/libjni_eglfence.so 2357-2359
+/product/lib64/libjni_filtershow_filters.so 2360-2369
+/product/lib64/libjni_jpegstream.so 2370-2478
+/product/lib64/libjni_jpegutil.so 2479-2549
+/product/lib64/libjni_latinime.so 2550-2805
+/product/lib64/libjni_tinyplanet.so 2806-2808
+/product/media/audio/ui/Camera_Timer.ogg 2812-2814
+/product/media/audio/ui/Camera_Timer_2sec.ogg 2815-2832
+/product/media/audio/ui/Dock.ogg 2833-2834
+/product/media/audio/ui/Effect_Tick.ogg 2835-2836
+/product/media/audio/ui/InCallNotification.ogg 2837-2838
+/product/media/audio/ui/KeypressDelete.ogg 2839-2840
+/product/media/audio/ui/KeypressInvalid.ogg 2841-2842
+/product/media/audio/ui/KeypressReturn.ogg 2839-2840
+/product/media/audio/ui/KeypressSpacebar.ogg 2839-2840
+/product/media/audio/ui/KeypressStandard.ogg 2839-2840
+/product/media/audio/ui/Lock.ogg 2843-2844
+/product/media/audio/ui/LowBattery.ogg 2845-2847
+/product/media/audio/ui/Screenshots.ogg 2848-2850
+/product/media/audio/ui/Undock.ogg 2851-2856
+/product/media/audio/ui/Unlock.ogg 2843 2857
+/product/media/audio/ui/VideoRecord.ogg 2843 2858-2860
+/product/media/audio/ui/camera_click.ogg 2843 2861-2862
+/product/media/audio/ui/camera_click_start.ogg 2863-2865
+/product/media/audio/ui/camera_click_stop.ogg 2866-2868
+/product/media/audio/ui/camera_focus.ogg 2843 2869
+/product/media/audio/ui/camera_shutter.ogg 2870-2873
+/product/media/audio/ui/charging.ogg 2874-2876
+/product/overlay/CarrierConfigResCommon_Sys.apk 2878-2886
+/product/overlay/CellBroadcastReceiverResCommon_Sys.apk 2887-2889
+/product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk 2891-2896
+/product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk 2898-2904
+/product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk 2906-2912
+/product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk 2914-2919
+/product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk 2921-2927
+/product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk 2929-2931
+/product/overlay/FrameworksResCommon_Sys.apk 2932-2938
+/product/overlay/GoogleDocumentsUIOverlay.apk 2939-2941
+/product/overlay/GoogleExtServicesConfigOverlay.apk 2942-2944
+/product/overlay/GooglePermissionControllerFrameworkOverlay.apk 2945-2947
+/product/overlay/GooglePermissionControllerOverlay.apk 2948-2950
+/product/overlay/ModuleMetadataGoogleOverlay.apk 2951-2953
+/product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk 2955-2957
+/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk 2959-2962
+/product/overlay/NavigationBarModeGesturalExtraWideBack/NavigationBarModeGesturalOverlayExtraWideBack.apk 2964-2967
+/product/overlay/NavigationBarModeGesturalNarrowBack/NavigationBarModeGesturalOverlayNarrowBack.apk 2969-2972
+/product/overlay/NavigationBarModeGesturalWideBack/NavigationBarModeGesturalOverlayWideBack.apk 2974-2977
+/product/overlay/OplusCarrierConfig.apk 2978-3006
+/product/overlay/SettingsResCommon_Sys.apk 3007-3010
+/product/overlay/SystemUIResCommon_Sys.apk 3011-3013
+/product/overlay/TelecommResCommon_Sys.apk 3014-3016
+/product/overlay/TelephonyResCommon_Sys.apk 3017-3020
+/product/overlay/TelephonyResCommon_Sys_Oplus.apk 3021-3024
+/product/overlay/WifiResCommon_Sys.apk 3025-3028

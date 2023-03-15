@@ -1,0 +1,4 @@
+<oplus-config>
+    <!-- hongchengwen@BSP.POWER, 2022/08/08, add for midas enable -->
+    <oplus-feature name="os.tool.midas"/>
+</oplus-config>

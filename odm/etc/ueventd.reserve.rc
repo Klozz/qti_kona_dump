@@ -1,0 +1,31 @@
+subsystem adf
+    devname uevent_devname
+
+#Runsheng.Pei@ANDROID.STORAGE.1207580, 2017/12/29, Add for new reserve partition
+#yanghao@PSW.KERNEL.Stability. change the owner from system to root for Android P kernel can access the partition
+/dev/block/bootdevice/by-name/oplusreserve1               0660   root     system
+/dev/block/sdf10   0660   root     system
+/dev/block/sdf13   0660   root     system
+/dev/block/sde13   0660   root     system
+/dev/block/sdf4    0660   root     system
+
+/dev/block/bootdevice/by-name/oplusreserve3               0660   root     system
+/dev/block/sdf15   0660   root     system
+/dev/block/sde15   0660   root     system
+/dev/block/sde50   0660   root     system
+/dev/block/sdf6    0660   root     system
+
+/dev/block/bootdevice/by-name/oplusreserve5               0660   root     system
+/dev/block/sdf17   0660   root     system
+/dev/block/sdf8    0660   root     system
+
+#Hong.Zhang@TECH.BSP.Stability.Aging2.0, 2020/07/14, Add for aging 2.0
+#ifdef OPLUS_FEATURE_AGINGTEST
+/dev/block/bootdevice/by-name/ddr                0660           root     system
+/dev/block/sdd3                                  0660           root     system
+#endif
+#liuchanghong@BSP.Kernel.Driver, 2021/10/18 add for oneplus reserve
+/dev/block/bootdevice/by-name/reserve3               0660   root     system
+/dev/block/sde74                                     0660   root     system
+/dev/block/bootdevice/by-name/reserve1               0660   root     system
+/dev/block/sde72                                     0660   root     system

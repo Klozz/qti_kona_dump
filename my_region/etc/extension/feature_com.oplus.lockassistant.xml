@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.oplus.lockassistant.lockcard_server_url" args="String:https://lockcard-service-in.allawnos.com/post/"/>
+    <app_feature name="com.oplus.lockassistant.lockcard_region" args="String:IN" />
+    <app_feature name="com.oplus.lockassistant.fk_upgrade_plan_info" args="String:http://www.flipkart.com/pages/fsup-tnc" />
+</extend_features>

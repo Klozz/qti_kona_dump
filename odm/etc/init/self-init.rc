@@ -1,0 +1,18 @@
+service prop-adap-core /odm/bin/self-init core
+    class core
+    user root
+    group root system radio
+    oneshot
+
+service prop-adap-core-gsi /odm/bin/self-init gsicore
+    class core
+    user root
+    group root system radio
+    oneshot
+
+on property:ro.vendor.oplus.radio.multisim.config=*
+    setprop persist.radio.multisim.config ${ro.vendor.oplus.radio.multisim.config}
+on property:persist.vendor.oplus.operator.opta=*
+    setprop persist.sys.oplus.operator.opta ${persist.vendor.oplus.operator.opta}
+on property:persist.vendor.oplus.operator.optb=*
+    setprop persist.sys.oplus.operator.optb ${persist.vendor.oplus.operator.optb}

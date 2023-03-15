@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.show_notification_when_register_vowifi" />
+</extend_features>

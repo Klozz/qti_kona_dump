@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pkgMappingConfig>
+    <!-- common config start -->
+    <pkgMappingItem sourcePkgName="com.heytap.appplatform" targetPkgName="com.oplus.appplatform" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.heytap.synergy" targetPkgName="com.oplus.synergy" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.heytap.linker" targetPkgName="com.oplus.linker" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.oneplus.twspods" targetPkgName="com.oplus.melody" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.nearme.atlas" targetPkgName="com.oplus.pay" priority="10"/>
+    <!-- common config end -->
+
+    <!-- export config start -->
+    <pkgMappingItem sourcePkgName="com.heytap.openid" targetPkgName="com.oplus.stdid" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.heytap.themestore" targetPkgName="com.oplus.themestore" priority="10"/>
+    <!-- export config end -->
+
+    <!-- oneplus config start -->
+    <pkgMappingItem sourcePkgName="com.oneplus.camera" targetPkgName="com.oplus.camera" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.oppo.camera" targetPkgName="com.oplus.camera" priority="10"/>
+    <pkgMappingItem sourcePkgName="net.oneplus.launcher" targetPkgName="com.android.launcher" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.oneplus.gamespace" targetPkgName="com.oplus.games" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.android.emergency" targetPkgName="com.oplus.sos" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.oneplus.screenrecord" targetPkgName="com.oplus.screenrecorder" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.oneplus.screenshot" targetPkgName="com.oplus.screenshot" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.oneplus.mms" targetPkgName="com.android.mms" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.recognize.number" targetPkgName="com.ted.number" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.numberrecognition" targetPkgName="com.ted.number" priority="10"/>
+    <pkgMappingItem sourcePkgName="com.oneplus.opshelf" targetPkgName="com.coloros.assistantscreen" priority="10"/>
+    <!-- oneplus config end -->
+</pkgMappingConfig>

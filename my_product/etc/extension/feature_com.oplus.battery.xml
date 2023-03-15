@@ -1,0 +1,3 @@
+<extend_features>
+    <app_feature name="com.oplus.battery.disable_vowifi" args="boolean:true"/>
+</extend_features>

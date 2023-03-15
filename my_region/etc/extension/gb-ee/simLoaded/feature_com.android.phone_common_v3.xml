@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.network_list_visible_5G_dynamic" args="String:hide" />
+    <app_feature name="com.android.phone.network_list_visible_dynamic" args="String:hide" />
+</extend_features>

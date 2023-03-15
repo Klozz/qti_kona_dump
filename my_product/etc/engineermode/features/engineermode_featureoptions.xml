@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<features>
+    <!-- Network feature -->
+    <feature name="com.oplus.eng.sar.body" value="0.85" />
+    <feature name="com.oplus.eng.sar.head" value="1.17" />
+    <feature name="com.oplus.eng.hdcp.key.support" />
+</features>

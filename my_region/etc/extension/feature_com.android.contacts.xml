@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!-- PengFei.Ma@CommApp.Contacts.2018/07/26.add for USER 1369622 -->
+    <app_feature name="com.android.contacts.support_card_recognize" />
+    <app_feature name="com.android.contacts.number_recognition_12"/>
+    <app_feature name="com.android.contacts.region_mark" args="String:IN"/>
+</extend_features>

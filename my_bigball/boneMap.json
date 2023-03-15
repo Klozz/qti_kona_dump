@@ -1,0 +1,29 @@
+{
+    "Head_M": {
+		"children": [1,2],
+		"index": 0,
+		"parent": -1,
+		"parentname": "",
+        "localpos": [0.0, 146.0, 0.0],
+		"localrot": [0.0, 0.0, 0.0, 1.0],
+		"localscale": [1.0, 1.0, 1.0]
+	},
+	"Eye_L": {
+		"children": [],
+		"index": 1,
+		"parent": 0,
+		"parentname": "Head_M",
+        "localpos": [1.945627445820719e-06, 1.1776648989325622e-08, 2.823963143328001e-07],
+		"localrot": [-0.008281661197543144, -0.6705459952354431, 0.009161258116364479, 0.7417651414871216],
+		"localscale": [1.0000004768371582, 1.0, 1.0]
+	},
+	"Eye_R": {
+		"children": [],
+		"index": 2,
+		"parent": 0,
+		"parentname": "Head_M",
+		"localpos": [0.0, 0.0, 0.0],
+		"localrot": [0.0, 0.0, 0.0, 1.0],
+		"localscale": [1.0, 1.0, 1.0]
+	}
+}

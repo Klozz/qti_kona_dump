@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8' ?>
+    <filter-conf>
+    <version>20210615</version>
+	<isOpen>1</isOpen>
+    <filter-name>Operator_Ringback_Tone_List</filter-name>
+    <item>
+        <tonetype>23</tonetype> <!--Represents TONE_SUP_RINGTONE-->
+		<prop name="sys.oplus.radio.carrier.ringtone" value="1"/>
+        <operator>singtel_and_airtel</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="400" waveFreq="425,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="200" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="400" waveFreq="425,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="2000" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>  <!--TONEGEN_INF represent no limit, number represent real cnt-->
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>23</tonetype>
+		<prop name="sys.oplus.radio.carrier.ringtone" value="2"/>
+        <operator>CHT_of_Taiwan</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="1000" waveFreq="440,480,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="2000" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>23</tonetype>
+		<prop name="sys.oplus.radio.carrier.ringtone" value="3"/>
+        <operator>VOLTE_of_AU</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="400" waveFreq="400,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="200" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="400" waveFreq="400,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="2000" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>23</tonetype>
+		<prop name="sys.oplus.radio.carrier.ringtone" value="4"/>
+        <operator>VOLTE_of_VOWIFI</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="400" waveFreq="400,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="200" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="400" waveFreq="400,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="2000" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>23</tonetype>
+		<prop name="sys.oplus.radio.carrier.ringtone" value="5"/>
+        <operator>MAXIS</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="400" waveFreq="425,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="200" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="400" waveFreq="425,0" loopCnt="0" loopIndx="0"/>
+            <ToneSegment duration="2000" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>22</tonetype>  <!--Represents TONE_SUP_CALL_WAITING-->
+		<prop name="sys.oplus.radio.carrier.cwtone" value="1"/>
+        <operator>waiting_tone_of_AU</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="200" waveFreq="425,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="3000" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>11</tonetype>
+		<prop name="sys.oplus.radio.carrier.cwtone" value="2"/>
+        <operator>waiting_tone_of_TEST</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="400" waveFreq="425,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="200" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="400" waveFreq="425,450,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="2000" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>17</tonetype>  <!--Represents TONE_SUP_BUSY-->
+		<prop name="sys.oplus.radio.carrier.bstone" value="1"/>
+        <operator>waiting_tone_of_TELCEL</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="250" waveFreq="425,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="250" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>4294967295</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+    <item>
+        <tonetype>17</tonetype>
+		<prop name="sys.oplus.radio.carrier.bstone" value="2"/>
+        <operator>MAXIS</operator>
+        <ToneDescriptor>
+			<ToneSegment duration="500" waveFreq="425,0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="500" waveFreq="0" loopCnt="0" loopIndx="0"/>
+			<ToneSegment duration="0" waveFreq="0" loopCnt="0" loopIndx="0"/>
+            <RepeatCnt>TONEGEN_INF</RepeatCnt>
+            <RepeatSegment>0</RepeatSegment>
+        </ToneDescriptor>
+    </item>
+</filter-conf>

@@ -1,0 +1,9 @@
+<oplus-config>
+    <!-- zhangjunhui@GAMEECO.COOLEFFECT.COOLEX, 2020/12/03, Add for coolex feature start -->
+    <oplus-feature name="oplus.software.coolex.support"/>
+    <!-- end -->
+    <!-- ChaiBojun@GAMEECO.VIBRATE, 2020/12/08, Add for FourD Vibrate feature start -->
+    <oplus-feature name="oplus.software.game_engine_vibrator_v1.support"/>
+    <!-- end -->
+</oplus-config>
+	

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="wallpaper.live.india_wallpaper.show" args="boolean:true"/>
+    <app_feature name="com.oplus.wallpapers.online_wallpaper.host" args="String:https://wallpaper-service-in.allawnos.com"/>
+</extend_features>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature args="StringList:type" name="com.android.server.telecom.not_save_call_log_for_operator">
+        <StringList args="112;911;999;9999;141999;1122;141112" name="type"/>
+    </app_feature>
+</extend_features>

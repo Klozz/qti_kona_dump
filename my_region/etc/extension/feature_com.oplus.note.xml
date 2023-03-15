@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.oplus.note.cloud_url_host" args="String:https://i-in01a-ocloud.heytapmobile.com"/>
+    <app_feature name="com.oplus.note.speech_url_domain" args="String:atot-si-in.allawnos.com"/>
+</extend_features>

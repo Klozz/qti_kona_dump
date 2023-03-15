@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.oplus.sos.special_function" args="String:
+            {&quot;usePowerBtnSwitch&quot;: {
+                    &quot;isSwitchOn&quot;: true,
+                    &quot;isClickable&quot;: false,
+                    &quot;isSupportPhoneClone&quot;: false,
+                    &quot;pressTimesToLaunchSOS&quot;: 3
+                },
+                &quot;autoCallSwitch&quot;: {
+                    &quot;defaultValue&quot;: true,
+                    &quot;isSupportPhoneClone&quot;: false
+                },
+                &quot;defaultEmergencyNumber&quot;: {
+                    &quot;emergencyNumber&quot;: &quot;112&quot;,
+                    &quot;position&quot;: 0
+                },
+                &quot;lowBatterySupport&quot;: true,
+                &quot;maxContactsSize&quot;: 5
+            }"
+    />
+</extend_features>

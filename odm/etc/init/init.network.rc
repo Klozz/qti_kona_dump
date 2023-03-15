@@ -1,0 +1,103 @@
+
+#Zhengpeng@OnLineRD.AirService.RIL, 2013/11/4, Add for create opponvitems dir
+on boot
+    mkdir /data/opponvitems  0771 radio radio
+    write /proc/sys/fs/suid_dumpable 1
+    setprop persist.vendor.radio.force_on_dc true
+    chmod 0664 /dev/mdmreason
+    chown system system /dev/mdmreason
+#endif
+
+#ifdef OPLUS_QDSS_DIAG
+#ZhuYan@Network.RF, 2020/09/16, Add for qdss system
+    chown root oem_2902 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+    chmod 660 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+
+    #reduce qdss log
+    write /sys/bus/coresight/reset_source_sink 1
+    write /sys/bus/coresight/devices/coresight-stm/hwevent_enable 0
+    write /sys/bus/coresight/devices/coresight-tmc-etr/enable_sink 1
+    write /sys/bus/coresight/devices/coresight-stm/enable_source 1
+    write /sys/bus/coresight/devices/coresight-stm/port_select 0x10000003
+    #disable ftrace
+    write /sys/kernel/tracing/instances/usb/tracing_on 0
+    write /sys/kernel/debug/tracing/tracing_on 0
+    write /sys/kernel/debug/tracing/events/enable 0
+#endif /* OPLUS_QDSS_DIAG */
+
+#ifdef OPLUS_FEATURE_DEVICE_LOG
+#ZhuYan@NetWork.RF.1139269, 2020/04/28
+#Add for device log on core domain
+#ZhuYan@Network.RF, 2020/09/16, Modify for qdss system
+service oplus_diag_mdlog_start /system/system_ext/bin/diag_mdlog_system -c -u -o /data/debugging/diag_logs/
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oplus_diag_mdlog_stop /system/system_ext/bin/diag_mdlog_system -k
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oplus_diag_mdlog_nrt /system/system_ext/bin/diag_mdlog_system -c -b -u
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oplus_diag_mdlog_buff_start /system/system_ext/bin/diag_mdlog_system -t 2 -p 2 -u
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oplus_diag_mdlog_buff_drain /system/system_ext/bin/oplus_diag_mdlog_drain
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oplus_diag_mdlog_buff_stop /system/system_ext/bin/diag_mdlog_system -p 2 -k
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+#endif /*OPLUS_FEATURE_DEVICE_LOG*/
+
+#ifdefVENDOR_EDIT
+#Weidong.Chen@PSW.NW.RF, 2020.1.16
+#Add for modem dump file permission
+service chmod_sdx55m /vendor/bin/sh /odm/bin/init.network.minidump.sh
+    class core
+    user root
+    group root
+    oneshot
+
+service remove_sdx55m /vendor/bin/sh /odm/bin/init.network.removedump.sh
+    class modemdump
+    user root
+    group root
+    oneshot
+
+on property:vendor.modem_dump_action=1
+    start chmod_sdx55m
+
+#Weidong.Chen@PSW.NW.RF, 2020.2.20
+#Add for remove useless modem dump
+on property:vendor.modem_dump_action=2
+    start remove_sdx55m
+#endif
+
+#WangWeiwei@NETWORK.STABILITY.XXX,2020/08/05,Add for debug modem crash.
+#Add for remove useless modem dump
+on property:persist.sys.agingtest=1
+   setprop persist.vendor.kickstart.verbose 1
+#endif

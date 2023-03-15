@@ -1,0 +1,17 @@
+service gameopt_hal_service-1-0 /odm/bin/hw/vendor.oplus.hardware.gameopt@1.0-service
+    class hal
+    user system
+    group system readproc root
+
+on property:sys.boot_completed=1
+    chmod 0660 /proc/game_opt/cpu_load
+    chmod 0660 /proc/game_opt/cpu_max_freq
+    chmod 0660 /proc/game_opt/cpu_min_freq
+    chmod 0660 /proc/game_opt/render_thread_info
+    chmod 0660 /proc/game_opt/rt_num
+    chmod 0660 /proc/game_opt/game_pid
+    chmod 0660 /proc/game_opt/heavy_task_info
+    chmod 0660 /proc/game_opt/key_tasks
+    chmod 0660 /proc/game_opt/dstate/dump_enable
+    chmod 0660 /proc/game_opt/dstate/duration
+    chmod 0660 /proc/game_opt/dstate/interested_tids

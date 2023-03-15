@@ -1,0 +1,12 @@
+<oplus-config>
+<!-- WangJian@CONNECTIVITY.WIFI.ARCHITECHURE, 2020/06/16   -->
+    <oplus-feature name="oplus.software.wlan.auto_reconnect" />
+
+    <oplus-feature name="oplus.software.wlan.dual_sta" />
+
+    <oplus-feature name="oplus.software.wlan.dbs" />
+
+    <oplus-feature name="oplus.software.wlan.wifi6" />
+<!-- GaoShangxiu@CONNECTIVITY.BT.Audio.Feature.1621909, 2021/10/02,add for support Binuural Record -->
+    <oplus-feature name="oplus.software.bt.binaural_record" />
+</oplus-config>

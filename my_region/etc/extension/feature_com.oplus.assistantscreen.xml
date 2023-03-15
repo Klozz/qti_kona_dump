@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <app_feature name="com.oplus.assistantscreen.current_region" args="String:IN"/>
+    <app_feature name="com.oplus.assistantscreen.app_recommend_card_enable"/>
+</extend_features>

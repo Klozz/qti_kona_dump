@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<extend_features>
+    <app_feature name="dft.logkit.ostorage_url" args="String:https://ostorage-ocloud-in.allawnos.com" />
+    <app_feature name="dft.logkit.feedback_server_url" args="String:https://ilogkit-service-in.allawnos.com" />
+</extend_features>

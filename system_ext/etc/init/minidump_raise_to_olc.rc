@@ -1,0 +1,9 @@
+service minidumpraise2olc system/system_ext/bin/minidumpraise2olc
+    class main
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+on property:sys.olc.service.on=true && property:sys.oplus.olc.packupminidump=true
+    start minidumpraise2olc

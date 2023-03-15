@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.disable_editing_vm_number_dynamic" />
+    <app_feature name="com.android.phone.network_list_visible_5G_dynamic" args="String:show" />
+    <app_feature name="com.android.phone.network_list_visible_dynamic" args="String:show" />
+    <app_feature args="StringList:type" name="com.android.phone.customize_network_name_list_5g_dynamic">
+        <StringList args="oplus_5g_4g_3g_2g_prefer" name="type"/>
+        <StringList args="oplus_4g_3g_2g_prefer" name="type"/>
+        <StringList args="oplus_3g_2g" name="type"/>
+        <StringList args="oplus_only_3g" name="type"/>
+        <StringList args="oplus_only_2g" name="type"/>
+    </app_feature>
+    <app_feature args="StringList:type" name="com.android.phone.customize_network_value_list_5g_dynamic">
+        <StringList args="33" name="type"/>
+        <StringList args="20" name="type"/>
+        <StringList args="18" name="type"/>
+        <StringList args="14" name="type"/>
+        <StringList args="1" name="type"/>
+    </app_feature>
+    <app_feature args="StringList:type" name="com.android.phone.customize_network_name_list_dynamic">
+        <StringList args="oplus_4g_3g_2g_prefer" name="type"/>
+        <StringList args="oplus_3g_2g" name="type"/>
+        <StringList args="oplus_only_3g" name="type"/>
+        <StringList args="oplus_only_2g" name="type"/>
+    </app_feature>
+    <app_feature args="StringList:type" name="com.android.phone.customize_network_value_list_dynamic">
+        <StringList args="20" name="type"/>
+        <StringList args="18" name="type"/>
+        <StringList args="14" name="type"/>
+        <StringList args="1" name="type"/>
+    </app_feature>
+    <app_feature name="com.android.phone.network_mode_customize_5G_4G_3G_2G" args="String:oplus_5g_4g_3g_2g_prefer" />
+    <app_feature name="com.android.phone.network_mode_customize_4G_3G_2G" args="String:oplus_4g_3g_2g_prefer" />
+    <app_feature name="com.android.phone.network_mode_customize_3G_2G" args="String:oplus_3g_2g" />
+    <app_feature name="com.android.phone.network_mode_customize_3G_only" args="String:oplus_only_3g" />
+    <app_feature name="com.android.phone.network_mode_customize_2G_only" args="String:oplus_only_2g" />
+</extend_features>

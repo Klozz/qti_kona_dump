@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.android.phone.simsettings.data_roaming_domestic_on_switch_control_national_dynamic" />
+    <app_feature name="com.android.phone.need_aggregation_network_lists_dynamic" />
+</extend_features>

@@ -1,0 +1,5 @@
+<oplus-config>
+    <!-- Zengpeng.Chen@BSP.CHG.Basic, 2021/02/08, add for typec otg Support -->
+    <oplus-feature name="oplus.typecotg.connection.menu.support" />
+    <!-- Zengpeng.Chen@BSP.CHG.Basic, 2021/02/08, add for typec otg Support end. -->
+</oplus-config>

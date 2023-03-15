@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************
+ ** Copyright (C), 2008-2020, OPPO Mobile Comm Corp., Ltd
+ **
+ ** Description : 1.0
+ **           This is a common file
+ **
+ ** Version: 1.0
+ ** Date created: 15:00, 2021/03/29
+ ** Author: Xiaokai.Hu@Tech.AD.Power
+ **
+ *************************************************************/
+-->
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.power.powermonitor</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPowerMonitor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

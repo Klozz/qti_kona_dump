@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings_provider_key version="129">
+    <application package="com.android.settings">
+        <key category="system" new_name="volume_notification_speaker" old_name="volume_ring_speaker" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="2" old_value="1" />
+            <value new_value="4" old_value="2" />
+            <value new_value="6" old_value="3" />
+            <value new_value="10" old_value="4" />
+            <value new_value="12" old_value="5" />
+            <value new_value="14" old_value="6" />
+            <value new_value="16" old_value="7" />
+        </key>
+        <key category="system" new_name="volume_ring_speaker" old_name="volume_ring_speaker" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="2" old_value="1" />
+            <value new_value="4" old_value="2" />
+            <value new_value="6" old_value="3" />
+            <value new_value="10" old_value="4" />
+            <value new_value="12" old_value="5" />
+            <value new_value="14" old_value="6" />
+            <value new_value="16" old_value="7" />
+        </key>
+        <key category="system" new_name="volume_alarm_speaker" old_name="volume_alarm_speaker" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="2" old_value="1" />
+            <value new_value="4" old_value="2" />
+            <value new_value="6" old_value="3" />
+            <value new_value="10" old_value="4" />
+            <value new_value="12" old_value="5" />
+            <value new_value="14" old_value="6" />
+            <value new_value="16" old_value="7" />
+        </key>
+        <key category="system" new_name="volume_music_speaker" old_name="volume_music_speaker" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="2" old_value="1" />
+            <value new_value="4" old_value="2" />
+            <value new_value="6" old_value="3" />
+            <value new_value="10" old_value="4" />
+            <value new_value="12" old_value="5" />
+            <value new_value="14" old_value="6" />
+            <value new_value="16" old_value="7" />
+        </key>
+        <key category="system" new_name="ring_stepless_vibration_intensity" old_name="incoming_call_vibrate_intensity" key_version="121">
+            <value new_value="800" old_value="0" />
+            <value new_value="1600" old_value="1" />
+            <value new_value="2400" old_value="2" />
+        </key>
+        <key category="system" new_name="notification_stepless_vibration_intensity" old_name="notice_vibrate_intensity" key_version="121">
+            <value new_value="800" old_value="0" />
+            <value new_value="1600" old_value="1" />
+            <value new_value="2400" old_value="2" />
+        </key>
+        <key category="system" target_category="secure" new_name="disable_screen_capture_sound" old_name="oem_screenshot_sound_enable" key_version="121">
+            <value new_value="1" old_value="0" />
+            <value new_value="0" old_value="1" />
+        </key>
+        <key category="global" new_name="soft_ap_wifi6_state"
+            old_name="softap_enable_11ax" />
+
+        <key category="secure" new_name="delay_notification_switch_state"
+            old_name="show_notification_snooze" />
+        <key category="system" target_category="global" new_name="wifi_auto_change_access_point"
+            old_name="wifi_should_switch_network" />
+        <key category="system" target_category="global" new_name="device_name"
+            old_name="oem_oneplus_devicename" />
+        <key category="system" target_category="global" new_name="wifi_passpoint_enabled_state"
+            old_name="oneplus_passpoint" />
+        <key category="system" target_category="global" new_name="wifi_auto_change_network"
+            old_name="wifi_auto_change_to_mobile_data" />
+        <key category="system" target_category="global" new_name="wifi_sla_switch_on"
+            old_name="download_smart_link_aggregation" />
+        <key category="system" new_name="smartboost_enable" old_name="op_smartboost_enable" />
+        <key category="global" target_category="secure" new_name="oplus_customize_screen_resolution_adjust"
+            old_name="oneplus_screen_resolution_adjust" >
+            <value new_value="3" old_value="0" />
+            <value new_value="2" old_value="1" />
+            <value new_value="1" old_value="2" />
+		</key>
+
+        <key category="global" target_category="system" new_name="is_osie_iris5_first_set" old_name="op_video_enhancer" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="0" old_value="1" />
+        </key>
+        <key category="global" target_category="secure" new_name="osie_video_display_switch"
+            old_name="op_video_enhancer" reserve_old_key="true" key_version="121"/>
+        <key category="global" target_category="secure" new_name="osie_iris5_switch"
+            old_name="op_video_enhancer" reserve_old_key="true" key_version="121"/>
+        <key category="global" target_category="secure" new_name="oplus_customize_screen_refresh_rate"
+            old_name="oneplus_screen_refresh_rate" key_version="121">
+            <value new_value="1" old_value="0" />
+            <value new_value="2" old_value="1" />
+			<value new_value="3" old_value="2" />
+        </key>
+        <key category="secure" new_name="oplus_fingerprint_quick_launch_switch"
+            old_name="op_quickpay_enable"/>
+        <key category="secure" new_name="default_voice_assist_picker_service"
+            old_name="oneplus_default_voice_assist_picker_service" />
+        <key category="system" target_category="secure" new_name="hide_navigationbar_enable"
+            old_name="navigation_mode" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="1" old_value="2" />
+        </key>
+        <key category="system" target_category="secure" new_name="navigation_gesture"
+            old_name="navigation_mode" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="1" old_value="2" />
+        </key>
+        <key category="system" target_category="secure" new_name="manual_hide_navigationbar"
+            old_name="navigation_mode" reserve_old_key="true" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="1" old_value="2" />
+        </key>
+        <key category="secure" target_category="system" new_name="oplus_customize_eye_protect_enable"
+            old_name="night_display_activated" />
+        <key category="secure" target_category="system" new_name="fix_time_state"
+            old_name="night_display_auto_mode" />
+        <key category="secure" target_category="system" new_name="setting_enable_color_temperature_regulation"
+            old_name="display_white_balance_enabled" />
+        <key category="secure" target_category="system" new_name="fix_time_state"
+            old_name="night_display_auto_mode" key_version="121">
+            <value new_value="0" old_value="0" />
+            <value new_value="1" old_value="1" />
+            <value new_value="0" old_value="2" />
+        </key>
+        <key category="system" new_name="oplus_customize_smart_apperceive_screen_capture"
+            old_name="oem_acc_sensor_three_finger" />
+        <key category="system" target_category="secure" new_name="settings_navigation_bar_combination"
+            old_name="oem_acc_key_define" key_version="121" >
+            <value new_value="0" old_value="1" />
+            <value new_value="1" old_value="0" />
+        </key>
+        <key category="system" new_name="current_typeface_name"
+            old_name="oem_font_mode" key_version="121">
+            <value new_value="Roboto" old_value="1" />
+            <value new_value="OnePlus Sans" old_value="2" />
+        </key>
+        <key category="system" new_name="qs_personality_shape_type"
+            old_name="oneplus_shape" key_version="121">
+            <value new_value="2" old_value="1" />
+            <value new_value="0" old_value="2" />
+            <value new_value="5" old_value="3" />
+            <value new_value="4" old_value="4" />
+        </key>
+        <key category="system" target_category="secure" new_name="oplus_customize_comm_incallui_curved_display_notification_color"
+            old_name="op_custom_horizon_light_animation_style"  key_version="121">
+            <value new_value="blue" old_value="0" />
+            <value new_value="red" old_value="1" />
+            <value new_value="gold" old_value="2" />
+            <value new_value="blue" old_value="3" />
+        </key>
+        <key category="system" target_category="secure" new_name="optical_fp_anim_style"
+            old_name="op_custom_unlock_animation_style"  key_version="121">
+            <value new_value="anim_6" old_value="0" />
+            <value new_value="anim_103" old_value="1" />
+            <value new_value="anim_104" old_value="2" />
+            <value new_value="anim_6" old_value="3" />
+            <value new_value="anim_101" old_value="4" />
+            <value new_value="anim_108" old_value="9" />
+            <value new_value="anim_6" old_value="11" />
+        </key>
+        <key category="secure" new_name="display_density_forced" old_name="display_density_forced" reserve_old_key="true" key_version="128">
+            <value new_value="380" old_value="420" />
+            <value new_value="420" old_value="450" />
+            <value new_value="480" old_value="480" />
+            <value new_value="510" old_value="510" />
+            <value new_value="540" old_value="540" />
+            <value new_value="500" old_value="560" />
+            <value new_value="560" old_value="600" />
+            <value new_value="640" old_value="640" />
+            <value new_value="680" old_value="680" />
+            <value new_value="720" old_value="720" />
+        </key>
+        <key category="system" new_name="font_scale" old_name="font_scale" reserve_old_key="true" key_version="121">
+            <value new_value="0.9" old_value="0.85" />
+            <value new_value="1.0" old_value="1.0" />
+            <value new_value="1.15" old_value="1.15" />
+            <value new_value="1.35" old_value="1.3" />
+        </key>
+        <key category="system" target_category="secure" new_name="oplus_customize_face_unlock_switch"
+            old_name="oneplus_face_unlock_enable" reserve_old_key="true" key_version="121"/>
+        <key category="system" target_category="secure" new_name="oplus_customize_face_unlock_auto_check_switch"
+            old_name="oneplus_face_unlock_enable" reserve_old_key="true" key_version="121"/>
+        <key category="system" target_category="secure" new_name="oplus_customize_face_unlock_remain_unlock_switch"
+            old_name="oneplus_auto_face_unlock_enable"  key_version="126">
+			<value new_value="0" old_value="1" />
+            <value new_value="1" old_value="0" />
+        </key>
+        <key category="system" target_category="secure" new_name="oplus_customize_face_unlock_screen_fill_light"
+            old_name="oneplus_face_unlock_assistive_lighting_enable"  key_version="121"/>
+        <key category="secure" new_name="oplus_fingerprint_quick_launch_switch"
+            old_name="op_quickpay_enable"  key_version="121"/>
+        <key category="global" target_category="secure" new_name="notification_bubbles"
+            old_name="notification_bubbles"  key_version="121"/>
+        <key category="system" new_name="font_variation_settings"
+            old_name="oem_font_mode" reserve_old_key="true" key_version="123">
+            <value new_value="550" old_value="1" />
+            <value new_value="12838" old_value="2" />
+        </key>
+        <key category="system" new_name="oplus_customize_sms_notification_sound"
+            old_name="mms_notification" reserve_old_key="true" key_version="123"/>
+        <key category="system" new_name="ringtone_sim2"
+            old_name="ringtone_2" reserve_old_key="true" key_version="125"/>
+        <key category="system" new_name="oplus_customize_cta_user_experience"
+            old_name="oem_join_user_plan_settings" reserve_old_key="true" key_version="129"/>
+        <key category="system" target_category="global" new_name="oplus_customize_system_stable_plan_switch"
+            old_name="oem_join_stability_plan_settings" reserve_old_key="true" key_version="129"/>
+    </application>
+</settings_provider_key>

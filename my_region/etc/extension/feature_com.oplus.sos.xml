@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <!--Add for India special function for SOS-->
+    <app_feature name="com.oplus.sos.india_special_function"/>
+</extend_features>

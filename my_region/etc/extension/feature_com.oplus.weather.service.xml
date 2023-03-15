@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.oplus.weather.service.weather_host" args="String:https://weather-server-in.allawnos.com"/>
+</extend_features>

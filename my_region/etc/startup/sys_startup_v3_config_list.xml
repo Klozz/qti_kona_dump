@@ -1,0 +1,693 @@
+<filter-conf>
+<version>2022082401</version>
+<isOpen>1</isOpen>
+<filter-name>sys_startup_v3_config_list</filter-name>
+	
+	<startup all="11"  type="1"  pkgName="com.redteamobile.roaming"/>
+	<startup all="11"  type="1"  pkgName="com.nearme.gamecenter"/>
+	<startup all="11"  type="1"  pkgName="com.heytap.gamecenter"/>
+	<startup all="11"  type="1"  pkgName="com.coloros.oppopods"/>
+	<startup all="11"  type="1"  pkgName="com.oplus.melody"/>
+	<startup all="11"  type="1"  pkgName="com.oneplus.twspods"/>
+	<startup all="11"  type="1"  pkgName="com.oneplus.brickmode"/>
+	<startup all="1"  type="1"  pkgName="com.tencent.mm"/>
+	<startup all="1"  type="1"  pkgName="com.xiaomi.channel"/>
+	<startup all="1"  type="1"  pkgName="com.immomo.momo"/>
+	<startup all="1"  type="1"  pkgName="com.feinno.felio"/>
+	<startup all="1"  type="1"  pkgName="net.iaround"/>
+	<startup all="1"  type="1"  pkgName="com.tencent.qqphonebook"/>
+	<startup all="1"  type="1"  pkgName="com.tencent.WBlog"/>
+	<startup all="1"  type="1"  pkgName="cn.com.fetion"/>
+	<startup all="1"  type="1"  pkgName="com.alibaba.mobileim"/>
+	<startup all="1"  type="1"  pkgName="com.snda.youni"/>
+	<startup all="1"  type="1"  pkgName="com.sg.sledog"/>
+	<startup all="1"  type="1"  pkgName="jp.naver.line.android"/>
+	<startup all="1"  type="1"  pkgName="com.weico.sinaweibo"/>
+	<startup all="1"  type="1"  pkgName="me.imid.fuubo"/>
+	<startup all="1"  type="1"  pkgName="com.changba"/>
+	<startup all="1"  type="1"  pkgName="com.sohu.sohuvideo"/>
+	<startup all="1"  type="1"  pkgName="com.asiainfo.android"/>
+	<startup all="1"  type="1"  pkgName="com.systen.tongjiqi"/>
+	<startup all="1"  type="1"  pkgName="com.keke.otginstall"/>
+	<startup all="1"  type="1"  pkgName="com.keke.otginstall.aid"/>
+	<startup all="1"  type="1"  pkgName="com.whatsapp"/>
+	<startup all="1"  type="1"  pkgName="com.rsupport.rs.activity.oneplus"/>
+	<startup all="1"  type="1"  pkgName="com.rsupport.rs.activity.oppo"/>
+	<startup all="1"  type="1"  pkgName="com.rsupport.rs.activity.oppoglobal"/>
+	<startup all="1"  type="1"  pkgName="com.rsupport.rsperm.ao.a1th"/>
+	<startup all="1"  type="1"  pkgName="com.rsupport.rs.activity.rsupport"/>
+	<startup all="1"  type="1"  pkgName="com.rsupport.mvagent"/>
+	<startup all="1"  type="1"  pkgName="com.rsupport.mvagent1"/>
+	<startup all="1"  type="1"  pkgName="rsupport.AndroidViewer"/>
+	<startup all="1"  type="1"  pkgName="com.android.cts.net"/>
+	<startup all="1"  type="1"  pkgName="com.android.cts.stub"/>
+	<startup all="1"  type="1"  pkgName="com.android.cts.verifier"/>
+	<startup all="1"  type="1"  pkgName="com.android.cts.permissiondeclareappcompat"/>
+	<startup all="1"  type="1"  pkgName="com.lbe.security"/>
+	<startup all="1"  type="1"  pkgName="com.lbe.security.miui"/>
+	<startup all="1"  type="1"  pkgName="com.qihoo360.mobilesafe"/>
+	<startup all="1"  type="1"  pkgName="com.ijinshan.duba"/>
+	<startup all="1"  type="1"  pkgName="com.tencent.qqpimsecure"/>
+	<startup all="1"  type="1"  pkgName="com.symantec.mobilesecurity"/>
+	<startup all="1"  type="1"  pkgName="com.anguanjia.safe"/>
+	<startup all="1"  type="1"  pkgName="cn.opda.a.phonoalbumshoushou"/>
+	<startup all="1"  type="1"  pkgName="com.baidu.security"/>
+	<startup all="1"  type="1"  pkgName="com.wandoujia.phoenix2"/>
+	<startup all="1"  type="1"  pkgName="com.wandoujia.phoenix2.usbproxy"/>
+	<startup all="1"  type="1"  pkgName="com.nd.assistance"/>
+	<startup all="1"  type="1"  pkgName="com.qq.AppService"/>
+	<startup all="1"  type="1"  pkgName="com.shuame.sprite"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.assistance.gerneral"/>
+	<startup all="1"  type="1"  pkgName="com.realtek.airplay.client"/>
+	<startup all="1"  type="1"  pkgName="com.autonavi.xmgd.navigator.oppo"/>
+	<startup all="1"  type="1"  pkgName="com.autonavi.xmgd.navigator"/>
+	<startup all="1"  type="1"  pkgName="com.jb.gokeyboard.handwrite.zh"/>
+	<startup all="1"  type="1"  pkgName="com.baidu.BaiduMap"/>
+	<startup all="1"  type="1"  pkgName="com.sonyericsson.extras.smartwirelessheadsetpro"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.gatt"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.gatt.proximityservice"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.voicesearch"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.simplebackup"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.mediacontrol"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.switchwidget"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.gosearchwidget"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.calendarwidget"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.notewidget"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex:goHandBook"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.contactwidget"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.emailwidget"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.weatherwidget"/>
+	<startup all="1"  type="1"  pkgName="com.gau.go.launcherex.gowidget.weatherwidget:MessageService"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.saus"/>
+	<startup all="1"  type="1"  pkgName="com.anydo"/>
+	<startup all="1"  type="1"  pkgName="com.anydo.cal"/>
+	<startup all="1"  type="1"  pkgName="com.keenvim.cnCalendar"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.wearable.oclick2"/>
+	<startup all="1"  type="1"  pkgName="com.oppo.pcassistant"/>
+	<startup all="1"  type="1"  pkgName="com.android.cts.robot"/>
+	<startup all="1"  type="1"  pkgName="com.zing.zalo"/>
+	<startup all="1"  type="1"  pkgName="com.facebook.orca"/>
+	<startup all="1"  type="1"  pkgName="com.facebook.katana"/>
+	<startup all="1"  type="1"  pkgName="com.instagram.android"/>
+	<startup all="1"  type="1"  pkgName="com.tencent.mobileqqi"/>
+	<startup all="1"  type="1"  pkgName="com.bbm"/>
+	<startup all="1"  type="1"  pkgName="com.bbm2"/>
+	<startup all="1"  type="1"  pkgName="com.bbm3"/>
+	<startup all="1"  type="1"  pkgName="com.bbm4"/>
+	<startup all="1"  type="1"  pkgName="com.bbm5"/>
+	<startup all="1"  type="1"  pkgName="com.bbm6"/>
+	<startup all="1"  type="1"  pkgName="com.bbm7"/>
+	<startup all="1"  type="1"  pkgName="com.skype.raider"/>
+	<startup all="1"  type="1"  pkgName="com.viber.voip"/>
+	<startup all="1"  type="1"  pkgName="com.path"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.syncadapters.calendar"/>
+	<startup all="1"  type="1"  pkgName="com.snapchat.android"/>
+	<startup all="1"  type="1"  pkgName="com.twitter.android"/>
+	<startup all="1"  type="1"  pkgName="com.yahoo.mobile.client.android.im"/>
+	<startup all="1"  type="1"  pkgName="com.bsb.hike"/>
+	<startup all="1"  type="1"  pkgName="com.sgiggle.production"/>
+	<startup all="1"  type="1"  pkgName="com.truecaller.phoneapp"/>
+	<startup all="1"  type="1"  pkgName="com.truecaller"/>
+	<startup all="1"  type="1"  pkgName="com.imo.android.imoim"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.calendar"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.talk"/>
+	<startup all="1"  type="1"  pkgName="com.opera.max.oem.oppo"/>
+	<startup all="1"  type="1"  pkgName="com.appstar.callrecorder"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.xts.deviceowner"/>
+	<startup all="1"  type="1"  pkgName="org.telegram.messenger"/>
+	<startup all="1"  type="1"  pkgName="com.jio.join"/>
+	<startup all="1"  type="1"  pkgName="com.facebook.lite"/>
+	<startup all="1"  type="1"  pkgName="com.jiochat.jiochatapp"/>
+	<startup all="1"  type="1"  pkgName="com.vkontakte.android"/>
+	<startup all="1"  type="1"  pkgName="com.afwsamples.testdpc"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.apps.enterprise.dmagent"/>
+	<startup all="1"  type="1"  pkgName="com.mobileiron"/>
+	<startup all="1"  type="1"  pkgName="com.microsoft.office.outlook"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.apps.tachyon"/>
+	<startup all="1"  type="1"  pkgName="com.shopee.my"/>
+	<startup all="1"  type="1"  pkgName="com.alibaba.android.rimet"/>
+	<startup all="1"  type="1"  pkgName="com.access_company.android.nfcommunicator"/>
+	<startup all="1"  type="1"  pkgName="com.murad.waktusolat"/>
+	<startup all="1"  type="1"  pkgName="com.caiharbor.esim"/>
+	<startup all="1"  type="1"  pkgName="com.arabiait.azkar"/>
+	<startup all="1"  type="1"  pkgName="com.athan"/>
+	<startup all="1"  type="1"  pkgName="com.athanotify"/>
+	<startup all="1"  type="1"  pkgName="com.athanow.prayer_times"/>
+	<startup all="1"  type="1"  pkgName="com.bitsmedia.android.muslimpro"/>
+	<startup all="1"  type="1"  pkgName="com.dot.azkari"/>
+	<startup all="1"  type="1"  pkgName="com.geospatialtechnology.visualqiblah"/>
+	<startup all="1"  type="1"  pkgName="com.guidedways.ipray"/>
+	<startup all="1"  type="1"  pkgName="com.haz.prayer"/>
+	<startup all="1"  type="1"  pkgName="com.hisn.almuslim"/>
+	<startup all="1"  type="1"  pkgName="com.kosratdahmad.myprayers"/>
+	<startup all="1"  type="1"  pkgName="com.ls.arabic"/>
+	<startup all="1"  type="1"  pkgName="com.maher4web.hisn"/>
+	<startup all="1"  type="1"  pkgName="com.masarat.salati"/>
+	<startup all="1"  type="1"  pkgName="com.mobileappsteam.myprayer"/>
+	<startup all="1"  type="1"  pkgName="com.mobilion.diyanet.namazvakit"/>
+	<startup all="1"  type="1"  pkgName="com.parfield.prayers.lite"/>
+	<startup all="1"  type="1"  pkgName="com.raimbekov.android.sajde"/>
+	<startup all="1"  type="1"  pkgName="com.simppro.azkar"/>
+	<startup all="1"  type="1"  pkgName="com.sommayah.myprayertimes"/>
+	<startup all="1"  type="1"  pkgName="idreams.com.azkar"/>
+	<startup all="1"  type="1"  pkgName="org.hicham.salaat"/>
+	<startup all="1"  type="1"  pkgName="com.seagroup.seatalk"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.deskclock"/>
+	<startup all="1"  type="1"  pkgName="com.ss.android.ugc.trill"/>
+	<startup all="1"  type="1"  pkgName="com.turkcell.bip"/>
+	<startup all="1"  type="1"  pkgName="com.usescotty.driver.app"/>
+	<startup all="1"  type="1"  pkgName="com.projectslender"/>
+	<startup all="1"  type="1"  pkgName="com.jakarta.baca.lite"/>
+	<startup all="1"  type="1"  pkgName="com.xb.topnews"/>
+	<startup all="1"  type="1"  pkgName="app.buzz.share"/>
+	<startup all="1"  type="1"  pkgName="com.qidian.QDReader.traditional"/>
+	<startup all="1"  type="1"  pkgName="com.qidian.Int.reader"/>
+	<startup all="1"  type="1"  pkgName="com.hike.chat.stickers"/>
+	<startup all="1"  type="1"  pkgName="com.chauffeurprive.driver"/>
+	<startup all="1"  type="1"  pkgName="com.geckolab"/>
+	<startup all="1"  type="1"  pkgName="com.ubercab.driver"/>
+	<startup all="1"  type="1"  pkgName="com.ubercab.fleet"/>
+	<startup all="1"  type="1"  pkgName="ee.mtakso.driver"/>
+	<startup all="1"  type="1"  pkgName="fr.lecab.partner.android"/>
+	<startup all="1"  type="1"  pkgName="taxi.android.driver"/>
+	<startup all="1"  type="1"  pkgName="com.cabify.driver"/>
+	<startup all="1"  type="1"  pkgName="com.deliverymobile"/>
+	<startup all="1"  type="1"  pkgName="com.takeaway.driver"/>
+	<startup all="1"  type="1"  pkgName="com.alibaba.icbu.app.seller"/>
+	<startup all="1"  type="1"  pkgName="com.amazon.sellermobile.android"/>
+	<startup all="1"  type="1"  pkgName="com.ebay.mobile"/>
+	<startup all="1"  type="1"  pkgName="com.wish.merchant"/>
+	<startup all="1"  type="1"  pkgName="pl.allegro.sale"/>
+	<startup all="1"  type="1"  pkgName="com.linkedin.android"/>
+	<startup all="1"  type="1"  pkgName="com.pinterest"/>
+	<startup all="1"  type="1"  pkgName="pl.interia.czateria"/>
+	<startup all="1"  type="1"  pkgName="pl.wykop.droid"/>
+	<startup all="1"  type="1"  pkgName="com.discord"/>
+	<startup all="1"  type="1"  pkgName="com.tinder"/>
+	<startup all="1"  type="1"  pkgName="com.adopteunmec.androides"/>
+	<startup all="1"  type="1"  pkgName="tv.twitch.android.app"/>
+	<startup all="1"  type="1"  pkgName="com.citymapper.app.release"/>
+	<startup all="1"  type="1"  pkgName="com.citynav.jakdojade.pl.android"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.apps.maps"/>
+	<startup all="1"  type="1"  pkgName="com.gpsroutefinder.mobile.location.tracker.gps.maps.locator.route.finder"/>
+	<startup all="1"  type="1"  pkgName="com.here.app.maps"/>
+	<startup all="1"  type="1"  pkgName="com.justpark.jp"/>
+	<startup all="1"  type="1"  pkgName="com.live.earth.maps.streetview.livelocations"/>
+	<startup all="1"  type="1"  pkgName="com.magnetic.openmaps"/>
+	<startup all="1"  type="1"  pkgName="com.mappy.app"/>
+	<startup all="1"  type="1"  pkgName="com.mapswithme.maps.pro"/>
+	<startup all="1"  type="1"  pkgName="com.waze"/>
+	<startup all="1"  type="1"  pkgName="pl.naviexpert.market"/>
+	<startup all="1"  type="1"  pkgName="pl.naviexpert.rysiek"/>
+	<startup all="1"  type="1"  pkgName="pl.neptis.yanosik.mobi.android"/>
+	<startup all="1"  type="1"  pkgName="uk.co.ordnancesurvey.osmaps"/>
+	<startup all="1"  type="1"  pkgName="rge.tech.usuarios"/>
+	<startup all="1"  type="1"  pkgName="com.vialsoft.radarbot_free"/>
+	<startup all="1"  type="1"  pkgName="com.tomtom.gplay.navapp"/>
+	<startup all="1"  type="1"  pkgName="com.tumblr"/>
+	<startup all="1"  type="1"  pkgName="id.co.babe"/>
+	<startup all="1"  type="1"  pkgName="com.engloryintertech.caping"/>
+	<startup all="1"  type="1"  pkgName="com.eterno"/>
+	<startup all="1"  type="1"  pkgName="com.kddi.familysmile.mvno"/>
+	<startup all="1"  type="1"  pkgName="jp.co.daj.consumer.ifilter"/>
+	<startup all="1"  type="1"  pkgName="com.life360.android.safetymapd"/>
+	<startup all="1"  type="1"  pkgName="com.nationaledtech.Boomerang"/>
+	<startup all="1"  type="1"  pkgName="com.microsoft.mobile.polymer"/>
+	<startup all="1"  type="1"  pkgName="com.trendmicro.tmmspersonal.jp.googleplayversion"/>
+	<startup all="1"  type="1"  pkgName="com.comprion.android.GSMA_AC_Mobile_App_SP1_signed"/>
+	<startup all="1"  type="1"  pkgName="com.comprion.android.GSMA_AC_Mobile_App_SP2_signed"/>
+	<startup all="1"  type="1"  pkgName="com.xtc.watch.imoo"/>
+	<startup all="1"  type="1"  pkgName="com.pizzahut.phd"/>
+	<startup all="1"  type="1"  pkgName="id.mcdonalds.delivery"/>
+	<startup all="1"  type="1"  pkgName="com.deliverynow"/>
+	<startup all="1"  type="1"  pkgName="vn.foody.delivery"/>
+	<startup all="1"  type="1"  pkgName="com.mobile.app.mcdelivery"/>
+	<startup all="1"  type="1"  pkgName="com.global.foodpanda.android"/>
+	<startup all="1"  type="1"  pkgName="com.shopee.Th"/>
+	<startup all="1"  type="1"  pkgName="com.lazada.android"/>
+	<startup all="1"  type="1"  pkgName="com.fitbit.FitbitMobile"/>
+	<startup all="1"  type="1"  pkgName="com.nationaledtech.Boommerang.apk"/>
+	<startup all="1"  type="1"  pkgName="com.quora.android"/>
+	<startup all="1"  type="1"  pkgName="in.mohalla.sharechat"/>
+	<startup all="1"  type="1"  pkgName="com.ftw_and_co.happn"/>
+	<startup all="1"  type="1"  pkgName="com.microsoft.mobile.ploymer"/>
+	<startup all="1"  type="1"  pkgName="app.goplus.in.myapplication"/>
+	<startup all="1"  type="1"  pkgName="com.winit.merucab"/>
+	<startup all="1"  type="1"  pkgName="carzonrent.crdapp"/>
+	<startup all="1"  type="1"  pkgName="com.savaari.app"/>
+	<startup all="1"  type="1"  pkgName="com.stpl.fasttrackbooking1"/>
+	<startup all="1"  type="1"  pkgName="com.megacabsnew.app.customer"/>
+	<startup all="1"  type="1"  pkgName="com.mti.taxibookings.app"/>
+	<startup all="1"  type="1"  pkgName="com.tabcabs.android"/>
+	<startup all="1"  type="1"  pkgName="taxi.sixcrore.customer"/>
+	<startup all="1"  type="1"  pkgName="droid.shuttl.driver"/>
+	<startup all="1"  type="1"  pkgName="com.meru.merumobile"/>
+	<startup all="1"  type="1"  pkgName="com.cordrive.app.carzonrent"/>
+	<startup all="1"  type="1"  pkgName="in.swiggy.delivery"/>
+	<startup all="1"  type="1"  pkgName="com.application.zomato.ordering"/>
+	<startup all="1"  type="1"  pkgName="com.india.foodpanda.android"/>
+	<startup all="1"  type="1"  pkgName="com.Dominos"/>
+	<startup all="1"  type="1"  pkgName="com.ubercab.eats"/>
+	<startup all="1"  type="1"  pkgName="in.burgerkingindia.android"/>
+	<startup all="1"  type="1"  pkgName="com.pizzahut"/>
+	<startup all="1"  type="1"  pkgName="com.done.faasos"/>
+	<startup all="1"  type="1"  pkgName="com.yum.kfc"/>
+	<startup all="1"  type="1"  pkgName="com.mcdonalds.mobileapp"/>
+	<startup all="1"  type="1"  pkgName="com.poncho"/>
+	<startup all="1"  type="1"  pkgName="fit.cure.android"/>
+	<startup all="1"  type="1"  pkgName="com.freshmenu"/>
+	<startup all="1"  type="1"  pkgName="in.swiggy.partnerapp"/>
+	<startup all="1"  type="1"  pkgName="com.application.services.partner"/>
+	<startup all="1"  type="1"  pkgName="com.application.zomatomerchant"/>
+	<startup all="1"  type="1"  pkgName="com.notifier.bamboo"/>
+	<startup all="1"  type="1"  pkgName="ma.dista.yum"/>
+	<startup all="1"  type="1"  pkgName="com.jabong.android"/>
+	<startup all="1"  type="1"  pkgName="in.amazon.mShop.android"/>
+	<startup all="1"  type="1"  pkgName="com.flipkart.android"/>
+	<startup all="1"  type="1"  pkgName="com.myntra.android"/>
+	<startup all="1"  type="1"  pkgName="com.paytmmall"/>
+	<startup all="1"  type="1"  pkgName="com.snapdeal.main"/>
+	<startup all="1"  type="1"  pkgName="com.shopclues"/>
+	<startup all="1"  type="1"  pkgName="com.shopping.limeroad"/>
+	<startup all="1"  type="1"  pkgName="com.zzkko"/>
+	<startup all="1"  type="1"  pkgName="com.ril.ajio"/>
+	<startup all="1"  type="1"  pkgName="club.fromfactory"/>
+	<startup all="1"  type="1"  pkgName="in.amazonbusiness.berrio.android.app"/>
+	<startup all="1"  type="1"  pkgName="com.paytm.business"/>
+	<startup all="1"  type="1"  pkgName="com.snapdeal.seller"/>
+	<startup all="1"  type="1"  pkgName="com.shopclues.seller"/>
+	<startup all="1"  type="1"  pkgName="com.olacabs.android.operator"/>
+	<startup all="1"  type="1"  pkgName="com.olacabs.customer"/>
+	<startup all="1"  type="1"  pkgName="im.thebot.messenger"/>
+	<startup all="1"  type="1"  pkgName="com.pathao.driver"/>
+	<startup all="1"  type="1"  pkgName="com.tokopedia.tkpd"/>
+	<startup all="1"  type="1"  pkgName="com.egets.drivers"/>
+	<startup all="1"  type="1"  pkgName="com.egets.takeaways"/>
+	<startup all="1"  type="1"  pkgName="com.daraz.sellercenter"/>
+	<startup all="1"  type="1"  pkgName="com.onekyat.app"/>
+	<startup all="1"  type="1"  pkgName="com.shop.android"/>
+	<startup all="1"  type="1"  pkgName="nz.co.trademe.trademe"/>
+	<startup all="1"  type="1"  pkgName="com.grabtaxi.passenger"/>
+	<startup all="1"  type="1"  pkgName="com.honestbee.consumer"/>
+	<startup all="1"  type="1"  pkgName="com.zalora.android"/>
+	<startup all="1"  type="1"  pkgName="com.shopee.ph"/>
+	<startup all="1"  type="1"  pkgName="com.allgoritm.youla"/>
+	<startup all="1"  type="1"  pkgName="com.avito.android"/>
+	<startup all="1"  type="1"  pkgName="com.deliveryclub"/>
+	<startup all="1"  type="1"  pkgName="com.deliveryclub.rider"/>
+	<startup all="1"  type="1"  pkgName="com.gettaxi.dbx.android"/>
+	<startup all="1"  type="1"  pkgName="com.joom"/>
+	<startup all="1"  type="1"  pkgName="ru.foodfox.client"/>
+	<startup all="1"  type="1"  pkgName="ru.foodfox.courier.debug.releaseserver"/>
+	<startup all="1"  type="1"  pkgName="ru.foodfox.vendor"/>
+	<startup all="1"  type="1"  pkgName="ru.handh.net"/>
+	<startup all="1"  type="1"  pkgName="ru.ok.android"/>
+	<startup all="1"  type="1"  pkgName="ru.yandex.taximeter"/>
+	<startup all="1"  type="1"  pkgName="com.deliveroo.driverapp"/>
+	<startup all="1"  type="1"  pkgName="com.gojek.driver.sg.car"/>
+	<startup all="1"  type="1"  pkgName="com.grab.food.dax"/>
+	<startup all="1"  type="1"  pkgName="com.grabpay.merchant"/>
+	<startup all="1"  type="1"  pkgName="com.sc.lazada"/>
+	<startup all="1"  type="1"  pkgName="com.zalora.sc"/>
+	<startup all="1"  type="1"  pkgName="net.giosis.qsm.sg"/>
+	<startup all="1"  type="1"  pkgName="com.jumia.android"/>
+	<startup all="1"  type="1"  pkgName="com.shopee.tw"/>
+	<startup all="1"  type="1"  pkgName="dbx.taiwantaxi"/>
+	<startup all="1"  type="1"  pkgName="app.zenly.locator"/>
+	<startup all="1"  type="1"  pkgName="com.orangelabs.quickpass.android.cardevent"/>
+	<startup all="1"  type="1"  pkgName="com.comprion.android.GSMA_AC_Mobile_App_SP1_signed_AndroidPOnwards"/>
+	<startup all="1"  type="1"  pkgName="com.til.timesnews"/>
+	<startup all="1"  type="1"  pkgName="com.facebook.mlite"/>
+	<startup all="1"  type="1"  pkgName="com.whatsapp.w4b"/>
+	<startup all="1"  type="1"  pkgName="com.imo.android.imoimbeta"/>
+	<startup all="1"  type="1"  pkgName="org.thunderdog.challegram"/>
+	<startup all="1"  type="1"  pkgName="mobi.skred.app"/>
+	<startup all="1"  type="1"  pkgName="com.imo.android.imoimlite"/>
+	<startup all="1"  type="1"  pkgName="com.michatapp.im"/>
+	<startup all="1"  type="1"  pkgName="kik.android"/>
+	<startup all="1"  type="1"  pkgName="com.perm.kate_new_6"/>
+	<startup all="1"  type="1"  pkgName="sg.omi"/>
+	<startup all="1"  type="1"  pkgName="th.cyberapp.beechat"/>
+	<startup all="1"  type="1"  pkgName="com.p1.mobile.putong"/>
+	<startup all="1"  type="1"  pkgName="cn.soulapp.android"/>
+	<startup all="1"  type="1"  pkgName="com.android.coloros.movetosdcard"/>
+	<startup all="1"  type="1"  pkgName="com.google.android.apps.vega"/>
+	<startup all="1"  type="1"  pkgName="com.linecorp.linelite"/>
+	<startup all="1"  type="1"  pkgName="com.coloros.locationproxy"/>
+	<startup all="1"  type="1"  pkgName="com.samsung.android.geargplugin"/>
+	<startup all="1"  type="1"  pkgName="sg.gov.tech.bluetrace"/>
+	<startup all="1"  type="1"  pkgName="fr.gouv.android.stopcovid"/>
+	<startup all="1"  type="1"  pkgName="sg.gov.homer"/>
+	<startup all="1"  type="1"  pkgName="ch.admin.bag.dp3t"/>
+	<startup all="1"  type="1"  pkgName="com.market.heydemo"/>
+	<startup all="1"  type="1"  pkgName="com.oneplus.note"/>
+	<startup all="1"  type="1"  pkgName="com.finshell.fin"/>
+	<startup all="1"  type="1"  pkgName = "com.color.otaassistant"/>
+
+	<!-- bakcground activity 2-->
+	<!-- activityCallerPkgWhite -->
+	<startup type = "3"  mask = "2" pkgName = "com.coloros.shortcuts"></startup>
+	<startup type = "3"  mask = "2" pkgName = "com.nearme.instant.platform"></startup>
+	<!-- activitySelfCallPkgWhite -->
+	<startup type = "3"  mask = "2" pkgName = "com.finshell.wallet">
+		<item mask = "2" associatePkg = "com.finshell.wallet"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.oplus.melody">
+		<item mask = "2" associatePkg = "com.oplus.melody"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.coloros.oppopods">
+		<item mask = "2" associatePkg = "com.coloros.oppopods"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.nearme.gamecenter">
+		<item mask = "2" associatePkg = "com.nearme.gamecenter"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.heytap.xgame">
+		<item mask = "2" associatePkg = "com.heytap.xgame"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.coloros.systemclone">
+		<item mask = "2" associatePkg = "com.coloros.systemclone"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.opposs.marketdemo1">
+		<item mask = "2" associatePkg = "com.opposs.marketdemo1"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.opposs.marketdemo2">
+		<item mask = "2" associatePkg = "com.opposs.marketdemo2"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.opposs.marketdemo7">
+		<item mask = "2" associatePkg = "com.opposs.marketdemo7"/>
+	</startup>
+	<startup type = "3"  mask = "2" pkgName = "com.oneplus.deskclock">
+		<item mask = "2" associatePkg = "com.oneplus.deskclock"/>
+	</startup>
+	<startup type = "2"  mask = "2" pkgName = "de.telekom.appstarter">
+		<item mask = "2" associatePkg = "de.telekom.appstarter"/>
+		<item mask = "2" associatePkg = "de.telekom.tsc"/>
+	</startup>
+	<!-- bindService  8-->
+	<!-- autosync -->
+	<startup type = "1"  mask = "8" pkgName = "com.kingsoft.email">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.netease.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup all = "1" type = "1"  mask = "8" pkgName = "com.android.email">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.google.android.gms">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.tencent.androidqqmail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.tencent.qqpim">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.tencent.pb">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.smartisan.email">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup all = "1" type = "1"  mask = "8" pkgName = "com.google.android.syncadapters.calendar">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.google.android.syncadapters.contacts">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.google.android.email">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.google.android.gm">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.rediff.mail.and">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "ru.mail.mailapp">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.trtf.blue">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.my.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.mail.mobile.android.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.appple.app.email">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "ru.yandex.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.syntomo.email">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.maildroid">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "de.web.mobile.android.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.netease.mobimail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.cloudmagic.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "it.italiaonline.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "jp.co.yahoo.android.ymail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "com.nhn.android.mail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup type = "1"  mask = "8" pkgName = "net.daum.android.solmail">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<startup all = "1" type = "1"  mask = "8" pkgName = "com.google.android.keep">
+		<item mask = "8"  subMask = "2"/>
+		<item mask = "8"  subMask = "16"/>
+	</startup>
+	<!-- background service  16-->
+	<!-- serviceCallerPkgAction -->
+	<startup type = "3"  mask = "16" pkgName = "com.coloros.mcs">
+		<item mask = "16" subMask = "1" action="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+	</startup>
+	<startup type = "3"  mask = "16" pkgName = "com.heytap.mcs">
+		<item mask = "16" subMask = "1" action="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+	</startup>
+	<!-- appServiceRestrictedpProtectlist -->
+	<startup type = "2"  mask = "16" pkgName = "com.oppo.ota"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oppo.cota"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.daemon.shelper"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.exserviceui"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.uxdesign"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.gesture"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oppo.tzupdate"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.tzupdate"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.nearme.statistics.rom"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.familyguard"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.opos.ads"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.android.permissioncontroller"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.android.dlna.service"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.phonemanager"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.securepay"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.android.incallui"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.heytap.openid"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.mediatek.omacp"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.heytap.reader"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.floatassistant"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.heytap.ugcvideo.praise"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.coloros.gamespace"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.achievo.vipshop"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.opposs.marketdemo2"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.cosa"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.ota"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.cota"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.exserviceui"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.uxdesign"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.gesture"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.securepay"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.cupid"></startup>
+	<startup type = "2"  mask = "16" pkgName = "net.oplus.odm"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.ditoautoregist"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oppo.camera"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.finshell.fin"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.oplus.ipemanager"></startup>
+	<startup type = "2"  mask = "16" pkgName = "com.android.traceur"></startup>
+	<!-- special broadcast 256-->
+	<!-- wl -->
+	<startup type = "1"  mask = "256" pkgName = "com.oppo.toprand.voyager"></startup>
+	<startup type = "1"  mask = "256" pkgName = "com.coloros.screenrecorder"></startup>
+	<startup type = "1"  mask = "256" pkgName = "com.oppo.toprand.custom"></startup>
+	<startup type = "1"  mask = "256" pkgName = "com.toprand.voyager"></startup>
+	<startup type = "1"  mask = "256" pkgName = "com.oppo.im"></startup>
+	<startup type = "1"  mask = "256" pkgName = "com.oppo.opnfive"></startup>
+	<startup type = "1"  mask = "256" pkgName = "com.coloros.colorfilestand"></startup>
+	<startup type = "1"  mask = "256" pkgName = "com.transsion.XOSLauncher"></startup>
+	
+	<!--nopkg -->
+	<!-- activity 1-->
+	<!-- blackguardActivity -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.richinfo.system.main.TransparentActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.p1.mobile.putong.api.push.keep.OnePixelActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.youloft.core.report.OnePixActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.mqunar.qutui.KActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.gf.mobile.control.webview.PreloadCordovaActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "moai.daemon.DaemonActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.wpengapp.support.ProtectProcessHelper" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.cleanmaster.daemon.onePxForLive.OnepxActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.henrik.keeplive.onepx.KeepLiveActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.vqs.iphoneassess.activity.InstallActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.alibaba.sdk.android.push.keeplive.PushExtActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.prcgrd.others.onepx.ClearActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.zxsoufun.zxchat.activity.LockActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.netease.nr.biz.push.newpush.activity.PushGTActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.cleanmaster.security.accessibilitysuper.accessibilityopen.ToastTransparentActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.cn21.flowcon.activity.main.OnePixelActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.syezon.wifi.keep_alive.OnePixelAty" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.aia.china.YoubangHealth.activity.activitytask.KeepLiveActy" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.baidu.mbaby.activity.tst.KeepActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.qihoo.browser.keepalive.LiveActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.tshang.peipei.keeplive.onepx.KeepLiveActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.common.cliplib.activity.KeepAliveActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.marsdaemon.DaemonActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.cleanmaster.daemon.onePxForLive.OnepxActivity1" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.marswin89.others.onepx.ClearActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.sohu.push.alive.one_pixel.OnePixelActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.yscall.kulaidian.service.guardian.OnePixelActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.qihoo.util.CommonActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.stub.stub02.Stub01" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.stub.stub01.Stub02" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.stub.stub05.Stub01" flag = "1"/>
+	<!-- activity -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.igexin.sdk.GActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.igexin.sdk.MActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.igexin.sdk.PushActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.igexin.getuiext.activity.GetuiExtActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.tencent.android.tpush.XGPushActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.baidu.android.pushservice.PushKeepAlive" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.huawei.android.pushselfshow.richpush.RichPushActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.huawei.android.pushselfshow.permission.RequestPermissionsActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "cn.jpush.android.ui.PushActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.umeng.update.UpdateDialogActivity" flag = "1"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "1" name = "com.qihoo.util.CommonActivity" flag = "1"/>
+	
+	<!-- bindService  8-->
+	<!-- bindServiceCpn-->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.alipay.android.app.MspService"/> <!-- alipay -->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.sina.weibo.business.RemoteSSOService"/> <!-- weibo -->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.iflytek.speechcloud.binder.BinderService"/> <!-- iflytek -->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.iflytek.vflynote.binder.BinderService"/> <!-- iflytek -->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.iflytek.speechsuite.binder.SuiteBinderService"/> <!-- iflytek -->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.amazon.venezia.service.command.CommandServiceImpl"/> <!-- amazon appstore -->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.tenpay.android.service.TenpayService"/> <!--tencent pay-->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.xiaomi.gamecenter.sdk.Service4SDK"/> <!-- xiaomi game assistant-->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.baidu.netdisk.open.service.OpenService"/> <!--baidu netdisk-->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.ustcinfo.ict.platform.service.PluginServiceImp"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "droid.app.hp.api.share.ShareService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.turntochild.tpysx.TurnToChildAppService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.turntochild.sxcb.turnToChildAppService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.turntochild.i09.TurnToChildService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.turntochild.bxgj.turnToChildAppService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.turntochild.cxcxsy.turnToChildAppService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.unionpay.tsmservice.service.UPServiceTsm"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.unionpay.tsmservice.service.UPNewServiceTsm"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.huawei.hihealthservice.HiHealthService"/><!--2201236-->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.huawei.health.hwhealthlinkage.wearsdk.CallbackService"/><!--2201236-->
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.coloros.mediascanner.scan.ScanJobService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.migu.music.aidl.MiniControlService"/>
+	<startup_nopkg startType = "1" parameterType = "2" mask = "8" name = "com.multimedia.arunit.StandardarService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.alipay.android.app.MspService"/> <!-- alipay -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.sina.weibo.business.RemoteSSOService"/> <!-- weibo -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.iflytek.speechcloud.binder.BinderService"/> <!-- iflytek -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.iflytek.vflynote.binder.BinderService"/> <!-- iflytek -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.iflytek.speechsuite.binder.SuiteBinderService"/> <!-- iflytek -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.amazon.venezia.service.command.CommandServiceImpl"/> <!-- amazon appstore -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.tenpay.android.service.TenpayService"/> <!--tencent pay-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.xiaomi.gamecenter.sdk.Service4SDK"/> <!-- xiaomi game assistant-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.baidu.netdisk.open.service.OpenService"/> <!--baidu netdisk-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.ustcinfo.ict.platform.service.PluginServiceImp"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "droid.app.hp.api.share.ShareService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.turntochild.tpysx.TurnToChildAppService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.turntochild.sxcb.turnToChildAppService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.turntochild.i09.TurnToChildService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.turntochild.bxgj.turnToChildAppService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.turntochild.cxcxsy.turnToChildAppService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.unionpay.tsmservice.service.UPServiceTsm"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.unionpay.tsmservice.service.UPNewServiceTsm"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.huawei.hihealthservice.HiHealthService"/><!--2201236-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.huawei.health.hwhealthlinkage.wearsdk.CallbackService"/><!--2201236-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.coloros.mediascanner.scan.ScanJobService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.migu.music.aidl.MiniControlService"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "8" name = "com.multimedia.arunit.StandardarService"/>
+	
+	<!-- provider 64-->
+	<!-- provider-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.igexin.download.DownloadProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.baidu.android.pushservice.PushInfoProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.umeng.message.provider.MessageProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.tencent.android.tpush.XGPushProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.tencent.android.tpush.SettingsContentProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.tencent.mid.api.MidProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.meituan.android.common.unionid.UnionIdProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.baidu.location.OfflineLocationV1Provider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.meituan.android.common.unionid.UnionIdProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.qihoo.util.CommonProvider" flag="1" priority="2000"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.stub.stub02.Stub04" flag="1" priority="2000"/>
+	<!-- providerCpn-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.tencent.mm.plugin.base.stub.MMPluginProvider"/> <!-- tencent mm pay -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.tencent.mm.plugin.base.stub.WXCommProvider"/>  <!-- mm pay by systemui-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.sina.weibo.provider.SinaWeiboSdkProvider"/><!-- weibo share -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.immomo.momo.sdk.support.MomoSdkSupportProvider"/> <!--momo share-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.huawei.hwid.fingerprint.provider.HwIDProvider"/> <!--huawei game loginID-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.facebook.messenger.app.MessengerLoggedInUserProvider"/> <!--facebook messenger login accounts-->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "android.support.v4.content.FileProvider"/> <!--package upgrade packageinstaller get the file -->
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.moshu.phonelive.magiccore.upadteapk.MNUpdateApkFileProvider"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.tencent.gcloud.ApolloProvider"/>
+	<startup_nopkg startType = "2" parameterType = "2" mask = "64" name = "com.coloros.shortcuts.framework.db.AppDataProvider"/>
+
+	<!-- broadcast 128-->
+	<!-- actionlist-->
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "qualcomm.intent.action.WIFI_DISPLAY_AUDIO"/>
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "android.provider.Telephony.WAP_PUSH_DELIVER"/>
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "android.provider.Telephony.SMS_DELIVER"/>
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "android.content.cts.ContextWrapperTest.STICKY_BROADCAST_RESULT"/>
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "android.intent.action.ANALOG_AUDIO_DOCK_PLUG"/>
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "android.media.AUDIO_BECOMING_NOISY"/>
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "android.media.VOLUME_CHANGED_ACTION"/>
+	<startup_nopkg startType = "1" parameterType = "1" mask = "128" name = "android.appwidget.action.APPWIDGET_ENABLED"/>
+</filter-conf>

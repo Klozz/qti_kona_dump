@@ -1,0 +1,36 @@
+#############################libnfc_accesscard_config.conf###################################
+#add A0, 85, 04, 50, 0A, A8, 2C for mute RATS on Mifare 1K 2020.04.02 bugid:2917116
+# NXP_RF_CONF_BLK_12 block
+# The access card Tx2Rx will be set 0x40 and the A0,   0D,   06,   62/67,   32 register will be set 0xAE/0x0E
+#Add pharse auto function control:A0,   28,   26,   03,   00,   00,   00,   CB  2021-06-02 added by LiuWenJie
+#register addr :A0,   28,   26 ;
+# 03 -->Field On ,mobile reply REQA count，set ->00，disable this function
+# 00 -->Field On ,mobile reply REQB count，set ->00，disable this function
+# 00 -->Field On ,mobile reply REQF count，set ->00，disable this function
+# 00 -->Field On ,14443-4 reply NAK count，set ->00，disable this function
+# CB -->11001011 8bit set 1 mean loop set phase , 7bit set 1 enable NCI log;  1011 mean 11 array phase
+#00B4(45°,FDT default)
+#FF10(-60°,FDT default)
+#02D0(180°,FDT default)
+#0384(225°,FDT default)
+#01E0(120°,FDT default)
+#0000(0°,FDT 7C)
+#0000(0°,FDT 80)
+#00B4(45°,FDT 7C)
+#00B4(45°,FDT 80)
+#FF10(-60°,FDT 7C)
+#FF10(-60°,FDT 80)
+OPLUS_CONF_EXTN={
+          20,   02,   6E,   08,
+          A0,   85,   04,   58,   0A,   A8,   AC,
+          A0,   0D,   03,   61,   09,   7F,
+          A0,   0D,   06,   82,   82,   49,   80,   00,   00,
+          A0,   0D,   06,   80,   82,   49,   80,   00,   00,
+          A0,   0D,   06,   62,   32,   AE,   00,   7F,   00,
+          A0,   0D,   06,   67,   32,   AE,   00,   1F,   00,
+          A0,   6A,   10,   B4,   00,   B4,   00,   B4,   00,   B4,   00,   64,   05,   64,   05,   64,   05,   64,   05,
+          A0,   28,   26,   03,   00,   00,   00,   CB,
+          B4,   00,   00,   10,   FF,   00,   D0,   02,   00,   84,   03,   00,   E0,   01,    00,
+          00,   00,   7C,   00,   00,   80,   B4,   00,   7C,   B4,   00,   80,   10,   FF,    7C,   10,   FF,   80
+}
+##############################NEED THIS LINE TO END FILE#####################################

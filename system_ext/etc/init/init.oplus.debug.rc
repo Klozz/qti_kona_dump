@@ -1,0 +1,1342 @@
+##################################################################################
+### OPLUS_FEATURE_LOGKIT, OPLUS All rights reserved.
+###
+### File: - init.oplus.debug.rc
+### Author: Chunbo.Gao@ANDROID.DEBUG
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### Chunbo.Gao@ANDROID.DEBUG   2014-03-18               Create this file
+##################################################################################
+
+# There are some duplicate codes
+
+on property:persist.sys.dump=1
+    start dumpon
+    start dump_switch_on
+
+on property:persist.sys.engineering.pre.fulldumpon=true
+    start dumpon
+    start dump_switch_on
+    setprop persist.sys.dump 1
+    setprop persist.sys.engineering.pre.fulldumpon false
+
+on property:persist.sys.engineering.pre.fulldumpoff=true
+    start dumpon
+    start dump_switch_on
+    setprop persist.sys.dump 0
+    setprop persist.sys.engineering.pre.fulldumpoff false
+
+on property:persist.sys.dump=0
+    start dumpoff
+    start dump_switch_off
+
+on property:persist.sys.oplus.radio.modemssr=1
+    start dump_switch_modemssr
+
+on property:persist.sys.oplus.radio.modemssr=0
+    start dump_switch_from_ssr_to_minidump
+
+
+#JianRong.Zheng@Swdp.Android.Log, 2016/10/07, remove 0x840 0x841, default value set by kernel or driver, no need to modify here
+on property:persist.sys.powerkeydump=0
+    write /proc/kpdpwr 0
+    write /proc/kpdpwr 100
+
+#JianRong.Zheng@Swdp.Android.Log, 2016/10/07, modify 0x840 from 0x0c to 0x0F, 0x841 from 0x07 to 0x05 avoid cause into dump by mistake(5.5s change to 10.7s)
+on property:persist.sys.powerkeydump=1
+    write /proc/kpdpwr 1
+    write /proc/kpdpwr 101
+
+#linzhangru@PSW.TECH 20191126, trigger saupwklog dump after sau finished or force rebooted
+on property:sys.saupwk.logdump=true
+    start saupwklogdump
+
+#Canjie.Zheng@ANDROID.DEBUG,2016/11/25,disable console log default
+on property:ro.build.release_type=false
+    write /proc/sys/kernel/printk "1 6 1 7"
+
+service dumpon /system/system_ext/bin/autochmod.sh "dumpon"
+    class core
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+service dumpoff /system/system_ext/bin/autochmod.sh "dumpoff"
+    class core
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+service dump_switch_on system/system_ext/bin/dump_switch "fulldump"
+    class core
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+service dump_switch_off system/system_ext/bin/dump_switch "minidump"
+    class core
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+service dump_switch_modemssr system/system_ext/bin/dump_switch "modemssr"
+    class core
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+service dump_switch_from_ssr_to_minidump system/system_ext/bin/dump_switch "modemssr_to_mini"
+    class core
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+service packupminidump /system/system_ext/bin/autochmod.sh "packupminidump"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+service olcpackupminidump /system/system_ext/bin/autochmod.sh "olcpackupminidump"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+service ps /system/system_ext/bin/autochmod.sh "psinfo"
+    class core
+    user root
+    group root system everybody sdcard_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service top /system/system_ext/bin/autochmod.sh "topinfo"
+    class core
+    user root
+    group root system everybody sdcard_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service server_list /system/system_ext/bin/autochmod.sh "servicelistinfo"
+    class core
+    user root
+    group root system everybody sdcard_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service dump_sys /system/system_ext/bin/autochmod.sh "dumpsysinfo"
+    class core
+    user root
+    group root system everybody
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service dump_storage /system/system_ext/bin/autochmod.sh "dumpstorageinfo"
+    class core
+    user root
+    group root system everybody sdcard_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+#Miao.Yu@ANDROID.WMS, 2019/11/25, Add for dump wm info
+service dump_wm /system/system_ext/bin/autochmod.sh "dumpWm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+service dump_state /system/system_ext/bin/autochmod.sh "dumpstate"
+    class core
+    user root
+    group root system everybody sdcard_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service tranfer_tomb /system/system_ext/bin/autochmod.sh "tranfer_tombstone"
+    class core
+    user system
+    group root system tombstoned
+    disabled
+    oneshot
+service tranfer_anr /system/system_ext/bin/autochmod.sh "tranfer_anr"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+#Chunbo.Gao@ANDROID.DEBUG.2514795, 2019/11/12, Add for copy binder_info
+service copybinderinfo /system/system_ext/bin/autochmod.sh "copybinderinfo"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+#Wuchao.Huang@ROM.Framework.EAP, 2019/11/19, Add for copy binder_info
+service copyEapBinderInfo /system/system_ext/bin/autochmod.sh "copyEapBinderInfo"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service logcatsdcard /system/system_ext/bin/autochmod.sh "logcatmain"
+    class core
+    user system
+    group root system shell everybody sdcard_rw log ext_data_rw
+    disabled
+
+service logcatradio /system/system_ext/bin/autochmod.sh "logcatradio"
+    class core
+    user system
+    group root system
+    disabled
+
+service logcatevent /system/system_ext/bin/autochmod.sh "logcatevent"
+    class core
+    user system
+    group root system
+    disabled
+
+service logcatkernel /system/system_ext/bin/autochmod.sh "logcatkernel"
+    class core
+    user root
+    group root system
+    disabled
+
+service cameraloginit /system/system_ext/bin/autochmod.sh "cameraloginit"
+    class core
+    user root
+    disabled
+    oneshot
+
+#Jianping.Zheng@Swdp.Android.Stability.Crash,2017/04/04,add for record performance
+service perf_record /system/system_ext/bin/autochmod.sh "perf_record"
+    class core
+    user root
+    disabled
+    seclabel u:r:perf_record:s0
+
+#Qilong.Ao@ANDROID.BIOMETRICS, 2020/10/16, Add for adb sync
+service oplussync /system/system_ext/bin/autochmod.sh "oplussync"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+#Fei.Mo@PSW.BSP.Sensor, 2017/09/01 ,Add for power monitor top info
+service thermal_top /system/system_ext/bin/autochmod.sh "thermal_top"
+    class core
+    user root
+    disabled
+    oneshot
+
+service dumpenvironment /system/system_ext/bin/autochmod.sh "dumpenvironment"
+    class core
+    #ifdef OPLUS_BUG_STABILITY
+    #Tian.Pan@ANDROID.STABILITY.NA.2020/06/08.add for dump binder info and system_server_fd info
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    #endif /*OPLUS_BUG_STABILITY*/
+    disabled
+    oneshot
+
+on property:vendor.camera.vm.parameters.copycameradcslog=1
+    copy_update_engine_log /data/vendor/explorer/explorer_logs/log/explorer_log_abnormal_log /data/persist_log/backup/explorer_log_abnormal_log
+    start copyCamDcsLog
+    setprop vendor.camera.vm.parameters.copycameradcslog 0
+
+service copyCamDcsLog /system/system_ext/bin/autochmod.sh "copyCamDcsLog"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service tcpdumplog /system/system_ext/bin/autochmod.sh "tcpdumplog"
+    class core
+    user root
+    #ifdef OPLUS_FEATURE_TCPDUMP
+    #DuYuanhua@NETWORK.DATA.2959182, add group for rutils-remove action
+    group root system everybody shell
+    #endif
+    disabled
+    oneshot
+service fingerprintlog /system/system_ext/bin/autochmod.sh "fingerprintlog"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+#Qi.Zhang@TECH.BSP.Stability 2019/09/20, Add for uefi log
+service logcatuefi /system/system_ext/bin/autochmod.sh "logcatuefi"
+    class core
+    user root
+    group cache
+    disabled
+    oneshot
+
+service fplogqess /system/system_ext/bin/autochmod.sh "fpqess"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service prepacketlog /odm/bin/vendor.autochmod.sh "prepacketlog"
+    class core
+    user root
+    disabled
+    oneshot
+
+service wifipktlogtransf /odm/bin/vendor.autochmod.sh "wifipktlogtransf"
+    class core
+    user root
+    disabled
+    oneshot
+
+service wifidriverlog_on /vendor/bin/cnss_diag  -m /mnt/vendor/persist/wlan/cnss_diag.conf -q -f -t HELIUM
+    class main
+    user system
+    group system wifi inet sdcard_rw media_rw diag
+    disabled
+    oneshot
+
+service wifidriverlog_off /vendor/bin/cnss_diag -q -u -w -b 4096
+    class main
+    user system
+    group system wifi inet net_admin sdcard_rw media_rw diag
+    disabled
+    oneshot
+
+service setiwprivpkt0 /system/system_ext/bin/autochmod.sh "setiwprivpkt0"
+    class core
+    user root
+    disabled
+    oneshot
+
+service setiwprivpkt1 /system/system_ext/bin/autochmod.sh "setiwprivpkt1"
+    class core
+    user root
+    disabled
+    oneshot
+
+service setiwprivpkt4 /system/system_ext/bin/autochmod.sh "setiwprivpkt4"
+    class core
+    user root
+    disabled
+    oneshot
+
+on property:oplus.wifi.ftm=1
+    stop wifidriverlog_on
+    stop wifidriverlog_always_on
+    #stop wifidriverlog_off
+
+
+#Zaogen.Hong@PSW.CN.WiFi.Connect,2020/03/03, Add for trigger wifi dump by engineerMode
+service wifi_minidump /system/system_ext/bin/autochmod.sh "wifi_minidump"
+    class core
+    user root
+    group system root shell
+    disabled
+    oneshot
+
+service initcache /system/system_ext/bin/autochmod.sh "initcache"
+    class core
+    user system
+    group root system shell log
+    disabled
+    oneshot
+
+service logcatcache /system/system_ext/bin/autochmod.sh "logcatcache"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service radiocache /system/system_ext/bin/autochmod.sh "radiocache"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service eventcache /system/system_ext/bin/autochmod.sh "eventcache"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service kernelcache /system/system_ext/bin/autochmod.sh "kernelcache"
+    class core
+    user root
+    group root system
+    disabled
+
+service tcpdumpcache /system/system_ext/bin/autochmod.sh "tcpdumpcache"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service fingerprintcache /system/system_ext/bin/autochmod.sh "fingerprintcache"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service fplogcache /system/system_ext/bin/autochmod.sh "fplogcache"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+#ifdef OPLUS_FEATURE_STANDBY_MONITOR
+#Linjie.Xu@PSW.AD.Power.PowerMonitor.1104067, 2018/01/17, Add for OppoPowerMonitor get dmesg at O
+service tranferPowerRelated /system/system_ext/bin/autochmod.sh "tranferPowerRelated"
+    class core
+    user root
+    group root system bluetooth wifi everybody media_rw sdcard_rw ext_data_rw
+    disabled
+    oneshot
+
+    service qrtrlookupforopm /system/system_ext/bin/autochmod.sh "qrtrlookupforopm"
+    class core
+    user root
+    group root system everybody media_rw ext_data_rw
+    disabled
+    oneshot
+
+service startSsLogPower /system/system_ext/bin/autochmod.sh "startSsLogPower"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+service opmgetdmesg /system/system_ext/bin/autochmod.sh "kernelcacheforopm"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+service catchWXlogForOpm /system/system_ext/bin/autochmod.sh "catchWXlogForOpm"
+    class core
+    user root
+    group root system everybody sdcard_rw ext_data_rw media_rw
+    disabled
+    oneshot
+
+service eapCopyWXlog /system/system_ext/bin/autochmod.sh "eapCopyWXlog"
+    class core
+    user root
+    group root system everybody sdcard_rw ext_data_rw media_rw
+    disabled
+    oneshot
+
+service catchQQlogForOpm /system/system_ext/bin/autochmod.sh "catchQQlogForOpm"
+    class core
+    user root
+    group root system everybody sdcard_rw ext_data_rw media_rw
+    disabled
+    oneshot
+
+service catchClockForOpm /system/system_ext/bin/autochmod.sh "catchClockForOpm"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+#Linjie.Xu@PSW.AD.Power.PowerMonitor.1104067, 2018/01/17, Add for OppoPowerMonitor get Sysinfo at O
+service opmgetps /system/system_ext/bin/autochmod.sh "psforopm"
+    class main
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+service opmgetcpufreq /system/system_ext/bin/autochmod.sh "cpufreqforopm"
+    class main
+    user root
+    disabled
+    oneshot
+
+service logcatMainCacheForOpm /system/system_ext/bin/autochmod.sh "logcatMainCacheForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+
+service logcatEventCacheForOpm /system/system_ext/bin/autochmod.sh "logcatEventCacheForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+
+service logcatRadioCacheForOpm /system/system_ext/bin/autochmod.sh "logcatRadioCacheForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+
+service catchBinderInfoForOpm /system/system_ext/bin/autochmod.sh "catchBinderInfoForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service catchBattertFccForOpm /system/system_ext/bin/autochmod.sh "catchBattertFccForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service catchTopInfoForOpm /system/system_ext/bin/autochmod.sh "catchTopInfoForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+service dumpsysHansHistoryForOpm /system/system_ext/bin/autochmod.sh "dumpsysHansHistoryForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service getPropForOpm /system/system_ext/bin/autochmod.sh "getPropForOpm"
+    class core
+    user root
+    group root system everybody shell
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+service dumpsysSurfaceFlingerForOpm /system/system_ext/bin/autochmod.sh "dumpsysSurfaceFlingerForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service dumpsysSensorserviceForOpm /system/system_ext/bin/autochmod.sh "dumpsysSensorserviceForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service dumpsysBatterystatsForOpm /system/system_ext/bin/autochmod.sh "dumpsysBatterystatsForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service dumpsysBatterystatsCheckinForOpm /system/system_ext/bin/autochmod.sh "dumpsysBatterystatsCheckinForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service dumpsysBatterystatsOplusCheckinForOpm /system/system_ext/bin/autochmod.sh "dumpsysBatterystatsOplusCheckinForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service dumpsysMediaForOpm /system/system_ext/bin/autochmod.sh "dumpsysMediaForOpm"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    group root system everybody shell
+    disabled
+    oneshot
+
+service logcusMainForOpm /system/system_ext/bin/autochmod.sh "logcusMainForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcusEventForOpm /system/system_ext/bin/autochmod.sh "logcusEventForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcusRadioForOpm /system/system_ext/bin/autochmod.sh "logcusRadioForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcusKernelForOpm /system/system_ext/bin/autochmod.sh "logcusKernelForOpm"
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcusTCPForOpm /system/system_ext/bin/autochmod.sh "logcusTCPForOpm"
+    class core
+    user root
+    group root system everybody shell
+    disabled
+    oneshot
+
+service customDiaglogForOpm /system/system_ext/bin/autochmod.sh "customDiaglogForOpm"
+    class core
+    user root
+    disabled
+    oneshot
+#endif OPLUS_FEATURE_STANDBY_MONITOR
+
+service dmaprocsforhealth /system/system_ext/bin/autochmod.sh "dmaprocsforhealth"
+    class main
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+service meminfoforhealth /system/system_ext/bin/autochmod.sh "meminfoforhealth"
+    class main
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+service slabinfoforhealth /system/system_ext/bin/autochmod.sh "slabinfoforhealth"
+    class main
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+service svelteforhealth /system/system_ext/bin/autochmod.sh "svelteforhealth"
+    class main
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+#Yufeng.Liu@Plf.TECH.Performance, 2019/9/3, Add for malloc_debug
+service memdebugregister /system/system_ext/bin/autochmod.sh "memdebugregister"
+    class main
+    user root
+    disabled
+    oneshot
+
+service memdebugstart /system/system_ext/bin/autochmod.sh "memdebugstart"
+    class main
+    user root
+    disabled
+    oneshot
+
+service memdebugdump /system/system_ext/bin/autochmod.sh "memdebugdump"
+    class main
+    user root
+    disabled
+    oneshot
+
+service memdebugremove /system/system_ext/bin/autochmod.sh "memdebugremove"
+    class main
+    user root
+    disabled
+    oneshot
+
+on post-fs-data
+    mkdir /data/ramdump 770 system system
+    mkdir /dev/log  0775 system system
+
+
+    #Fangfang.Hui@BSP.Stability, 2020/09/04, Add for backup the feedback log to opporeserve2 partition
+    mkdir /data/persist_log/DCS/de/theia 0777 system system
+    mkdir /data/persist_log/DCS/en/theia 0777 system system
+    mkdir /data/persist_log/theia        0777 system system
+
+    mkdir /data/persist_log/DCS/de/minidump 0777 system system
+    mkdir /data/persist_log/DCS/en/minidump 0777 system system
+    mkdir /data/persist_log/DCS/minidump 0777 system system
+    mkdir /data/persist_log/DCS/de/AEE_DB 0777 system system
+    mkdir /data/persist_log/DCS/en/AEE_DB 0777 system system
+    #Fangfang.Hui@BSP.Stability, 2020/09/04, Add for backup the feedback log to opporeserve2 partition
+    mkdir /data/persist_log/oplusreserve 0777 system system
+
+    mkdir /data/persist_log/oplusreserve/media 0777 system system
+    mkdir /data/persist_log/oplusreserve/media/log 0777 system system
+    mkdir /data/persist_log/oplusreserve/media/log/minidumpbackup 0777 system system
+    mount ext4 /mnt/vendor/oplusreserve/media/log/minidump /data/persist_log/oplusreserve/media/log/minidumpbackup bind
+
+    mkdir /data/oplus/mmdump 0777 system system
+    mkdir /data/oplus/mmdump/gpu 0777 system system
+    mkdir /data/vendor/mmdump 0771 root system
+    mkdir /data/vendor/mmdump/adsp 0771 root system
+    #Zhao.Pan@MULTIMEDIA.AUDIODRIVER.ADSP, 2021/01/21, Add for adsp ramdump
+    mkdir /data/persist_log/DCS/en/mm_logs 0777 system system
+    mkdir /data/persist_log/DCS/en/mm_logs/ramdump 0777 system system
+    mkdir /data/persist_log/DCS/en/mm_logs/ramdump/adsp 0777 system system
+    #Yang.Cao@MULTIMEDIA.DISPLAY.GPU, 2021/06/23, Add for gpu ramdump
+    mkdir /data/persist_log/DCS/en/mm_logs/ramdump/gpu 0777 system system
+
+    #ifdef OPLUS_FEATURE_SENSOR
+    #tangjh@PSW.BSP.SENSOR, 2020/07/30 ,add for slpi dump
+    mkdir /data/vendor/mmdump/slpi 0771 root system
+    #endif
+
+    #Peng.Zhong@ANDROID.INPUT.1149733, 2017/11/08, Add for input dynamically log
+    mkdir /data/logswitch 0777 system system
+
+    #Fangfang.Hui@BSP.Stability, 2020/09/04, Add for backup the feedback log to opporeserve2 partition
+    mkdir /data/persist_log/oplusreserve 0777 system system
+    chmod 0777 /data/persist_log/oplusreserve
+    chown system system /data/persist_log/oplusreserve
+    mkdir /data/persist_log/oplusreserve/media 0777 system system
+    chmod 0777 /data/persist_log/oplusreserve/media
+    chown system system /data/persist_log/oplusreserve/media
+    mkdir /data/persist_log/oplusreserve/media/log 0777 system system
+    chmod 0777 /data/persist_log/oplusreserve/media/log
+    chown system system /data/persist_log/oplusreserve/media/log
+    mkdir /data/persist_log/oplusreserve/media/log/minidumpbackup 0777 system system
+    chmod 0777 /data/persist_log/oplusreserve/media/log/minidumpbackup
+    chown system system /data/persist_log/oplusreserve/media/log/minidumpbackup
+    mount ext4 /mnt/vendor/oplusreserve/media/log/minidump /data/persist_log/oplusreserve/media/log/minidumpbackup bind
+
+    #PanZhuan@BSP.Tools, 2020/12/04, add for backup stamp data to opporeserve2 partition
+    mkdir /data/persist_log/stamp 0777 system system
+    chmod 0777 /data/persist_log/stamp
+    chown system system /data/persist_log/stamp
+
+    #Qianxu@MM,2021/2/20,add for display dump
+    mkdir /data/persist_log/DCS/de/psw_multimedia_display  0777 system system
+    mkdir /data/persist_log/DCS/en/psw_multimedia_display  0777 system system
+    mkdir /data/persist_log/DCS/de/psw_multimedia_perf  0777 system system
+    mkdir /data/persist_log/DCS/en/psw_multimedia_perf  0777 system system
+
+    #Jiazheng.Ju@Tech.Framework.Performance, 2021/02/19, Add to create quality_log directory for oplusqualityprotect
+    mkdir /data/persist_log/DCS/de/quality_log 0777 system system
+    chmod 0777 /data/persist_log/DCS/de/quality_log
+
+    #Jiaqi.Hao@ANDROID.STABILITY, 2021/06/25, Add for create stability_monitor directory for oplusMemoryLeakMonitor
+    mkdir /data/persist_log/DCS/de/stability_monitor 0777 system system
+    chmod 0777 /data/persist_log/DCS/de/stability_monitor
+
+    copy /sys/fs/pstore/console-ramoops-0 /data/debugging/last_kmsg.txt
+
+    #zhuzhenjian@BSP,Stability,2022/4/26, add fdleak_log dir on DCS
+    mkdir /data/persist_log/DCS/de/fdleak 0777 system system
+    chmod 0777 /data/persist_log/DCS/de/fdleak
+
+service initopluslog /system/system_ext/bin/autochmod.sh "initopluslog"
+    class core
+    user system
+    group root system shell everybody sdcard_rw log ext_data_rw
+    disabled
+    oneshot
+
+on property:persist.sys.assert.panic=true
+   # TODO boot auto start
+   start initcache
+   start initopluslog
+   start inittpdebug
+   setprop persist.sys.log.cache false
+
+on property:persist.sys.assert.panic.camera=true
+   start initcache
+   start initopluslog
+   start inittpdebug
+   setprop persist.sys.log.cache false
+
+#Xiao.Liang@PSW.Wifi.Basic.Log.1072015,2018/10/21, add for collecting wifi driver log
+on property:vold.decrypt=trigger_restart_framework && property:persist.sys.debuglog.config=wifi && property:persist.sys.assert.panic=true
+   #start prepacketlog
+   #stop wifidriverlog_off
+   stop wifidriverlog_always_on
+   start wifidriverlog_on
+
+#lixiong2@CONNECTIVITY.WIFI.HARDWARE.LOG.3978621, 2022/08/09, add for collecting wifi driver log of sm8550
+on property:persist.sys.assert.panic=true && property:persist.sys.debuglog.config=wifi
+   #start prepacketlog
+   #stop wifidriverlog_off
+   stop wifidriverlog_always_on
+   start wifidriverlog_on
+
+on property:ro.crypto.state=encrypted && property:ro.crypto.type=file && property:ro.oplus.connectivity.prevision_build=true && property:persist.sys.assert.panic=true
+   stop wifidriverlog_always_on
+   start wifidriverlog_on
+#endif
+
+on property:sys.oplus.collectcache.start=true
+   start logcatcache
+   start radiocache
+   start eventcache
+   start kernelcache
+   start tcpdumpcache
+   start fingerprintcache
+   start fplogcache
+   start logcatuefi
+
+on property:sys.oplus.collectlog.start=true
+   start logcatsdcard
+   start logcatradio
+   start logcatevent
+   start logcatkernel
+   start tcpdumplog
+   start fingerprintlog
+   start fplogqess
+   start qmilogon
+   #ifdef OPLUS_FEATURE_SSLOG_CATCH
+   #ZhangWankang@NETWORK.POWER 2020/04/02,add for catch ss log
+   start locatModemTmp
+   #endif
+
+#Canjie.Zheng@ANDROID.DEBUG,2017/03/09, add for Sensor.logger
+service resetlogpath /system/system_ext/bin/autochmod.sh "resetlogpath"
+    class main
+    user root
+    disabled
+    oneshot
+
+#Jianping.Zheng@Swdp.Android.Stability.Crash,2017/04/04,add for record performance
+on property:persist.sys.oplus.perfrecord=true
+    start perf_record
+
+on property:persist.sys.oplus.perfrecord=false
+    stop perf_record
+
+#Canjie.Zheng@ANDROID.DEBUG,2016/11/28,add for tp
+service gettpinfo /system/system_ext/bin/autochmod.sh "gettpinfo"
+    class main
+    user root
+    group root system  shell everybody media_rw sdcard_rw ext_data_rw
+    disabled
+    oneshot
+
+service inittpdebug /system/system_ext/bin/autochmod.sh "inittpdebug"
+    class main
+    user root
+    disabled
+    oneshot
+
+service settplevel /system/system_ext/bin/autochmod.sh "settplevel"
+    class main
+    user root
+    disabled
+    oneshot
+
+service readdump system/system_ext/bin/minidumpreader
+    class main
+    user root
+    group system root shell
+    oneshot
+
+on property:sys.oplus.minidump=on
+    write /sys/module/msm_poweroff/parameters/download_mode 1
+
+on property:sys.oplus.minidump=off
+    write /sys/module/msm_poweroff/parameters/download_mode 0
+
+on property:persist.sys.assert.panic.camera=false
+    start inittpdebug
+    start resetlogpath
+    setprop persist.sys.log.cache true
+
+on property:persist.sys.assert.panic=false
+    start inittpdebug
+    start resetlogpath
+    start qmilogoff
+    setprop persist.sys.log.cache true
+
+#Xiao.Liang@PSW.Wifi.Basic.Log.1072015,2018/10/21, add for collecting wifi driver log
+on property:vold.decrypt=trigger_restart_framework && property:persist.sys.assert.panic=false
+    stop wifidriverlog_on
+    #start wifidriverlog_off
+    #start wifipktlogtransf
+    chmod 0770 /data/vendor/wifi
+
+on property:persist.sys.assert.panic=false && property:ro.crypto.state=encrypted && property:ro.crypto.type=file
+    stop wifidriverlog_on
+    #start wifidriverlog_off
+    #start wifipktlogtransf
+    chmod 0770 /data/vendor/wifi
+
+on property:persist.sys.oplusdebug.tplevel=*
+    start settplevel
+
+#./add for new log kit begin
+service tranfer2 /system/system_ext/bin/autochmod.sh "transfer_log"
+    class core
+    user root
+    group root system bluetooth wifi everybody media_rw sdcard_rw ext_data_rw
+    disabled
+    oneshot
+
+#./add for chmod and chown while timeout
+service chmodFromBasePath /system/system_ext/bin/autochmod.sh "chmodFromBasePath"
+    class core
+    user root
+    group root system bluetooth wifi everybody media_rw sdcard_rw ext_data_rw
+    disabled
+    oneshot
+
+#endif
+#./add for new log kit end
+
+#ifdef OPLUS_FEATURE_RECOVERY_BOOT
+#Shuangquan.du@ANDROID.UPDATABILITY, 2019/07/03, add for generate runtime prop
+on post-fs-data
+    start generate_runtime_prop
+
+service generate_runtime_prop /system/system_ext/bin/autochmod.sh "generate_runtime_prop"
+    class core
+    user root
+    group system root cache
+    seclabel u:r:generate_runtime_prop:s0
+    disabled
+    oneshot
+#endif /* OPLUS_FEATURE_RECOVERY_BOOT */
+
+#Fangfang.Hui@TECH.AD.Stability, 2019/08/13, Add for the quality feedback dcs config
+service backup_minidumplog /system/system_ext/bin/autochmod.sh "backup_minidumplog"
+    class core
+    user system
+    group system root cache shell
+    seclabel u:r:oplusbootstats:s0
+    disabled
+    oneshot
+
+#add for customer log
+service delcustomlog  /system/system_ext/bin/autochmod.sh "delcustomlog"
+    class core
+    user root
+    disabled
+    oneshot
+
+service customdmesg  /system/system_ext/bin/autochmod.sh "customdmesg"
+    class core
+    user root
+    disabled
+    oneshot
+
+service customdiaglog  /system/system_ext/bin/autochmod.sh "customdiaglog"
+    class core
+    user root
+    disabled
+    oneshot
+
+service mvrecoverylog  /system/system_ext/bin/autochmod.sh "mvrecoverylog"
+    class core
+    user system
+    group system root everybody cache sdcard_rw
+    seclabel u:r:mvrecoverylog:s0
+    disabled
+    oneshot
+
+service transfer_recovery  /system/system_ext/bin/autochmod.sh "transfer_recovery"
+    class core
+    user system
+    group system root everybody cache sdcard_rw
+    seclabel u:r:mvrecoverylog:s0
+    disabled
+    oneshot
+
+#ifdef OPLUS_FEATURE_VAB_LOG
+#Zhangxueqiang@ANDROID.UPDATABILITY, 2020/11/24, add for save update_engine log
+on property:sys.oplus.copyrecoverylog=1
+    copy_update_engine_log /mnt/vendor/oplusreserve/recovery /sdcard/Android/data/com.oplus.olc/files/Log/recovery_log/recovery
+    copy_update_engine_log /mnt/vendor/oplusreserve/factory /sdcard/Android/data/com.oplus.olc/files/Log/recovery_log/factory
+    copy_update_engine_log /mnt/vendor/oplusreserve/update_engine_log /sdcard/Android/data/com.oplus.olc/files/Log/recovery_log/update_engine_log
+    setprop sys.oplus.copyrecoverylog 0
+#endif /* OPLUS_FEATURE_VAB_LOG */
+
+service logcusmain  /system/system_ext/bin/autochmod.sh "logcusmain"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcusevent /system/system_ext/bin/autochmod.sh "logcusevent"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcusradio /system/system_ext/bin/autochmod.sh "logcusradio"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcuskernel /system/system_ext/bin/autochmod.sh "logcuskernel"
+    class core
+    user system
+    group root system
+    disabled
+    oneshot
+
+service logcustcpdump /system/system_ext/bin/autochmod.sh "logcustcpdump"
+    class core
+    user root
+    group root system everybody shell
+    disabled
+    oneshot
+
+service logcuschmod /system/system_ext/bin/autochmod.sh "logcuschmod"
+    class core
+    user root
+    group root system sdcard_rw
+    disabled
+    oneshot
+
+service logcusqmistart  /system/system_ext/bin/autochmod.sh "logcusqmistart"
+    class core
+    user root
+    disabled
+    oneshot
+service logcusqmistop  /system/system_ext/bin/autochmod.sh "logcusqmistop"
+    class core
+    user root
+    disabled
+    oneshot
+
+#Laixin@PSW.CN.WiFi.Basic.Switch.1069763, 2018/09/03, Add for collect wifi switch log
+service collectWifiP2pLog /system/system_ext/bin/autochmod.sh "collectWifiP2pLog"
+    class main
+    user root
+    disabled
+    oneshot
+
+service packWifiP2pFailLog /system/system_ext/bin/autochmod.sh "packWifiP2pFailLog"
+    class main
+    user root
+    disabled
+    oneshot
+
+on property:sys.oplus.wifi.p2p.log.stop=1
+    start packWifiP2pFailLog
+
+#ifdef OPLUS_FEATURE_WIFI_LOG
+#YangQing@OPLUS_FEATURE_WIFI_LOG, 2022/05/13 , add for collect wifi log
+on property:sys.oplus.wifi.connect.firmware_log=1
+    start wifidriverlog_always_on
+on property:sys.oplus.wifi.connect.firmware_log=0
+    stop wifidriverlog_always_on
+on property:sys.oplus.wifi.connect.tcpdump_log=1
+    start captureTcpdumpLog
+on property:sys.oplus.wifi.connect.tcpdump_log=0
+    stop captureTcpdumpLog
+
+service wifidriverlog_always_on /vendor/bin/cnss_diag  -m /mnt/vendor/persist/wlan/cnss_diag_always_on.conf -q -f -t HELIUM
+    class main
+    user system
+    group system wifi inet sdcard_rw media_rw diag
+    disabled
+    oneshot
+
+service captureTcpdumpLog /system/system_ext/bin/autochmod.sh "captureTcpdumpLog"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+#endif /* OPLUS_FEATURE_WIFI_LOG */
+
+#Xiao.Liang@PSW.CN.WiFi.Basic.SoftAP.1610391, 2018/10/30, Modify for reading client devices name from /data/misc/dhcp/dnsmasq.leases
+service changedhcpfolderpermissions /system/system_ext/bin/autochmod.sh "changedhcpfolderpermissions"
+    class main
+    user root
+    disabled
+    oneshot
+
+#Lei.Zhang@PSW.CN.WiFi.Basic.Hardware.1687242, 2018/12/04, Add for change ini file for WiFi roaming test
+service switchWiFiIniForRoam /odm/bin/vendor.autochmod.sh "switchWiFiIniForRoam"
+    class main
+    user root
+    disabled
+    oneshot
+
+#add for oidt begin
+service oidtlogs /system/system_ext/bin/autochmod.sh "oidtlogs"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+#add for oidt end
+
+#ifdef OPLUS_FEATURE_PHOENIX
+on post-fs
+    write /proc/phoenix "SET_BOOTSTAGE@NATIVE_INIT_POST_FS"
+
+on property:sys.oplus.phoenix.prepare_log=*
+    exec u:r:oplusbootstats:s0 system system -- /system_ext/bin/phoenix_log_manager
+
+on property:sys.oplus.phoenix.handle_error=*
+    exec  u:r:oplusbootstats:s0 root system -- /system_ext/bin/phoenix_log_native_helper.sh ${sys.oplus.phoenix.handle_error}
+
+on property:sys.boot_completed=1
+    setprop sys.oplus.phoenix.prepare_log boot_success
+
+on property:sys.olc.service.on=*
+    setprop sys.oplus.phoenix.prepare_log boot_success
+#endif
+
+on property:sys.boot_completed=1
+#ifdef OPLUS_FEATURE_SHUTDOWN_DETECT
+#Liang.Zhang@TECH.BSP.Stability.OPLUS_SHUTDOWN_DETECT, 2019/04/28, Add for shutdown detect
+    setprop sys.oplus.shutdown.prepare_log boot_success
+#endif /* OPLUS_FEATURE_SHUTDOWN_DETECT */
+
+#ifdef OPLUS_FEATURE_SHUTDOWN_DETECT
+#Bin.Xu@BSP.KERNEL.STABILITY, 2020/04/27, Add for shutdown detect.
+on property:sys.olc.service.on=*
+    setprop sys.oplus.shutdown.prepare_log boot_success
+
+on property:sys.oplus.shutdown.prepare_log=*
+    exec u:r:oplusbootstats:s0 system system -- /system_ext/bin/shutdown_log_back
+
+on property:sys.oplus.shutdown.handle_error=*
+    exec u:r:oplusbootstats:s0 system system -- /system_ext/bin/shutdown_log_native_helper.sh ${sys.oplus.shutdown.handle_error}
+#endif  /* OPLUS_FEATURE_SHUTDOWN_DETECT */
+
+#Chunbo.Gao@ANDROID.DEBUG.1968962, 2019/4/23, Add for qmi log
+service qmilogon /system/system_ext/bin/autochmod.sh "qmilogon"
+    class core
+    user root
+    disabled
+    oneshot
+
+service qmilogoff /system/system_ext/bin/autochmod.sh "qmilogoff"
+    class core
+    user root
+    disabled
+    oneshot
+
+service qrtrlookup /odm/bin/vendor.autochmod.sh "qrtrlookup"
+    class core
+    user root
+    disabled
+    oneshot
+
+service adspglink /system/system_ext/bin/autochmod.sh "adspglink"
+    class core
+    user root
+    disabled
+    oneshot
+
+service modemglink /system/system_ext/bin/autochmod.sh "modemglink"
+    class core
+    user root
+    disabled
+    oneshot
+
+service cdspglink /system/system_ext/bin/autochmod.sh "cdspglink"
+    class core
+    user root
+    disabled
+    oneshot
+
+service modemqrtr /system/system_ext/bin/autochmod.sh "modemqrtr"
+    class core
+    user root
+    disabled
+    oneshot
+
+service sensorqrtr /system/system_ext/bin/autochmod.sh "sensorqrtr"
+    class core
+    user root
+    disabled
+    oneshot
+
+service npuqrtr /system/system_ext/bin/autochmod.sh "npuqrtr"
+    class core
+    user root
+    disabled
+    oneshot
+
+service slpiqrtr /system/system_ext/bin/autochmod.sh "slpiqrtr"
+    class core
+    user root
+    disabled
+    oneshot
+
+service slpiglink /system/system_ext/bin/autochmod.sh "slpiglink"
+    class core
+    user root
+    disabled
+    oneshot
+#ifdef OPLUS_FEATURE_SSLOG_CATCH
+#ZhangWankang@NETWORK.POWER 2020/04/02,add for catch ss log
+service logcatSsLog /system/system_ext/bin/autochmod.sh "logcatSsLog"
+    class core
+    user root
+    group root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+#endif
+
+#Haiping.Zhong@AD.BuildConfig.2516504, 2019/11/07, Add for set logd prop
+on property:persist.oplus.logd.kernel=true
+    stop logd
+    start logd
+#endif
+service transferUser /system/system_ext/bin/autochmod.sh "transferUser"
+    class core
+    user system
+    group root system sdcard_rw everybody
+    disabled
+    oneshot
+
+service dump_system /system/system_ext/bin/autochmod.sh "dump_system"
+    class core
+    user root
+    group root system everybody sdcard_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+#Fuchun.Liao@BSP.CHG.Basic 2019/06/09 modify for black/bright screen check
+service create_black_bright_check_file /system/system_ext/bin/autochmod.sh "create_black_bright_check_file"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+on post-fs-data && property:ro.crypto.type=file
+    mkdir /data/persist_log/bsp/ 0777 system system
+    start create_black_bright_check_file
+#endif /* VENDOR_EIDT */
+
+#ifdef OPLUS_BUG_STABILITY
+#Qing.Wu@ANDROID.STABILITY.2278668, 2019/09/03, Add for capture binder info
+service binderinfocapture /system/system_ext/bin/autochmod.sh "binderinfocapture"
+    class core
+    user root
+    group system root shell
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+
+on property:debug.binderinfo.capture=true
+    start binderinfocapture
+#endif /* OPLUS_BUG_STABILITY */
+
+#ifdef OPLUS_BUG_STABILITY
+#Tian.Pan@ANDROID.STABILITY.3054721.2020/08/31.add for fix debug system_server register too many receivers issue.
+on property:debug.receiverinfo.capture=true
+    start receiverinfocapture
+
+service receiverinfocapture /system/system_ext/bin/autochmod.sh "receiverinfocapture"
+    class core
+    user root
+    group system root shell
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+#endif /*OPLUS_BUG_STABILITY*/
+
+#ifdef OPLUS_BUG_STABILITY
+#Tian.Pan@ANDROID.STABILITY.395865.2020/09/20.add for fix debug system_server binder thread full
+on property:debug.binderthreadfull.capture=true
+    start binderthreadfullcapture
+
+service binderthreadfullcapture /system/system_ext/bin/autochmod.sh "binderthreadfullcapture"
+    class core
+    user root
+    group system root shell
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+#endif /*OPLUS_BUG_STABILITY*/
+
+#Hong.Zhang@TECH.BSP.Stability.Agingtest, 2020/07/24, Add for agingtest
+#ifdef OPLUS_FEATURE_AGINGTEST
+service agingfixfreqcase /system/system_ext/bin/autofixfreqtest.sh
+    class core
+    user root
+    group root system cache
+    disabled
+    oneshot
+on property:vendor.oplus.freqtest.process=pretest
+    start agingfixfreqcase
+#endif /* OPLUS_FEATURE_AGINGTEST */
+
+#ifdef OPLUS_FEATURE_MEMLEAK_DETECT
+#Hailong.Liu@ANDROID.MM, 2020/03/18, add for capture native malloc leak on aging_monkey test
+on boot
+    chown system system /dev/osvelte
+    chmod 0662 /dev/osvelte
+
+on boot && property:libc.debug.hooks.enable=svelte
+   start storesveltelog
+
+service storesveltelog /system/system_ext/bin/autochmod.sh "storeSvelteLog"
+    class core
+    user root
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot
+#endif /* OPLUS_FEATURE_MEMLEAK_DETECT */
+
+service chmoddcsenpath /system/system_ext/bin/autochmod.sh "chmoddcsenpath"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+#ifdef OPLUS_FEATURE_RECOVERY_BOOT_REASON
+#Martin.li@kernel.stability 2021/5/30 add for onbootlog
+service onbootlog system_ext/bin/onbootlog
+   class core
+   user root
+   group root system
+   oneshot
+#endif
+

@@ -1,0 +1,13 @@
+on property:debug.qcom.video.log.switch=On
+    setprop persist.vendor.debug.av.logs.lvl 2
+    write /d/msm_vidc/debug_level "0x103F113F"
+
+on property:debug.qcom.video.log.switch=Off
+    setprop persist.vendor.debug.av.logs.lvl 0
+    write /d/msm_vidc/debug_level "0x20181001"
+
+on property:debug.oplus.video.log.switch=On
+    setprop debug.oplus.video.log.enable 1
+
+on property:debug.oplus.video.log.switch=Off
+    setprop debug.oplus.video.log.enable 0

@@ -1,0 +1,7 @@
+com.android.email.partnerprovider:EmailPartnerProvider.apk::false
+com.oplus.stdsp:StdSP.apk::false
+com.heytap.mcs:MCS.apk::false
+com.oplus.melody:Melody.apk::false
+com.oplus.wifibackuprestore:WifiBackupRestore.apk::false
+com.oplus.interconnectcollectkit:InterconnectCollectKit.apk::false
+com.android.providers.partnerbookmarks:ChromePartnerProvider.apk::false

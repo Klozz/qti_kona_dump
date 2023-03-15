@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+    <default-grant-permissions package="com.heytap.market"
+        sha256-cert-digest="289CC3429F496460B66AC2A876C040091AAEF55B5EB942C2CE697EF3B1201459">
+        <!-- storge -->
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="true"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="true"/>
+        <!-- phone -->
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.WRITE_CALL_LOG"/>
+        <permission name="com.android.voicemail.permission.ADD_VOICEMAIL"/>
+        <permission name="android.permission.USE_SIP"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.scenemode">
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oplus.themestore"
+        sha256-cert-digest="01659F979D273A455539C21C69C6A6E6805FE936CC1A5D18FCFA1A34DCE5A5DF">
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </default-grant-permissions>
+</packages>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<celluerNetworkConfig>
+    <version>2021052610</version>
+    <CHECK_NETWORK_SERVER_01>http://conn-service-in-01.allawnos.com/generate204</CHECK_NETWORK_SERVER_01>
+    <CHECK_NETWORK_SERVER_02>http://conn-service-in-02.allawnos.com/generate204</CHECK_NETWORK_SERVER_02>
+    <CHECK_NETWORK_SERVER_03>http://conn-service-in-03.allawnos.com/generate204</CHECK_NETWORK_SERVER_03>
+    <CHECK_NETWORK_SERVER_04>http://conn-service-in-04.allawnos.com/generate204</CHECK_NETWORK_SERVER_04>
+    <CHECK_NETWORK_SERVER_05>http://conn-service-in-05.allawnos.com/generate204</CHECK_NETWORK_SERVER_05>
+    <CHECK_NETWORK_SERVER_06>http://conn-service-in-06.allawnos.com/generate204</CHECK_NETWORK_SERVER_06>
+    <CHECK_NETWORK_SERVER_07>http://conn-service-in-07.allawnos.com/generate204</CHECK_NETWORK_SERVER_07>
+    <CHECK_NETWORK_SERVER_08>http://conn-service-in-08.allawnos.com/generate204</CHECK_NETWORK_SERVER_08>
+</celluerNetworkConfig>

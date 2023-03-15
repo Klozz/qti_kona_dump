@@ -1,0 +1,146 @@
+#!/vendor/bin/sh
+
+SAR_EXEC_FILE="/vendor/bin/vendor_cmd_tool"
+SAR_CFG_FILE="/odm/etc/wifi/sar-vendor-cmd.xml"
+prj_sar_cfg_file="/odm/etc/wifi/wifisar.cfg"
+
+WIFI_SAR_DISABLE_CMD_BODY="--ENABLE 5 --NUM_SPECS 0 --END_CMD"
+
+# temp static value, should get from sysfs based on STA/SAP on/off status
+# for android O, interface of SAP is softap0
+get_wifi_iface() {
+	echo "wlan0"
+}
+
+build_cmd_header() {
+	iface="$(get_wifi_iface)"
+	echo "-f $SAR_CFG_FILE -i $iface --START_CMD --SAR_SET"
+}
+
+build_cmd_body() {
+
+	[ "$#" -ne "2" ] && return
+
+	echo "--ENABLE 7 --NUM_SPECS 2 --SAR_SPEC
+	--NESTED_AUTO --CHAIN 0 --POW_IDX $1 --END_ATTR
+	--NESTED_AUTO --CHAIN 1 --POW_IDX $2 --END_ATTR
+	--END_ATTR --END_CMD"
+}
+
+build_cmd() {
+	cHdr="$(build_cmd_header)"
+	cBody="$(build_cmd_body $1 $2)"
+
+	echo "$cHdr $cBody"
+}
+
+apply_sar() {
+	cmd="$(build_cmd $1 $2)"
+	echo "cmd=$cmd"
+
+	$SAR_EXEC_FILE $cmd
+}
+
+#LiFenfen@CONNECTIVITY.WIFI.HARDWARE.SAR.2900034, 2022/03/21
+#add for project sar flag, projectBit keyword in wifisar.cfg, such as projectBit=100011, it focus on bit0,4,5
+#sourcesar is framework sarbit, projectsar is customized sar support, the result is "sourcesar"&"projectsar"
+function transferSarIndex() {
+    local sourcesar=$1
+    local projectsar=$2
+    local replace=0
+    local len=${#projectsar}
+    local i=0                  #projectBit start from left
+    local j=${#sourcesar}-$len #align with projectBit
+    local str=""               #destination bit
+
+    while [ ${i} -lt ${len} ]
+    do
+        pbit=${projectsar:${i}:1}
+        sbit=${sourcesar:${j}:1}
+        #echo "pbit=$pbit\n"
+        #echo "sbit=$sbit\n"
+        #if pbit[i] is 0, set str[i] 0, this project doesn't care this scene bit.
+        if [ "${pbit}" == "${replace}" ]; then
+            str=${str}${pbit}
+        else
+            str=${str}${sbit}
+        fi
+        #echo "str=$str\n"
+    let i++
+    let j++
+    done
+
+    echo "$str"
+}
+get_sar_pwr() {
+	idx="$1"
+
+	local projectBit=""
+	if [ "$idx" -eq "0" ]; then
+		return
+	fi
+	if [ -f "$prj_sar_cfg_file" ]; then
+		projectBit=$(cat "$prj_sar_cfg_file" | awk -F "=" '{
+		if ($1 == "projectBit") {
+			print $2
+		}}')
+		#echo $projectBit
+		#echo $idx
+		if [ -n "$projectBit" ]; then
+			idx="$(transferSarIndex $idx $projectBit)"
+		fi
+		#echo $idx
+		pwrindex=$(cat $prj_sar_cfg_file | awk -F ";" '{
+		if ($1 == "idx:""'$idx'") {
+			print $2
+		}}')
+	else
+		return
+	fi
+
+	pwr0=$(echo $pwrindex | awk -F "[][,]" '{print $2}');
+	pwr1=$(echo $pwrindex | awk -F "[][,]" '{print $3}');
+
+	pwr0=$(echo $pwr0 | tr -d [:space:])
+	pwr1=$(echo $pwr1 | tr -d [:space:])
+
+	#print $pwr0
+	#print $pwr1
+
+	echo "$pwr0 $pwr1"
+}
+
+disable_wifi_sar() {
+	cmd_hdr="$(build_cmd_header)"
+	cmd_body="$WIFI_SAR_DISABLE_CMD_BODY"
+
+	cmd="$cmd_hdr $cmd_body"
+	echo "cmd=$cmd"
+
+	$SAR_EXEC_FILE $cmd
+}
+
+[ ! -f "$prj_sar_cfg_file" ] && echo "fail to find wifisar_idx.cfg" && return
+# Note:
+# 1. sarIdx:wifi 2.4G enable(0/1):wifi 5G band(0-4).
+sar_cmd=$(getprop "sys.oplus.wlan.sar_idx" "")
+
+# 1. get each parameter
+cmd_array=(${sar_cmd//:/ })
+array_len=${#cmd_array[@]}
+[ "$array_len" -ne "3" ] && echo "Invalid sar cmd!" && return
+sarIdx=${cmd_array[0]}
+
+# 2. get backoff power from sarIdx(note wifi5G B1/B2/B3/B4 have different power value)
+pwr=$(get_sar_pwr "$sarIdx")
+echo "pwr=$pwr"
+pwr_array=(${pwr// / })
+arr_len=${#pwr_array[@]}
+print $arr_len
+[ "$arr_len" -ne "2" ] && echo "Invalid power array" && disable_wifi_sar && return
+
+pwrindex0=${pwr_array[0]}
+pwrindex1=${pwr_array[1]}
+
+# 3. apply backoff power
+apply_sar "$pwrindex0" "$pwrindex1"

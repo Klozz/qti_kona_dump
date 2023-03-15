@@ -1,0 +1,19 @@
+<oplus-config>
+    <!-- Guofu.Yang@ANDROID.INPUT, 2020/06/17, add for Linear motor vibrator -->
+    <oplus-feature name="oplus.software.vibrator_lmvibrator" />
+    <!-- Guofu.Yang@ANDROID.INPUT, 2020/06/08, add end -->
+
+    <!-- LuoBinqiang@ANDROID.AMS, 2020/07/14, add for some process keep alive -->
+    <oplus-feature name="oplus.software.keep_alive" />
+    <!-- LuoBinqiang@ANDROID.AMS, 2020/07/14, add end -->
+
+	<!-- CaiChunchun@ANDROID.INPUT, 2020/11/25, add for some process keep alive -->
+    <oplus-feature name="oplus.software.wake_up_arouse_support" />
+    <!-- CaiChunchun@ANDROID.INPUT, 2020/11/25, add end -->
+
+    <!-- Dengpinbo@ANDROID.INPUT, 2021/07/12, add for blackgesture -->
+    <oplus-feature name="oplus.software.gesture_proximitysensor" />
+    <!-- Dengpinbo@ANDROID.INPUT, 2021/07/12, add end -->
+
+    <oplus-feature name="oplus.software.disable_smallwindow_leather" />
+</oplus-config>

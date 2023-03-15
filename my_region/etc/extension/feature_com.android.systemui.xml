@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+
+    <!--support shutdownview emergency call-->
+    <app_feature name="com.android.systemui.support_shutdownview_emergency_call"/>
+
+    <!--support black screen -->
+    <app_feature name="com.android.systemui.support_black_screen" args="boolean:true"/>
+
+</extend_features>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extend_features>
+    <app_feature name="com.oplus.aod.scene_info_enable" args="boolean:true"/>
+    <app_feature name="com.oplus.aod.support_app_host" args="String:https://aodscene-service-in.allawnos.com"/>
+</extend_features>

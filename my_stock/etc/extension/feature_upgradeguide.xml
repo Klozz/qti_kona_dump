@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extend_features>
+    <!--component update url ,default:""-->
+    <app_feature name="com.upgradeguide.download_url" args="String:"/>
+</extend_features>
